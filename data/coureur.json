@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "nom": "Egan",
+        "prenom": "Bernal",
+        "date_naissance": "1994-03-22",
+        "nationalite": "Colombie",
+        "equipe": "Team INEOS",
+        "drapeau":"lien_vers_l_image_du_drapeau",
+        "image":"lien_vers_l_image_du_coureur"
+        }
+]

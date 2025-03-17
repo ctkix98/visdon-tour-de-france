@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "nom_ville_depart": "Paris",
+    "coordonnees_depart": {
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    },
+    "nom_ville_arrivee": "Lille",
+    "coordonnees_arrivee": {
+      "latitude": 50.6333,
+      "longitude": 3.0667
+    },
+    "distance": 200,
+    "denivele": 1000,
+    "type_etape": "montagne",
+    "date": "2024-07-01",
+    "classements": [
+      { "classement_etape": [{ "id": 1, "temps": "032517" }] },
+      {
+        "classement_maillots": {
+          "classement_maillot_jaune": [{ "id_coureur": 1, "temps": "032517" }],
+          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
+          "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
+        }
+      }
+    ],
+    "anecdote": "ici une anecdote",
+    "coordonees_trace": [
+      { "latitude": 48.8566, "longitude": 2.3522 },
+      { "latitude": 50.6333, "longitude": 3.0667 }
+    ],
+    "image_profil": "lien_vers_l_image_de_l_etape"
+  }
+]

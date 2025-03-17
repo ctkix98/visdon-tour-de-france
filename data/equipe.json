@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "nom": "Team INEOS",
+    "nationalite": "Angleterre",
+    "image": "lien_vers_l_image_de_l_equipe",
+    "coureurs": [1, 2, 3]
+  }
+]
