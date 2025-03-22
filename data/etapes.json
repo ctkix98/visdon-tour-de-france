@@ -3,13 +3,13 @@
     "id": 1,
     "nom_ville_depart": "Florence",
     "coordonnees_depart": {
-      "latitude": 0.12,
-      "longitude": 0.123
+      "latitude": 43.7697955,
+      "longitude": 11.2556404
     },
     "nom_ville_arrivee": "Rimini",
     "coordonnees_arrivee": {
-      "latitude": 0.123,
-      "longitude": 0.123
+      "latitude": 43.9465433,
+      "longitude": 12.630749
     },
     "distance": 206,
     "denivele": 3600,
@@ -910,20 +910,54 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 2,
+    "nom_ville_depart": "Cesenatico",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 44.1999283,
+      "longitude": 12.3969692
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Bologne",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 44.4938203,
+      "longitude": 11.3426327
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
+    "distance": 199.2,
+    "denivele": 1850,
+    "type_etape": "accidentée",
+    "date": "2024-06.30",
+    "classements": [
+      { "classement_etape": [{ "id": 1, "temps": "032517" }] },
+      {
+        "classement_maillots": {
+          "classement_maillot_jaune": [{ "id_coureur": 1, "temps": "032517" }],
+          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
+          "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
+        }
+      }
+    ],
+    "anecdote": "ici une anecdote",
+    "coordonees_trace": [
+      { "latitude": 48.8566, "longitude": 2.3522 },
+      { "latitude": 50.6333, "longitude": 3.0667 }
+    ],
+    "image_profil": "lien_vers_l_image_de_l_etape"
+  },
+  {
+    "id": 3,
+    "nom_ville_depart": "Piacenza",
+    "coordonnees_depart": {
+      "latitude": 44.8476352,
+      "longitude": 9.6665313
+    },
+    "nom_ville_arrivee": "Turin",
+    "coordonnees_arrivee": {
+      "latitude": 45.0677551,
+      "longitude": 7.6824892
+    },
+    "distance": 230.8,
+    "denivele": 1315,
+    "type_etape": "plat",
     "date": "2024-07-01",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
@@ -944,21 +978,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 4,
+    "nom_ville_depart": "Pinerolo",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 44.8873086,
+      "longitude": 7.3319454
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Valloire",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 45.165,
+      "longitude": 6.4296372
     },
-    "distance": 200,
-    "denivele": 1000,
+    "distance": 139.6,
+    "denivele": 3860,
     "type_etape": "montagne",
-    "date": "2024-07-01",
+    "date": "2024-07-02",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -978,21 +1012,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 5,
+    "nom_ville_depart": "Saint-Jean-de-Maurienne",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 45.27458190917969,
+      "longitude": 6.347660064697266
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Saint-Vulbas",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 45.8306,
+      "longitude": 5.28959
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
+    "distance": 177.4,
+    "denivele": 1002,
+    "type_etape": "plat",
+    "date": "2024-07-03",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1012,21 +1046,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 6,
+    "nom_ville_depart": "Mâcon",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 46.3036683,
+      "longitude": 4.8322266
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Dijon",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 47.3215806,
+      "longitude": 5.0414701
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
+    "distance": 163.5,
+    "denivele": 889,
+    "type_etape": "plat",
+    "date": "2024-07-04",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1046,21 +1080,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 7,
+    "nom_ville_depart": "Nuits-Saint-Georges",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 47.1367598,
+      "longitude": 4.9489061
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Gevrey-Chambertin",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 47.2261857,
+      "longitude": 4.9705666
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
+    "distance": 25.3,
+    "denivele": 285,
+    "type_etape": "course contre la montre",
+    "date": "2024-07-05",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1080,21 +1114,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 8,
+    "nom_ville_depart": "Semur-en-Auxois",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 47.4902149,
+      "longitude": 4.3328705
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Colombey-les-deux-églises",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 48.2230053,
+      "longitude": 4.8873124
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
+    "distance": 183.4,
+    "denivele": 2291,
+    "type_etape": "plat",
+    "date": "2024-07-06",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1114,21 +1148,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 9,
+    "nom_ville_depart": "Troyes",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 48.2971626,
+      "longitude": 4.0746257
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Troyes",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 48.2971626,
+      "longitude": 4.0746257
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
+    "distance": 199,
+    "denivele": 2033,
+    "type_etape": "accidentée",
+    "date": "2024-07-07",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1148,21 +1182,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 10,
+    "nom_ville_depart": "Orléans",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 47.9027336,
+      "longitude": 1.9086066
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Saint-Amand-Montrond",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 46.7227062,
+      "longitude": 2.5046503
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
+    "distance": 187.3,
+    "denivele": 888,
+    "type_etape": "plat",
+    "date": "2024-07-09",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1182,21 +1216,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 11,
+    "nom_ville_depart": "Evaux-les-Bains",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 46.176149,
+      "longitude": 2.4870429
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Le Lioran",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 45.0906651,
+      "longitude": 2.7533211
     },
-    "distance": 200,
-    "denivele": 1000,
+    "distance": 211,
+    "denivele": 4192,
     "type_etape": "montagne",
-    "date": "2024-07-01",
+    "date": "2024-07-10",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1216,21 +1250,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 12,
+    "nom_ville_depart": "Aurillac",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 44.9285441,
+      "longitude": 2.4433101
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Villeneuve-sur-Lot",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 44.4056615,
+      "longitude": 0.7046455
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
+    "distance": 204,
+    "denivele": 2253,
+    "type_etape": "plat",
+    "date": "2024-07-11",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1250,21 +1284,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 13,
+    "nom_ville_depart": "Agen",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 44.2015827,
+      "longitude": 0.6176112
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Pau",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 43.2957547,
+      "longitude": -0.3685668
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
+    "distance": 165.3,
+    "denivele": 1866,
+    "type_etape": "plat",
+    "date": "2024-07-12",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1284,21 +1318,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 14,
+    "nom_ville_depart": "Pau",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 43.2957547,
+      "longitude": -0.3685668
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Saint-Lary-Soulan Pla d’Adet",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 42.81364440917969,
+      "longitude": 0.29342180490493774
     },
-    "distance": 200,
-    "denivele": 1000,
+    "distance": 151.9,
+    "denivele": 4043,
     "type_etape": "montagne",
-    "date": "2024-07-01",
+    "date": "2024-07-13",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1318,21 +1352,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 15,
+    "nom_ville_depart": "Loudenvielle",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 42.7507566,
+      "longitude": 0.4327564
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Plateau de Beille",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 42.7260378,
+      "longitude": 1.6908485
     },
-    "distance": 200,
-    "denivele": 1000,
+    "distance": 197.7,
+    "denivele": 5043,
     "type_etape": "montagne",
-    "date": "2024-07-01",
+    "date": "2024-07-14",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1352,21 +1386,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 16,
+    "nom_ville_depart": "Gruissan",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 43.107039,
+      "longitude": 3.0864971
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Nîmes",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 43.8374249,
+      "longitude": 4.3600687
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
+    "distance": 188.6,
+    "denivele": 1176,
+    "type_etape": "plat",
+    "date": "2024-07-16",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1386,21 +1420,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 17,
+    "nom_ville_depart": "Saint-Paul-Trois-Châteaux",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 44.3475554,
+      "longitude": 4.7707325
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Superdévoluy",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 44.6765415,
+      "longitude": 5.9295878
     },
-    "distance": 200,
-    "denivele": 1000,
+    "distance": 177.8,
+    "denivele": 3007,
     "type_etape": "montagne",
-    "date": "2024-07-01",
+    "date": "2024-07-17",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1420,21 +1454,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 18,
+    "nom_ville_depart": "Gap",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 44.5612032,
+      "longitude": 6.0820639
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Barcelonnette",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 44.3862043,
+      "longitude": 6.6513554
     },
-    "distance": 200,
-    "denivele": 1000,
+    "distance": 179.5,
+    "denivele": 3033,
     "type_etape": "montagne",
-    "date": "2024-07-01",
+    "date": "2024-07-18",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1454,21 +1488,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 19,
+    "nom_ville_depart": "Embrun ",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 44.5641764,
+      "longitude": 6.4958189
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Isola 2000",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 44.1869246,
+      "longitude": 7.1454412
     },
-    "distance": 200,
-    "denivele": 1000,
+    "distance": 144.6,
+    "denivele": 4462,
     "type_etape": "montagne",
-    "date": "2024-07-01",
+    "date": "2024-07-19",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1488,21 +1522,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 20,
+    "nom_ville_depart": "Nice",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 43.7009358,
+      "longitude": 7.2683912
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Col de la Couillole",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 44.1002269,
+      "longitude": 7.0229315
     },
-    "distance": 200,
-    "denivele": 1000,
+    "distance": 132.8,
+    "denivele": 4763,
     "type_etape": "montagne",
-    "date": "2024-07-01",
+    "date": "2024-07-20",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
@@ -1522,55 +1556,21 @@
     "image_profil": "lien_vers_l_image_de_l_etape"
   },
   {
-    "id": 1,
-    "nom_ville_depart": "Paris",
+    "id": 21,
+    "nom_ville_depart": "Monaco",
     "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
+      "latitude": 43.7323492,
+      "longitude": 7.4276832
     },
-    "nom_ville_arrivee": "Lille",
+    "nom_ville_arrivee": "Nice",
     "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
+      "latitude": 43.7009358,
+      "longitude": 7.2683912
     },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
-    "classements": [
-      { "classement_etape": [{ "id": 1, "temps": "032517" }] },
-      {
-        "classement_maillots": {
-          "classement_maillot_jaune": [{ "id_coureur": 1, "temps": "032517" }],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
-          "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
-          "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
-        }
-      }
-    ],
-    "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
-    "image_profil": "lien_vers_l_image_de_l_etape"
-  },
-  {
-    "id": 1,
-    "nom_ville_depart": "Paris",
-    "coordonnees_depart": {
-      "latitude": 48.8566,
-      "longitude": 2.3522
-    },
-    "nom_ville_arrivee": "Lille",
-    "coordonnees_arrivee": {
-      "latitude": 50.6333,
-      "longitude": 3.0667
-    },
-    "distance": 200,
-    "denivele": 1000,
-    "type_etape": "montagne",
-    "date": "2024-07-01",
+    "distance": 33.7,
+    "denivele": 728,
+    "type_etape": "course contre la montre",
+    "date": "2024-07-21",
     "classements": [
       { "classement_etape": [{ "id": 1, "temps": "032517" }] },
       {
