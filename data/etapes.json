@@ -16,7 +16,883 @@
     "type_etape": "accidentée",
     "date": "2024-06-29",
     "classements": [
-      { "classement_etape": [{ "id": 1, "temps": "032517" }] },
+      { "classement_etape": [
+        {
+            "no_classement": 1,
+            "id": 181,
+            "temps": "05h 07' 22''"
+        },
+        {
+            "no_classement": 2,
+            "id": 187,
+            "temps": "05h 07' 22''"
+        },
+        {
+            "no_classement": 3,
+            "id": 8,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 4,
+            "id": 11,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 5,
+            "id": 126,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 6,
+            "id": 152,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 7,
+            "id": 45,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 8,
+            "id": 71,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 9,
+            "id": 61,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 10,
+            "id": 112,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 11,
+            "id": 36,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 12,
+            "id": 32,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 13,
+            "id": 77,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 14,
+            "id": 123,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 15,
+            "id": 84,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 16,
+            "id": 1,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 17,
+            "id": 135,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 18,
+            "id": 88,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 19,
+            "id": 46,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 20,
+            "id": 37,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 21,
+            "id": 211,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 22,
+            "id": 111,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 23,
+            "id": 3,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 24,
+            "id": 204,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 25,
+            "id": 141,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 26,
+            "id": 151,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 27,
+            "id": 65,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 28,
+            "id": 31,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 29,
+            "id": 186,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 30,
+            "id": 203,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 31,
+            "id": 41,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 32,
+            "id": 74,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 33,
+            "id": 206,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 34,
+            "id": 81,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 35,
+            "id": 34,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 36,
+            "id": 21,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 37,
+            "id": 13,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 38,
+            "id": 182,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 39,
+            "id": 114,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 40,
+            "id": 24,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 41,
+            "id": 51,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 42,
+            "id": 52,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 43,
+            "id": 12,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 44,
+            "id": 15,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 45,
+            "id": 18,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 46,
+            "id": 158,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 47,
+            "id": 64,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 48,
+            "id": 171,
+            "temps": "05h 07' 27''"
+        },
+        {
+            "no_classement": 49,
+            "id": 35,
+            "temps": "05h 07' 38''"
+        },
+        {
+            "no_classement": 50,
+            "id": 115,
+            "temps": "05h 07' 40''"
+        },
+        {
+            "no_classement": 51,
+            "id": 116,
+            "temps": "05h 07' 56''"
+        },
+        {
+            "no_classement": 52,
+            "id": 4,
+            "temps": "05h 08' 00''"
+        },
+        {
+            "no_classement": 53,
+            "id": 42,
+            "temps": "05h 08' 46''"
+        },
+        {
+            "no_classement": 54,
+            "id": 48,
+            "temps": "05h 08' 46''"
+        },
+        {
+            "no_classement": 55,
+            "id": 95,
+            "temps": "05h 09' 03''"
+        },
+        {
+            "no_classement": 56,
+            "id": 78,
+            "temps": "05h 16' 22''"
+        },
+        {
+            "no_classement": 57,
+            "id": 44,
+            "temps": "05h 16' 22''"
+        },
+        {
+            "no_classement": 58,
+            "id": 153,
+            "temps": "05h 21' 38''"
+        },
+        {
+            "no_classement": 59,
+            "id": 7,
+            "temps": "05h 21' 38''"
+        },
+        {
+            "no_classement": 60,
+            "id": 85,
+            "temps": "05h 22' 25''"
+        },
+        {
+            "no_classement": 61,
+            "id": 202,
+            "temps": "05h 22' 25''"
+        },
+        {
+            "no_classement": 62,
+            "id": 198,
+            "temps": "05h 22' 25''"
+        },
+        {
+            "no_classement": 63,
+            "id": 122,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 64,
+            "id": 157,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 65,
+            "id": 174,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 66,
+            "id": 105,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 67,
+            "id": 55,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 68,
+            "id": 97,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 69,
+            "id": 168,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 70,
+            "id": 215,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 71,
+            "id": 92,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 72,
+            "id": 128,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 73,
+            "id": 104,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 74,
+            "id": 134,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 75,
+            "id": 137,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 76,
+            "id": 173,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 77,
+            "id": 94,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 78,
+            "id": 16,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 79,
+            "id": 93,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 80,
+            "id": 66,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 81,
+            "id": 33,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 82,
+            "id": 146,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 83,
+            "id": 145,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 84,
+            "id": 136,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 85,
+            "id": 75,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 86,
+            "id": 127,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 87,
+            "id": 108,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 88,
+            "id": 101,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 89,
+            "id": 2,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 90,
+            "id": 6,
+            "temps": "05h 26' 08''"
+        },
+        {
+            "no_classement": 91,
+            "id": 196,
+            "temps": "05h 32' 02''"
+        },
+        {
+            "no_classement": 92,
+            "id": 201,
+            "temps": "05h 32' 02''"
+        },
+        {
+            "no_classement": 93,
+            "id": 207,
+            "temps": "05h 32' 05''"
+        },
+        {
+            "no_classement": 94,
+            "id": 47,
+            "temps": "05h 32' 05''"
+        },
+        {
+            "no_classement": 95,
+            "id": 62,
+            "temps": "05h 32' 05''"
+        },
+        {
+            "no_classement": 96,
+            "id": 121,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 97,
+            "id": 125,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 98,
+            "id": 17,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 99,
+            "id": 208,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 100,
+            "id": 184,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 101,
+            "id": 164,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 102,
+            "id": 82,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 103,
+            "id": 183,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 104,
+            "id": 14,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 105,
+            "id": 213,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 106,
+            "id": 98,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 107,
+            "id": 43,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 108,
+            "id": 216,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 109,
+            "id": 56,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 110,
+            "id": 217,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 111,
+            "id": 57,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 112,
+            "id": 118,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 113,
+            "id": 54,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 114,
+            "id": 113,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 115,
+            "id": 58,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 116,
+            "id": 86,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 117,
+            "id": 103,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 118,
+            "id": 38,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 119,
+            "id": 5,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 120,
+            "id": 68,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 121,
+            "id": 63,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 122,
+            "id": 172,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 123,
+            "id": 76,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 124,
+            "id": 117,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 125,
+            "id": 144,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 126,
+            "id": 87,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 127,
+            "id": 22,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 128,
+            "id": 96,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 129,
+            "id": 178,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 130,
+            "id": 212,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 131,
+            "id": 25,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 132,
+            "id": 142,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 133,
+            "id": 176,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 134,
+            "id": 67,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 135,
+            "id": 143,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 136,
+            "id": 91,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 137,
+            "id": 131,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 138,
+            "id": 133,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 139,
+            "id": 161,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 140,
+            "id": 27,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 141,
+            "id": 138,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 142,
+            "id": 53,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 143,
+            "id": 83,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 144,
+            "id": 26,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 145,
+            "id": 156,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 146,
+            "id": 132,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 147,
+            "id": 155,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 148,
+            "id": 163,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 149,
+            "id": 165,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 150,
+            "id": 124,
+            "temps": "05h 36' 36''"
+        },
+        {
+            "no_classement": 151,
+            "id": 102,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 152,
+            "id": 28,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 153,
+            "id": 162,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 154,
+            "id": 147,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 155,
+            "id": 214,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 156,
+            "id": 23,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 157,
+            "id": 106,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 158,
+            "id": 73,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 159,
+            "id": 175,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 160,
+            "id": 205,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 161,
+            "id": 166,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 162,
+            "id": 72,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 163,
+            "id": 177,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 164,
+            "id": 218,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 165,
+            "id": 154,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 166,
+            "id": 167,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 167,
+            "id": 148,
+            "temps": "05h 37' 40''"
+        },
+        {
+            "no_classement": 168,
+            "id": 194,
+            "temps": "05h 46' 34''"
+        },
+        {
+            "no_classement": 169,
+            "id": 192,
+            "temps": "05h 46' 34''"
+        },
+        {
+            "no_classement": 170,
+            "id": 107,
+            "temps": "05h 46' 34''"
+        },
+        {
+            "no_classement": 171,
+            "id": 197,
+            "temps": "05h 46' 34''"
+        },
+        {
+            "no_classement": 172,
+            "id": 188,
+            "temps": "05h 46' 34''"
+        },
+        {
+            "no_classement": 173,
+            "id": 193,
+            "temps": "05h 46' 34''"
+        },
+        {
+            "no_classement": 174,
+            "id": 191,
+            "temps": "05h 46' 34''"
+        },
+        {
+            "no_classement": 175,
+            "id": 185,
+            "temps": "05h 46' 34''"
+        }
+    ]},
       {
         "classement_maillots": {
           "classement_maillot_jaune": [{ "id_coureur": 1, "temps": "032517" }],
