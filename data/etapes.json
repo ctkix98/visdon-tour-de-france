@@ -963,10 +963,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-1-route.gpx",
     "image_profil": "assets/images/profils/profil_1"
   },
   {
@@ -1933,10 +1930,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-2-route.gpx",
     "image_profil": "assets/images/profils/profil_2"
   },
   {
@@ -2903,10 +2897,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-3-route.gpx",
     "image_profil": "assets/images/profils/profil_3"
   },
   {
@@ -3868,10 +3859,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-4-route.gpx",
     "image_profil": "assets/images/profils/profil_4"
   },
   {
@@ -4833,10 +4821,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-5-route.gpx",
     "image_profil": "assets/images/profils/profil_5"
   },
   {
@@ -5798,10 +5783,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-6-route.gpx",
     "image_profil": "assets/images/profils/profil_6"
   },
   {
@@ -6763,10 +6745,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-7-route.gpx",
     "image_profil": "assets/images/profils/profil_7"
   },
   {
@@ -7723,10 +7702,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-8-route.gpx",
     "image_profil": "assets/images/profils/profil_8"
   },
   {
@@ -8683,10 +8659,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-9-route.gpx",
     "image_profil": "assets/images/profils/profil_9"
   },
   {
@@ -9638,10 +9611,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-10-route.gpx",
     "image_profil": "assets/images/profils/profil_10"
   },
   {
@@ -10573,10 +10543,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-11-route.gpx",
     "image_profil": "assets/images/profils/profil_11"
   },
   {
@@ -11478,10 +11445,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-12-route.gpx",
     "image_profil": "assets/images/profils/profil_12"
   },
   {
@@ -12368,10 +12332,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-13-route.gpx",
     "image_profil": "assets/images/profils/profil_13"
   },
   {
@@ -13233,10 +13194,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-14-route.gpx",
     "image_profil": "assets/images/profils/profil_14"
   },
   {
@@ -14088,10 +14046,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-15-route.gpx",
     "image_profil": "assets/images/profils/profil_15"
   },
   {
@@ -14933,10 +14888,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-16-route.gpx",
     "image_profil": "assets/images/profils/profil_16"
   },
   {
@@ -15753,10 +15705,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-17-route.gpx",
     "image_profil": "assets/images/profils/profil_17"
   },
   {
@@ -16573,10 +16522,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-18-route.gpx",
     "image_profil": "assets/images/profils/profil_18"
   },
   {
@@ -17373,10 +17319,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-19-route.gpx",
     "image_profil": "assets/images/profils/profil_19"
   },
   {
@@ -18173,10 +18116,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-20-route.gpx",
     "image_profil": "assets/images/profils/profil_20"
   },
   {
@@ -18973,10 +18913,7 @@
       }
     ],
     "anecdote": "ici une anecdote",
-    "coordonees_trace": [
-      { "latitude": 48.8566, "longitude": 2.3522 },
-      { "latitude": 50.6333, "longitude": 3.0667 }
-    ],
+    "coordonees_trace": "coordonnes_etapes/stage-21-route.gpx",
     "image_profil": "assets/images/profils/profil_21"
   }
   
