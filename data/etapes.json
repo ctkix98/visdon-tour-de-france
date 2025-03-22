@@ -947,7 +947,10 @@
                 "temps": "05h 07' 27''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 187,
+            "points": 33
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -1908,7 +1911,10 @@
                 "temps": "09h 53' 51''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 202,
+            "points": 67
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -2869,7 +2875,10 @@
                 "temps": "15h 20' 39''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 202,
+            "points": 76
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -3825,7 +3834,10 @@
                 "temps": "19h 09' 59''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 202,
+            "points": 87
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -4781,7 +4793,10 @@
                 "temps": "23h 18' 45''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 102
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -5737,7 +5752,10 @@
                 "temps": "26h 50' 40''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 149
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -6693,7 +6711,10 @@
                 "temps": "27h 20' 59''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 149
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -7644,7 +7665,10 @@
                 "temps": "31h 25' 49''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 216
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -8595,7 +8619,10 @@
                 "temps": "35h 46' 45''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 224
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -9541,7 +9568,10 @@
                 "temps": "40h 06' 51''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 267
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -10467,7 +10497,10 @@
                 "temps": "45h 08' 10''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 267
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -11363,7 +11396,10 @@
                 "temps": "49h 25' 25''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 328
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -12244,7 +12280,10 @@
                 "temps": "52h 49' 54''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 346
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -13100,7 +13139,10 @@
                 "temps": "56h 53' 14''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 353
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -13946,7 +13988,10 @@
                 "temps": "62h 12' 56''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 363
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -14782,7 +14827,10 @@
                 "temps": "66h 24' 23''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 376
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -15593,7 +15641,10 @@
                 "temps": "70h 40' 02''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 387
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -16404,7 +16455,10 @@
                 "temps": "75h 04' 02''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 387
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -17195,7 +17249,10 @@
                 "temps": "79h 12' 06''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 387
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -17986,7 +18043,10 @@
                 "temps": "83h 19' 20''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 387
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
@@ -18777,7 +18837,10 @@
                 "temps": "84h 07' 59''"
             }
         ],
-          "classement_maillot_vert": [{ "id_coureur": 1, "points": 32517 }],
+          "classement_maillot_vert": [{
+            "id_coureur": 172,
+            "points": 387
+        }],
           "classement_maillot_blanc": [{ "id_coureur": 1, "temps": "032517" }],
           "classement_maillot_a_pois": [{ "id_coureur": 1, "points": 32517 }]
         }
