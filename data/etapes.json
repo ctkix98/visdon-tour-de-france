@@ -13,7 +13,7 @@
     },
     "distance": 206,
     "denivele": 3600,
-    "type_etape": "accid_coureurentée",
+    "type_etape": "accidente",
     "date": "2024-06-29",
     "classements": [
       { "classement_etape": [
@@ -962,7 +962,7 @@
         }
       }
     ],
-    "anecdote": "ici une anecdote",
+    "anecdote": "Lors de cette première étape, le Français Romain Bardet s'est imposé en solitaire à Rimini, endossant ainsi le premier maillot jaune de sa carrière pour son dernier Tour de France.",
     "coordonees_trace": "coordonnes_etapes/stage-1-route.gpx",
     "image_profil": "assets/images/profils/profil_1"
   },
@@ -980,7 +980,7 @@
     },
     "distance": 199.2,
     "denivele": 1850,
-    "type_etape": "accid_coureurentée",
+    "type_etape": "accidente",
     "date": "2024-06.30",
     "classements": [
       { "classement_etape": [
@@ -2896,7 +2896,7 @@
         }
       }
     ],
-    "anecdote": "ici une anecdote",
+    "anecdote": "Biniam Girmay est entré dans l'histoire en devenant le premier coureur érythréen à remporter une étape du Tour de France, faisant de l'Érythrée la 37ᵉ nation à compter une victoire d'étape.Grâce à sa performance lors de la 3ᵉ étape, Richard Carapaz a endossé le maillot jaune, devenant ainsi le premier Équatorien à le porter. Il est également devenu le 24ᵉ coureur de l'histoire à avoir porté le maillot de leader dans les trois Grands Tours.",
     "coordonees_trace": "coordonnes_etapes/stage-3-route.gpx",
     "image_profil": "assets/images/profils/profil_3"
   },
@@ -3858,7 +3858,7 @@
         }
       }
     ],
-    "anecdote": "ici une anecdote",
+    "anecdote": "La 4ᵉ étape a proposé une ascension précoce du mythique Col du Galibier, culminant à 2 642 mètres, offrant un spectacle inattendu en début de Tour. Lors de cette 4ᵉ étape, Tadej Pogačar a attaqué dans le Col du Galibier, franchissant le sommet en tête et remportant l'étape à Valloire, s'emparant ainsi du maillot jaune qu'il conservera jusqu'à Paris.",
     "coordonees_trace": "coordonnes_etapes/stage-4-route.gpx",
     "image_profil": "assets/images/profils/profil_4"
   },
@@ -4820,7 +4820,7 @@
         }
       }
     ],
-    "anecdote": "ici une anecdote",
+    "anecdote": "Le Britannique Mark Cavendish a battu le record d'Eddy Merckx en remportant sa 35ᵉ victoire d'étape sur le Tour de France lors de la cinquième étape. Cette victoire est survenue 16 ans après son premier succès sur le Tour, établissant un nouveau record de longévité entre deux victoires d'étape pour un même coureur.",
     "coordonees_trace": "coordonnes_etapes/stage-5-route.gpx",
     "image_profil": "assets/images/profils/profil_5"
   },
@@ -7719,7 +7719,7 @@
     },
     "distance": 199,
     "denivele": 2033,
-    "type_etape": "accid_coureurentée",
+    "type_etape": "accidente",
     "date": "2024-07-07",
     "classements": [
       { "classement_etape": [
@@ -8658,7 +8658,7 @@
         }
       }
     ],
-    "anecdote": "ici une anecdote",
+    "anecdote": "La 9ᵉ étape, autour de Troyes, a innové en incluant 14 secteurs de routes blanches, totalisant 32,6 km, rappelant les Strade Bianche italiennes et ajoutant une dimension spectaculaire à la course. Le Français Anthony Turgis a brillamment remporté l'étape en solitaire, maîtrisant parfaitement les chemins de vignes pour s'offrir sa première victoire sur le Tour. ",
     "coordonees_trace": "coordonnes_etapes/stage-9-route.gpx",
     "image_profil": "assets/images/profils/profil_9"
   },
@@ -18912,7 +18912,7 @@
         }
       }
     ],
-    "anecdote": "ici une anecdote",
+    "anecdote": "Pour la première fois depuis 1904, le Tour de France ne s'est pas terminé à Paris. En raison des préparatifs pour les Jeux olympiques de 2024, l'arrivée finale a été déplacée à Nice. La dernière étape, un contre-la-montre individuel de 35 kilomètres entre Monaco et Nice, a offert un spectacle unique sur la Promenade des Anglais. Le contre-la-montre final à Nice a rappelé l'édition de 1989, où la dernière étape, également un contre-la-montre, avait été décisive pour le classement général. Cette configuration rare a ajouté du suspense jusqu'à la fin de la course. ",
     "coordonees_trace": "coordonnes_etapes/stage-21-route.gpx",
     "image_profil": "assets/images/profils/profil_21"
   }
