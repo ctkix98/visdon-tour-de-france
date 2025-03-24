@@ -5,7 +5,6 @@ import time
 import requests
 from bs4 import BeautifulSoup
 import pycountry
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -15,8 +14,10 @@ from selenium.webdriver.support import expected_conditions as EC
 # Fonction pour obtenir le code ISO du pays à partir du nom
 def get_iso_code(nationality):
     try:
-        # Certains noms de pays ne sont pas reconnus directement, on effectue une recherche floue
-        country = pycountry.countries.search_fuzzy(nationality)[0]
+        # Supprimer les parenthèses (si présentes) et nettoyer la nationalité
+        nationality_cleaned = re.sub(r'[()]', '', nationality).strip()
+        # Recherche floue du pays avec pycountry
+        country = pycountry.countries.search_fuzzy(nationality_cleaned)[0]
         return country.alpha_2.lower()
     except Exception as e:
         print(f"[Warning] Impossible de trouver le code ISO pour '{nationality}': {e}")
@@ -32,9 +33,21 @@ def download_image(img_url, save_path):
                     f.write(chunk)
             print(f"[Info] Image sauvegardée sous {save_path}")
         else:
-            print(f"[Erreur] Téléchargement de l'image échoué: code HTTP {response.status_code}")
+            print(f"[Erreur] Téléchargement de l'image échoué : code HTTP {response.status_code}")
     except Exception as e:
         print(f"[Erreur] Exception lors du téléchargement de l'image : {e}")
+
+# Fonction pour nettoyer la valeur de "team"
+def nettoyer_equipe(team_value):
+    return team_value.split('/')[0].strip()
+
+# Fonction pour supprimer uniquement les parenthèses de "nation"
+def nettoyer_nation(nation_value):
+    return re.sub(r'[()]', '', nation_value).strip()
+
+# Fonction pour formater le drapeau selon flag-icons
+def formater_drapeau(iso_code):
+    return f'<span class="fi fi-{iso_code}"></span>'
 
 def main():
     URL_BASE = "https://www.letour.fr/fr/coureurs"
@@ -64,12 +77,10 @@ def main():
         soup = BeautifulSoup(page, "html.parser")
         
         # Récupérer tous les liens menant à la page d'un coureur
-        # On recherche tous les <a> qui contiennent "/fr/coureur/" dans leur href
         rider_links = []
         for a in soup.find_all("a", href=True):
             href = a["href"]
             if "/fr/coureur/" in href:
-                # Assurer la complétude de l'URL
                 full_url = href if href.startswith("http") else "https://www.letour.fr" + href
                 if full_url not in rider_links:
                     rider_links.append(full_url)
@@ -96,11 +107,11 @@ def main():
             first_name_el = rider_soup.find(class_="riderInfos__firstName")
             full_name_el = rider_soup.find(class_="riderInfos__fullName")
             bib_el = rider_soup.find(class_="riderInfos__bib__number")
-            counrty_el = rider_soup.find(class_="riderInfos__country__name")
+            country_el = rider_soup.find(class_="riderInfos__country__name")
             team_el = rider_soup.find(class_="riderInfos__teamName")
             image_el = rider_soup.find("img", class_=lambda x: x and "riderProfile__img" in x)
 
-            if not (first_name_el and full_name_el and bib_el and counrty_el and team_el and image_el):
+            if not (first_name_el and full_name_el and bib_el and country_el and team_el and image_el):
                 print(f"[Erreur] Certaines informations manquent pour la page {rider_url}.")
                 continue
 
@@ -110,16 +121,15 @@ def main():
             bib_text = bib_el.get_text(strip=True)
             bib_number = re.sub(r"^N°\s*", "", bib_text)
 
-            nationality = counrty_el.get_text(strip=True)
+            nationality = country_el.get_text(strip=True)
             team = team_el.get_text(strip=True)
 
-            # Récupérer l'url de l'image. Parfois la source peut être dans "src" ou "data-src".
+            # Récupérer l'url de l'image
             img_url = image_el.get("src") if image_el.get("src") else image_el.get("data-src")
             if not img_url.startswith("http"):
                 img_url = "https://www.letour.fr" + img_url
 
             # Définir le nom de fichier pour l'image
-            # Conversion des noms en minuscules et suppression des espaces via un tiret
             prenom_nom = f"{first_name}-{full_name}".lower().replace(" ", "-")
             img_filename = f"{bib_number}_{prenom_nom}_profil.jpg"
             img_save_path = os.path.join(assets_folder, img_filename)
@@ -127,27 +137,30 @@ def main():
             # Télécharger l'image
             download_image(img_url, img_save_path)
 
-            # Récupérer le code ISO pour le drapeau en utilisant pycountry
-            iso_code = get_iso_code(nationality)
-            drapeau = f"flag-icon flag-icon-{iso_code}" if iso_code else ""
+            # Nettoyer la nationalité (supprimer les parenthèses)
+            nationality_cleaned = nettoyer_nation(nationality)
+
+            # Récupérer le code ISO pour le drapeau
+            iso_code = get_iso_code(nationality_cleaned)
+            drapeau = formater_drapeau(iso_code) if iso_code else ""
 
             # Construire le dictionnaire du coureur
             coureur_data = {
                 "id": bib_number,
                 "prenom": first_name,
                 "nom": full_name,
-                "nation": nationality,
+                "nation": nationality_cleaned,  # Nation nettoyée des parenthèses
                 "drapeau": drapeau,
-                "team": team,
+                "team": nettoyer_equipe(team),  # Nettoyage de l'équipe
                 "image": img_save_path
             }
             coureurs.append(coureur_data)
-            print(f"[Info] Coureur {bib_number} récupéré: {first_name} {full_name}")
+            print(f"[Info] Coureur {bib_number} récupéré : {first_name} {full_name}")
 
         # Sauvegarder dans le fichier coureur.json
-        with open("coureur.json", "w", encoding="utf-8") as f:
-            json.dump(coureurs, f, ensure_ascii=False, indent=4)
-        print("[Info] Données sauvegardées dans coureur.json")
+        with open("coureurs.json", "w", encoding="utf-8") as f:
+            json.dump({"coureurs": coureurs}, f, ensure_ascii=False, indent=4)
+        print("[Info] Données sauvegardées dans coureurs.json")
 
     except Exception as e:
         print(f"[Erreur] Exception globale : {e}")
