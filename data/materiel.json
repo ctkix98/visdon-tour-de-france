@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "titre": "Casque",
+    "contenu": "Le casque est un élément essentiel de sécurité pour les cyclistes. Il doit être homologué et porté correctement pour protéger la tête en cas de chute."
+  },
+  {
+    "id": 2,
+    "titre": "Cadre",
+    "contenu": "Le cadre du vélo est la structure principale qui-supporte le cycliste et les composants du vélo. Il doit être solide, léger et conçu pour résister aux contraintes de la course."
+  },
+  {
+    "id": 3,
+    "titre": "Pneus",
+    "contenu": "Les pneus sont un élément critique pour la performance et la sécurité du vélo. Ils doivent être choisis en fonction du type de course, de la surface de la route et des conditions météorologiques."
+  },
+  {
+    "id": 4,
+    "titre": "Oreillette",
+    "contenu": "L'oreillette est un dispositif de communication qui permet aux cyclistes de recevoir des instructions et des informations de leur équipe ou des commissaires de course. Elle doit être portée de manière à ne pas gêner la concentration du cycliste."
+  },
+  {
+    "id": 5,
+    "titre": "Musette",
+    "contenu": "La musette est un sac de ravitaillement que les cyclistes reçoivent pendant la course. Elle contient des aliments, des boissons et des produits de soin pour aider les cyclistes à se ressourcer et à continuer la course."
+  },
+  {
+    "id": 6,
+    "titre": "Chaussures à clips",
+    "contenu": "Les chaussures à clips sont des chaussures spéciales conçues pour les cyclistes. Elles sont équipées de clips qui s'attachent aux pédales du vélo, permettant ainsi une transmission de puissance efficace et une stabilité accrue."
+  },
+
+  {
+    "sportif": [
+      [
+        {
+          "id": 1,
+          "titre": "Casque",
+          "contenu": "Le casque est un élément essentiel de sécurité pour les coureurs du Tour de France 2024. Les coureurs devront porter un casque homologué qui respecte les normes de l'UCI en termes de sécurité et de confort."
+        },
+        {
+          "id": 2,
+          "titre": "Cadre",
+          "contenu": "Le cadre du vélo est un élément crucial pour les coureurs du Tour de France 2024. Les cadres doivent être conçus pour résister aux contraintes de la course et pour offrir une stabilité et une maniabilité optimales."
+        },
+        {
+          "id": 3,
+          "titre": "Pneus",
+          "contenu": "Les pneus sont un élément clé pour les coureurs du Tour de France 2024. Les pneus doivent être choisis en fonction du type de course, de la surface de la route et des conditions météorologiques pour offrir la meilleure adhérence et la meilleure performance possible."
+        },
+        {
+          "id": 4,
+          "titre": "Oreillette",
+          "contenu": "L'oreillette est un outil important pour les coureurs du Tour de France 2024. Les oreillettes permettent aux coureurs de recevoir des instructions et des informations de leurs équipes et des commissaires de course en temps réel."
+        },
+        {
+          "id": 5,
+          "titre": "Musette",
+          "contenu": "La musette est un sac de ravitaillement qui est distribué aux coureurs du Tour de France 2024 pendant la course. Les musettes contiennent des aliments, des boissons et des produits de soin pour aider les coureurs à se ressourcer et à continuer la course."
+        },
+        {
+          "id": 6,
+          "titre": "Chaussures à clips",
+          "contenu": "Les chaussures à clips sont un élément essentiel pour les coureurs du Tour de France 2024. Les chaussures à clips permettent aux coureurs de transmettre leur puissance aux pédales de manière efficace et de maintenir une stabilité et une contrôle optimal."
+        }
+      ]
+    ]
+  }
+]
