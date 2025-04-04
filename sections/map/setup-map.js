@@ -10,7 +10,7 @@ Promise.all([
   // Créer un élément SVG
   const width = 800;
   const height = 600;
-  const svg = select("#map")
+  const svg = select("#map-section")
     .append("svg")
     .attr("width", width)
     .attr("height", height);
