@@ -9,6 +9,14 @@
   <body>
     <main>
       <!-- Section des podiums -->
+      <section id="finish-section">
+        <h2>Dernière étape : arrivée à Nice</h2>
+        <img src="/assets/placeholders/rider.png" alt="T.Pogacar" />
+        <img src="/assets/placeholders/rider.png" alt="J. Vingegaard" />
+        <img src="/assets/placeholders/rider.png" alt="R.Evenepoel" />
+      </section>
+
+      <!-- Section des podiums -->
       <section id="podiums-section">
         <h2>Les podiums</h2>
         <!-- Podium 1 : Vainqueur d'étape -->
@@ -16,7 +24,7 @@
           <h3>Vainqueur de la dernière étape</h3>
           <div class="winner">
             <div class="character" data-name="Tadej Pogacar">
-              <img src="/assets/placeholders/rider.png" alt="Tadej Pogacar">
+              <img src="/assets/placeholders/rider.png" alt="Tadej Pogacar" />
               <div class="tooltip-content hidden">
                 <p>Course : Contre la montre</p>
                 <p>Distance : 34 km</p>
@@ -29,15 +37,18 @@
             </div>
           </div>
         </div>
-      
+
         <!-- 2. Podium général -->
         <div class="podium">
           <h3>Classement général</h3>
-      
+
           <!-- 1er -->
           <div class="winner">
             <div class="character" data-name="Jonas Vingegaard">
-              <img src="/assets/placeholders/rider.png" alt="Jonas Vingegaard">
+              <img
+                src="/assets/placeholders/rider.png"
+                alt="Jonas Vingegaard"
+              />
               <div class="tooltip-content hidden">
                 <p>🇩🇰 Jonas Vingegaard</p>
                 <p>Équipe : Jumbo-Visma</p>
@@ -48,11 +59,11 @@
               </div>
             </div>
           </div>
-      
+
           <!-- 2e -->
           <div class="winner">
             <div class="character" data-name="Tadej Pogacar">
-              <img src="/assets/placeholders/rider.png" alt="Tadej Pogacar">
+              <img src="/assets/placeholders/rider.png" alt="Tadej Pogacar" />
               <div class="tooltip-content hidden">
                 <p>🇸🇮 Tadej Pogacar</p>
                 <p>Équipe : UAE Team Emirates</p>
@@ -63,11 +74,11 @@
               </div>
             </div>
           </div>
-      
+
           <!-- 3e -->
           <div class="winner">
             <div class="character" data-name="Remco Evenepoel">
-              <img src="/assets/placeholders/rider.png" alt="Remco Evenepoel">
+              <img src="/assets/placeholders/rider.png" alt="Remco Evenepoel" />
               <div class="tooltip-content hidden">
                 <p>🇧🇪 Remco Evenepoel</p>
                 <p>Équipe : Soudal Quick-Step</p>
@@ -79,15 +90,15 @@
             </div>
           </div>
         </div>
-      
+
         <!-- 3. Maillots distinctifs -->
         <div class="podium">
           <h3>Gagnants des maillots distinctifs</h3>
-      
+
           <!-- Maillot blanc -->
           <div class="winner">
             <div class="character" data-name="Remco Evenepoel">
-              <img src="/assets/placeholders/rider.png" alt="Remco Evenepoel">
+              <img src="/assets/placeholders/rider.png" alt="Remco Evenepoel" />
               <div class="tooltip-content hidden">
                 <p>Équipe : Soudal Quick-Step</p>
                 <p>🇧🇪 Remco Evenepoel</p>
@@ -96,11 +107,14 @@
               </div>
             </div>
           </div>
-      
+
           <!-- Maillot jaune -->
           <div class="winner">
             <div class="character" data-name="Jonas Vingegaard">
-              <img src="/assets/placeholders/rider.png" alt="Jonas Vingegaard">
+              <img
+                src="/assets/placeholders/rider.png"
+                alt="Jonas Vingegaard"
+              />
               <div class="tooltip-content hidden">
                 <p>Équipe : Jumbo-Visma</p>
                 <p>🇩🇰 Jonas Vingegaard</p>
@@ -109,11 +123,11 @@
               </div>
             </div>
           </div>
-      
+
           <!-- Maillot vert -->
           <div class="winner">
             <div class="character" data-name="Wout Van Aert">
-              <img src="/assets/placeholders/rider.png" alt="Wout Van Aert">
+              <img src="/assets/placeholders/rider.png" alt="Wout Van Aert" />
               <div class="tooltip-content hidden">
                 <p>Équipe : Jumbo-Visma</p>
                 <p>🇧🇪 Wout Van Aert</p>
@@ -122,11 +136,11 @@
               </div>
             </div>
           </div>
-      
+
           <!-- Maillot à pois -->
           <div class="winner">
             <div class="character" data-name="Giulio Ciccone">
-              <img src="/assets/placeholders/rider.png" alt="Giulio Ciccone">
+              <img src="/assets/placeholders/rider.png" alt="Giulio Ciccone" />
               <div class="tooltip-content hidden">
                 <p>Équipe : Lidl-Trek</p>
                 <p>🇮🇹 Giulio Ciccone</p>
@@ -136,7 +150,44 @@
             </div>
           </div>
         </div>
+      </section>
 
+      <!-- Section compte à rebours -->
+      <section id="countdown-section">
+        <h2>Next to come</h2>
+
+        <div class="countdown-header">
+          <h3>Tour de France 2025</h3>
+          <p>5 juillet 2025</p>
+        </div>
+
+        <div class="countdown-timer">
+          <div class="time-block">
+            <p>Jours</p>
+            <p id="days">113</p>
+          </div>
+          <div class="time-block">
+            <p>Heures</p>
+            <p id="hours">23</p>
+          </div>
+          <div class="time-block">
+            <p>Minutes</p>
+            <p id="minutes">41</p>
+          </div>
+          <div class="time-block">
+            <p>Secondes</p>
+            <p id="seconds">15</p>
+          </div>
+        </div>
+
+        <div class="countdown-action">
+          <a
+            href="https://www.letour.fr/fr/la-course/grands-departs/grand-depart-2025"
+            target="_blank"
+          >
+            Découvrir l'édition 2025
+          </a>
+        </div>
       </section>
     </main>
   </body>
