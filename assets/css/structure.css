@@ -29,6 +29,44 @@ a#logo img{
     aspect-ratio: 38.00/29.45;
 }
 
+<<<<<<< HEAD
 main section{
     
+=======
+ section{
+    min-width: 100vw;
+    min-height: 100vh;  
+
+}
+
+section#menu-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+   
+
+    div{
+        background-color: black;
+        color: white;
+        border-radius: 100%;
+        padding: 2rem 2rem;
+        height: 10vw;
+        width:10vw;
+    }
+
+    div p {
+        text-align: center;
+    }
+
+    div:hover{
+        
+        background-color: #FFFF00;
+        color: black;
+       
+    }
+     
+    
+
+>>>>>>> menu-2
 }
