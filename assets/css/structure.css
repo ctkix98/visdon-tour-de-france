@@ -29,13 +29,9 @@ a#logo img{
     aspect-ratio: 38.00/29.45;
 }
 
-<<<<<<< HEAD
-main section{
-    
-=======
  section{
     min-width: 100vw;
-    min-height: 100vh;  
+    min-height: auto;  
 
 }
 
@@ -68,5 +64,4 @@ section#menu-section {
      
     
 
->>>>>>> menu-2
 }
