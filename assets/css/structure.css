@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+}
+
+header{
+    padding: 1rem;
+}
+
+a#logo{
+    display: inline-flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 24px;
+    background-color:#FFFF00;
+    text-decoration: none;
+    color: black;
+}
+
+
+a#logo img{
+    background-color:white ;
+    height: 29.45px;
+    border-radius: 100px;
+    padding: 1px;
+    flex-shrink: 0;
+    align-self: stretch;
+    aspect-ratio: 38.00/29.45;
+}
+
+ section{
+    min-width: 100vw;
+    min-height: auto;  
+
+}
+
+section#menu-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem; 
+
+}

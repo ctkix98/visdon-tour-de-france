@@ -1,0 +1,47 @@
+@import "../../node_modules/tailwindcss";
+@import "../../assets/font/stylesheet.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+@theme {
+    --font-sans : "Open sans" , sans-serif;
+    --font-primary : "Galibier" , sans-serif;
+
+    /*TDF PRIMARY COLORS*/
+    --color-yellow-50: #fbffe7 ;
+    --color-yellow-100 : #f4ffc1 ;
+    --color-yellow-200 : #eeff86 ;
+    --color-yellow-300 :#ecff41 ;
+    --color-yellow-400 : #f2ff0d ;
+    --color-yellow-500 : #ffff00 ;
+    --color-yellow-600 : #d1bf00 ;
+    --color-yellow-700 : #a68b02 ;
+    --color-yellow-800 : #896c0a ;
+    --color-yellow-900 : #74580f ;
+    --color-yellow-950 : #443004 ;
+
+    /*TDF SECONDARY COLORS*/
+    --color-black-50: #f6f6f6 ;
+    --color-black-100 : #e7e7e7 ;
+    --color-black-200 : #d1d1d1 ;
+    --color-black-300 :#b0b0b0 ;
+    --color-black-400 : #888888 ;
+    --color-black-500 : #6d6d6d ;
+    --color-black-600 : #5d5d5d ;
+    --color-black-700 : #4f4f4f ;
+    --color-black-800 : #454545 ;
+    --color-black-900 : #3d3d3d ;
+    --color-black-950 : #000000 ;
+    
+}
+
+@layer components {
+    .card {
+        @apply flex justify-center items-center bg-yellow-500 text-black-950 font-bold rounded-br-lg rounded-tl-lg p-[50px];
+    }
+    .menu-bubble{
+        @apply bg-black-950 hover:bg-yellow-500 text-white hover:text-black-950 rounded-full p-[2rem] w-[100px] h-[100px] ;
+    }
+
+
+}
