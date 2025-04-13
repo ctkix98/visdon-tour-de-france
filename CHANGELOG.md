@@ -2,6 +2,10 @@
  
 Toutes les modifications importantes du projet sont listées ici.
 
+## [0.0.5] - 13.04.2025
+### Complete CSS
+#### Cédrine
+- Add CSS via Tailwind for sections finish-line, podiums and countdown
 
 ## [0.0.4] - 07.04.2025
 ### Fix bug to launch site
