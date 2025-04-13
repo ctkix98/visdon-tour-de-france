@@ -2,46 +2,114 @@
 @import "../../assets/font/stylesheet.css";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
 @theme {
-    --font-sans : "Open sans" , sans-serif;
-    --font-primary : "Galibier" , sans-serif;
+  --font-sans: "Open sans", sans-serif;
+  --font-primary: "Galibier", sans-serif;
 
-    /*TDF PRIMARY COLORS*/
-    --color-yellow-50: #fbffe7 ;
-    --color-yellow-100 : #f4ffc1 ;
-    --color-yellow-200 : #eeff86 ;
-    --color-yellow-300 :#ecff41 ;
-    --color-yellow-400 : #f2ff0d ;
-    --color-yellow-500 : #ffff00 ;
-    --color-yellow-600 : #d1bf00 ;
-    --color-yellow-700 : #a68b02 ;
-    --color-yellow-800 : #896c0a ;
-    --color-yellow-900 : #74580f ;
-    --color-yellow-950 : #443004 ;
+  /*TDF PRIMARY COLORS*/
+  --color-yellow-50: #fbffe7;
+  --color-yellow-100: #f4ffc1;
+  --color-yellow-200: #eeff86;
+  --color-yellow-300: #ecff41;
+  --color-yellow-400: #f2ff0d;
+  --color-yellow-500: #ffff00;
+  --color-yellow-600: #d1bf00;
+  --color-yellow-700: #a68b02;
+  --color-yellow-800: #896c0a;
+  --color-yellow-900: #74580f;
+  --color-yellow-950: #443004;
 
-    /*TDF SECONDARY COLORS*/
-    --color-black-50: #f6f6f6 ;
-    --color-black-100 : #e7e7e7 ;
-    --color-black-200 : #d1d1d1 ;
-    --color-black-300 :#b0b0b0 ;
-    --color-black-400 : #888888 ;
-    --color-black-500 : #6d6d6d ;
-    --color-black-600 : #5d5d5d ;
-    --color-black-700 : #4f4f4f ;
-    --color-black-800 : #454545 ;
-    --color-black-900 : #3d3d3d ;
-    --color-black-950 : #000000 ;
-    
+  /*TDF SECONDARY COLORS*/
+  --color-black-50: #f6f6f6;
+  --color-black-100: #e7e7e7;
+  --color-black-200: #d1d1d1;
+  --color-black-300: #b0b0b0;
+  --color-black-400: #888888;
+  --color-black-500: #6d6d6d;
+  --color-black-600: #5d5d5d;
+  --color-black-700: #4f4f4f;
+  --color-black-800: #454545;
+  --color-black-900: #3d3d3d;
+  --color-black-950: #000000;
 }
 
 @layer components {
-    .card {
-        @apply flex justify-center items-center bg-yellow-500 text-black-950 font-bold rounded-br-lg rounded-tl-lg p-[50px];
-    }
-    .menu-bubble{
-        @apply bg-black-950 hover:bg-yellow-500 text-white hover:text-black-950 rounded-full p-[2rem] w-[100px] h-[100px] ;
-    }
+  .card {
+    @apply flex justify-center items-center bg-yellow-500 text-black-950 font-bold rounded-br-lg rounded-tl-lg p-[50px];
+  }
 
+  .menu-bubble {
+    @apply bg-black-950 hover:bg-yellow-500 text-white hover:text-black-950 rounded-full p-[2rem] w-[100px] h-[100px];
+  }
 
+  /* Podium composant réutilisable */
+  .podium-block {
+    @apply relative flex flex-col items-center mb-6;
+  }
+
+  .podium-character {
+    @apply relative cursor-pointer; /* ✅ Suppression de `group` ici */
+  }
+
+  .podium-img {
+    @apply z-10 transition-transform duration-300 ease-in-out group-hover:drop-shadow-lg;
+  }
+
+  .tooltip-graphic {
+    @apply absolute left-full top-1/2 -translate-y-1/2 ml-4 w-[300px] h-[150px] pointer-events-none z-0;
+  }
+
+  .tooltip-title {
+    @apply font-bold text-yellow-700 mb-2;
+  }
+
+  .tooltip-text {
+    @apply text-sm;
+  }
+
+  .tooltip-content {
+    @apply hidden group-hover:block absolute left-full top-0 ml-6 bg-yellow-100 text-black p-4 rounded-lg  w-64 z-20;
+  }
+
+  /* Section title */
+  @layer components {
+    .section-title {
+      @apply inline-block px-6 py-2 bg-yellow-500 text-black text-xl rounded-full font-primary;
+    }
+  }
+
+  /* Section countdown */
+  @layer components {
+    .countdown-header {
+      @apply text-center mt-8 mb-6;
+    }
+  
+    .countdown-header h3 {
+      @apply text-3xl font-bold font-primary text-black mb-1;
+    }
+  
+    .countdown-header p {
+      @apply text-base text-black;
+    }
+  
+    .countdown-timer {
+        @apply flex justify-center gap-6 bg-black-950 text-white py-6 px-8 rounded-lg mb-8 w-fit mx-auto;
+      }
+      
+      
+  
+    .time-block {
+      @apply flex flex-col items-center font-bold font-primary text-lg;
+    }
+  
+    .countdown-action {
+      @apply text-center;
+    }
+  
+    .countdown-action a {
+      @apply inline-block bg-yellow-500 text-black font-bold px-6 py-2 rounded-full hover:bg-yellow-400 transition;
+    }
+  }
+  
 }
+
