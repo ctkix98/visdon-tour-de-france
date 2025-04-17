@@ -38,9 +38,60 @@
     @apply flex justify-center items-center bg-yellow-500 text-black-950 font-bold rounded-br-lg rounded-tl-lg p-[50px];
   }
 
-  .menu-bubble {
-    @apply bg-black-950 hover:bg-yellow-500 text-white hover:text-black-950 rounded-full p-[2rem] w-[100px] h-[100px];
+  /* MENU composant réutilisable */
+
+  .grid-menu{
+    @apply relative w-full max-w-[800px] h-[600px];
   }
+  
+  .logo-container {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-3/4
+           aspect-square bg-white rounded-full flex items-center justify-center z-10;
+  }  
+
+  .center {
+    @apply w-[104px];
+  }
+
+   /* Positioning */
+   /*top-left*/
+   .box-1 {
+    @apply top-[2%] left-[20%];
+  }
+
+  /*bottom-left*/
+  .box-2 {
+    @apply bottom-[30%] left-[17%];
+  }
+
+  /*bottom-center*/
+  .box-3 {
+    @apply bottom-[10%] left-[50%] -translate-x-1/2;
+  }
+
+  /*top-right*/
+  .box-4 {
+    @apply top-[2%] right-[20%];
+  }
+
+  /*bottom-right*/
+  .box-5 {
+    @apply bottom-[30%] right-[17%];
+  }
+
+
+  .menu-bubble {
+    @apply flex bg-black-950 hover:bg-yellow-500 text-white hover:text-black-950 rounded-full  absolute w-[15vw] h-[15vw] items-center justify-center shadow-lg ;
+  }
+  .menu-bubble:hover {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .logo-tdf {
+    @apply w-[30vw] h-[30vw] border-1 object-scale-down border-black-500 rounded-full p-1 bg-white;
+  }
+
+
 
   /* Podium composant réutilisable */
   .podium-block {
@@ -70,6 +121,7 @@
   .tooltip-content {
     @apply hidden group-hover:block absolute left-full top-0 ml-6 bg-yellow-100 text-black p-4 rounded-lg  w-64 z-20;
   }
+} 
 
   /* Section title */
   @layer components {
@@ -109,7 +161,8 @@
     .countdown-action a {
       @apply inline-block bg-yellow-500 text-black font-bold px-6 py-2 rounded-full hover:bg-yellow-400 transition;
     }
+   
   }
   
-}
+
 

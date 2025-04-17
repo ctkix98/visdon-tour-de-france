@@ -31,14 +31,14 @@ a#logo img{
 
  section{
     min-width: 100vw;
-    min-height: auto;  
+    min-height: 100vh;  
 
 }
 
-section#menu-section {
+/* section#menu-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 2rem; 
 
-}
+} */
