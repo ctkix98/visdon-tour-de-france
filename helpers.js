@@ -6,8 +6,8 @@ const displaySection = (id) => {
   
   // Same same, avec les liens
   const activateLink = (id) => {
-    document.querySelector(`nav a.active`)?.classList.remove('active')
-    document.querySelector(`nav a[href="${id}"]`)?.classList.add('active')
+    document.querySelector(`menu-bubble a.active`)?.classList.remove('active')
+    document.querySelector(`menu-bubble a[href="${id}"]`)?.classList.add('active')
   }
   
   export {displaySection, activateLink}

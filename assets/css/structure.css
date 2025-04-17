@@ -4,6 +4,7 @@ html, body {
 
 header{
     padding: 1rem;
+    z-index: 100;
 }
 
 a#logo{
@@ -29,10 +30,16 @@ a#logo img{
     aspect-ratio: 38.00/29.45;
 }
 
- section{
+ section [id*="section"]{
     min-width: 100vw;
     min-height: 100vh;  
 
+}
+
+section#menu-wrapper{
+    height: 100vh;
+    overflow-y: hidden;
+    flex-grow: 1;
 }
 
 /* section#menu-section {

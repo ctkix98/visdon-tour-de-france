@@ -2,7 +2,7 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 import "/sections/menu/menu.js"
 import "/custom-elements/menu-bubble.js";
 import { displayCategories } from "./sections/menu/menu";
-import { displaySection } from "./helpers";
+import { displaySection, activateLink} from "./helpers";
 
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
@@ -13,7 +13,8 @@ console.log("coucou");
 const routes = () => {
     const hash = window.location.hash || '#menu-section';
     const hashs = hash.split('-')
-  
+    activateLink(hashs[0]);
+    
     switch(hashs[0]) {
       case '#menu':
           displaySection('menu')

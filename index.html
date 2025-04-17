@@ -17,7 +17,8 @@
       </a>
     </header>
     <!-- section menu -->
-     <section id="menu-section" href="#menu-section" class="grid-menu layout-wrapper">
+     <section id="menu-wrapper">
+     <section id="menu-section" href="#menu-section" class="grid-menu layout-wrapper active">
       <div id="teams" href="#teams-section" class="menu-bubble">
         <p>equipes</p>
       </div>
@@ -36,11 +37,14 @@
       <div id="logo-tdf">logo</div>
      </section>
      <!-- section teams -->
-      <section id="teams-section">
-        <div>
+      <section id="teams-section" class="active section-wrapper">
+        <a href="#menu-section">
+          <div class="btn-back">
           back
-        </div>
-        <div>
+          </div>
+        </a>
+        
+        <div class="section-title">
           Equipes
         </div>
         <div>
@@ -158,10 +162,12 @@
         </div>
       </section>
     <!-- section stakes -->
-     <section id="stakes-section">
-      <div class="btn-back">
+     <section id="stakes-section" class="active section-wrapper">
+      <a href="#menu-section">
+        <div class="btn-back">
         back
-      </div>
+        </div>
+      </a>
       <div class="section-title">
         enjeux
       </div>
@@ -205,10 +211,12 @@
 
      </section>
      <!-- section equipment -->
-     <section id="equipment-section">
-      <div>
+     <section id="equipment-section" class="active section-wrapper">
+      <a href="#menu-section">
+        <div class="btn-back">
         back
-      </div>
+        </div>
+      </a>
       <div>
         Materiel
       </div>
@@ -221,10 +229,12 @@
       </div>
      </section>
      <!-- section route -->
-     <section id="route-section">
-      <div>
+     <section id="route-section" class="active section-wrapper">
+      <a href="#menu-section">
+        <div class="btn-back">
         back
-      </div>
+        </div>
+      </a>
       <div>
         parcours
       </div>
@@ -236,10 +246,12 @@
       </div>
      </section>
      <!-- section rules -->
-     <section id="rules-section">
-      <div>
+     <section id="rules-section" class="active section-wrapper">
+      <a href="#menu-section">
+        <div class="btn-back">
         back
-      </div>
+        </div>
+      </a>
       <div>
         regles
       </div>
@@ -270,9 +282,9 @@
         </div>
       </div>
      </section>
-
+    </section>
     <!-- section carte -->
-    <section id="map-section">
+    <section id="map-section" class="active">
       <img
         class="france-map"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDFpj3ngVgwSqFhgfoPwwmn_Gi-zmbG8BHLQ&s"

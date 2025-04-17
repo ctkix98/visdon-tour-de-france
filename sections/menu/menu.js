@@ -16,11 +16,13 @@ const displayCategories = () => {
 
     categories.forEach(category => {
         const bubble = document.createElement('menu-bubble');
+        const link = document.createElement('a');
+        link.setAttribute('href', category.href);
         bubble.setAttribute('id', category.id);
-        bubble.setAttribute('href', category.href);
         bubble.setAttribute('class',`menu-bubble  box-${category.number}`);
         bubble.setAttribute('name', category.name);
-        bubbleList.appendChild(bubble);
+        link.appendChild(bubble);
+        bubbleList.appendChild(link);
     });
 
     const centerLogo = document.createElement('img');
