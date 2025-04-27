@@ -1,8 +1,12 @@
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import "/sections/menu/menu.js"
 import "/custom-elements/menu-bubble.js";
+import "/custom-elements/RulesCard.js";
+import "/sections/menu/rules.js"
+
 import { displayCategories } from "./sections/menu/menu";
 import { displaySection, activateLink} from "./helpers";
+import { displayCards } from "./sections/menu/rules";
 
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
@@ -38,7 +42,7 @@ const routes = () => {
 
       case '#rules':
         displaySection('rules')
-        //displayCategories();
+          displayCards();
       break;
     }
   }
