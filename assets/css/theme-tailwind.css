@@ -44,6 +44,7 @@
     .slide-content {
       @apply text-black font-primary text-[3vw] leading-snug;
       @apply max-w-[60vw] mx-auto text-center;
+      @apply transition-all duration-500 ease-in-out;
     }
 
     @layer components {

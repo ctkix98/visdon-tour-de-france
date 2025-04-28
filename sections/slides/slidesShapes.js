@@ -1,29 +1,39 @@
-const SHAPE_POSITIONS = [
-  { top: "10%", left: "-5%", color: "shape-yellow" },
-  { top: "5%", right: "10%", color: "shape-white" },
-  { bottom: "20%", left: "15%", color: "shape-black" },
-  { top: "30%", left: "55%", color: "shape-white" },
-  { top: "60%", right: "-5%", color: "shape-yellow" },
-  { bottom: "10%", right: "20%", color: "shape-black" },
-  { top: "75%", left: "5%", color: "shape-white" },
-  { bottom: "30%", left: "60%", color: "shape-yellow" },
-  { top: "15%", right: "35%", color: "shape-black" },
-  { bottom: "5%", left: "-5%", color: "shape-white" },
-];
+import * as d3 from "d3";
 
 export function injectSlideShapes() {
-  document.querySelectorAll(".slide").forEach((slide) => {
-    SHAPE_POSITIONS.forEach((shapeData) => {
-      const shape = document.createElement("div");
-      shape.classList.add("custom-shape", shapeData.color, "z-0");
+  return new Promise((resolve) => {
+    const SHAPE_POSITIONS = [
+      { top: 5, left: -5, color: "shape-yellow" },
+      { top: 10, left: 75, color: "shape-white" },
+      { top: 15, left: 90, color: "shape-black" },
+      { top: 60, left: 80, color: "shape-yellow" },
+      { top: 80, left: 90, color: "shape-white" },
+      { top: 85, left: 5, color: "shape-black" },
+      { top: 70, left: 20, color: "shape-yellow" },
+      { top: 25, left: 5, color: "shape-black" },
+      { top: 30, left: 40, color: "shape-white" },
+      { top: 75, left: 45, color: "shape-black" },
+    ];
 
-      // Ajoute les positions
-      if (shapeData.top) shape.style.top = shapeData.top;
-      if (shapeData.bottom) shape.style.bottom = shapeData.bottom;
-      if (shapeData.left) shape.style.left = shapeData.left;
-      if (shapeData.right) shape.style.right = shapeData.right;
+    const slides = document.querySelectorAll(".slide");
 
-      slide.appendChild(shape);
+    slides.forEach((slide) => {
+      const d3Slide = d3.select(slide);
+
+      SHAPE_POSITIONS.forEach((pos, i) => {
+        const shape = d3Slide
+          .append("div")
+          .attr("class", `custom-shape ${pos.color} slide-shape`)
+          .style("left", `${pos.left}%`)
+          .style("top", `${pos.top + 10}%`) // position de départ +10% plus bas
+          .style("opacity", 0)
+          .style("transition", `all 0.7s ease ${i * 50}ms`) // stagger
+
+        // Sauvegarde la position finale
+        shape.node().dataset.finalTop = `${pos.top}%`;
+      });
     });
+
+    resolve();
   });
 }
