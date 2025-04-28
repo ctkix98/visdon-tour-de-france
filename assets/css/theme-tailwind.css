@@ -42,10 +42,29 @@
     }
   
     .slide-content {
-      @apply text-center z-10;
+      @apply text-black font-primary text-[3vw] leading-snug;
+      @apply max-w-[60vw] mx-auto text-center;
     }
-  }
-  @layer components {
+
+    @layer components {
+      .stage-slide {
+        @apply flex flex-col items-center justify-center h-screen text-center px-8;
+      }
+    
+      .stage-title {
+        @apply text-[2vw] font-primary font-bold text-black leading-tight;
+      }
+    
+      .stage-subtitle {
+        @apply text-[1.5vw] font-primary text-black mt-2 mb-8;
+      }
+    
+      .stage-description {
+        @apply max-w-[50vw] text-[1.6vw] font-primary text-black leading-snug;
+      }
+    }
+    
+
     .custom-shape {
       @apply absolute w-50 h-40;
       border-radius: 25px 5px 25px 5px;
