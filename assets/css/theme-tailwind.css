@@ -34,6 +34,49 @@
 }
 
 @layer components {
+
+  /*Sections slides*/
+  @layer components {
+    .slide {
+      @apply relative w-screen h-screen overflow-hidden flex items-center justify-center px-8 py-12;
+    }
+  
+    .slide-content {
+      @apply text-center z-10;
+    }
+  }
+  @layer components {
+    .custom-shape {
+      @apply absolute w-50 h-40;
+      border-radius: 25px 5px 25px 5px;
+    }
+  
+    .shape-yellow {
+      background-color: var(--color-yellow-500);
+    }
+  
+    .shape-black {
+      background-color: var(--color-black-950);
+    }
+  
+    .shape-white {
+      background-color: white;
+      border: 0.5px solid black;
+    }
+  
+    .top-left {
+      @apply top-8 left-8;
+    }
+  
+    .bottom-right {
+      @apply bottom-8 right-8;
+    }
+  
+    .center-left {
+      @apply top-1/2 left-12 -translate-y-1/2;
+    }
+  }
+  
   
 
   /* MENU composant réutilisable */

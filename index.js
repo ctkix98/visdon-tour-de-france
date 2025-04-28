@@ -7,11 +7,13 @@ import "/sections/menu/rules.js"
 import { displayCategories } from "./sections/menu/menu";
 import { displaySection, activateLink} from "./helpers";
 import { displayCards } from "./sections/menu/rules";
+import { injectSlideShapes } from "./sections/slides/slidesShapes";
 
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
 
 console.log("coucou");
+injectSlideShapes();
 
 
 const routes = () => {
@@ -50,3 +52,4 @@ const routes = () => {
   // On veut être averti des changements
   window.addEventListener('hashchange', routes)
   routes()
+
