@@ -5,7 +5,7 @@
       "nom": "Team Visma | Lease a Bike",
       "image": "assets/images/equipes/1_visma_logo.png",
       "nationalite": "Pays-Bas",
-      "coureurs": [1, 2, 3, 4, 5, 6, 7, 8]
+      "coureurs": [1, 2, 3, 4, 5, 6, 7, 8]  
     },
     {
       "id": 2,
