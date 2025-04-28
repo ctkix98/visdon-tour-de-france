@@ -1,31 +1,37 @@
 [
     {
       "id": 1,
+      "img": "./../assets/maillots/maillot_jaune_devant.png",
       "titre": "Maillot jaune",
       "contenu": "Le maillot jaune est attribué au leader du classement général du Tour de France 2024. Le classement général est établi en fonction du temps total mis par chaque coureur pour parcourir les étapes. Le coureur qui a le temps total le plus bas est leader du classement général et porte le maillot jaune."
     },
     {
       "id": 2,
+      "img": "./../assets/maillots/maillot_vert_devant.png",
       "titre": "Maillot vert",
       "contenu": "Le maillot vert est attribué au leader du classement par points du Tour de France 2024. Le classement par points est établi en fonction du nombre de points attribués aux coureurs à chaque étape, en fonction de leur position à l'arrivée. Les points sont attribués de la manière suivante : 50 points pour le vainqueur de l'étape, 30 points pour le deuxième, 20 points pour le troisième, etc."
     },
     {
       "id": 3,
+      "img": "./../assets/maillots/maillot_pois_devant.png",
       "titre": "Maillot à pois",
       "contenu": "Le maillot à pois est attribué au leader du classement de la montagne du Tour de France 2024. Le classement de la montagne est établi en fonction du nombre de points attribués aux coureurs à chaque col ou montée, en fonction de leur position à l'arrivée. Les points sont attribués de la manière suivante : 20 points pour le premier coureur à passer au sommet, 15 points pour le deuxième, 10 points pour le troisième, etc."
     },
     {
       "id": 4,
+      "img": "./../assets/maillots/maillot_blanc_devant.png",
       "titre": "Maillot blanc",
       "contenu": "Le maillot blanc est attribué au leader du classement des jeunes du Tour de France 2024. Le classement des jeunes est établi en fonction du temps total mis par chaque coureur pour parcourir les étapes, mais uniquement pour les coureurs de moins de 26 ans. Le coureur qui a le temps total le plus bas est leader du classement des jeunes et porte le maillot blanc."
     },
     {
       "id": 5,
+      "img": "./../assets/maillots/etape.png",
       "titre": "Classement d'étape",
       "contenu": "Le classement d'étape est établi en fonction du temps mis par chaque coureur pour parcourir une étape. Le coureur qui a le temps le plus bas est vainqueur de l'étape. Les étapes peuvent être divisées en plusieurs catégories, telles que les étapes de plaine, les étapes de montagne, les étapes contre-la-montre, etc."
     },
     {
       "id": 6,
+      "img": "./../assets/maillots/equipe.png",
       "titre": "Classement par équipe",
       "contenu": "Le classement par équipe est établi en fonction du temps total mis par les trois premiers coureurs de chaque équipe pour parcourir les étapes. Le temps total est calculé en additionnant les temps des trois premiers coureurs de chaque équipe. L'équipe qui a le temps total le plus bas est leader du classement par équipe."
     }
