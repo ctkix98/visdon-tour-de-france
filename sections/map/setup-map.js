@@ -5,7 +5,6 @@ import { json } from "d3-fetch";
 
 const width = document.documentElement.clientWidth;
 const height = window.innerHeight;
-console.log(width);
 export const createMap = () => {
   return new Promise((resolve) => {
     json("../../data/map/france_italie_simplified.geojson").then((data) => {

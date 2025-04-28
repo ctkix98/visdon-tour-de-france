@@ -2,13 +2,14 @@ import { geoPath } from "d3-geo";
 import { select } from "d3-selection";
 import { xml } from "d3-fetch";
 import { createMap } from "./setup-map";
+import etapes from "../../data/etapes.json";
 
-const url = "../../coordonnees_etapes/stage-17-route.gpx";
+const urlStart = "../../coordonnees_etapes/stage-";
+const urlEnd = "-route.gpx";
+const projection = await createMap();
 
-const createTraces = async () => {
-  const projection = await createMap();
-  console.log(projection)
-  xml(url).then((data) => {
+const createTraces = async (stageNumber) => {
+  xml(`${urlStart}${stageNumber}${urlEnd}`).then((data) => {
     const svg = select("svg"); // Sélectionnez l'élément SVG existant
     const trkpts = data.querySelectorAll("trkpt");
     const coords = Array.from(trkpts).map((trkpt) => {
@@ -28,7 +29,7 @@ const createTraces = async () => {
       properties: {},
     };
 
-    console.log(line)
+    console.log(line);
     console.log(svg.node());
     svg
       .append("path")
@@ -38,4 +39,6 @@ const createTraces = async () => {
   });
 };
 
-await createTraces();
+for (let i = 1; i <= etapes.length; i++) {
+  await createTraces(i);
+}
