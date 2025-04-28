@@ -30,7 +30,7 @@ a#logo img{
 }
 
  section{
-    min-width: 100vw;
+    min-width: 100%;
     min-height: auto;  
 
 }
