@@ -14,6 +14,7 @@ drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"><
 
 console.log("coucou");
 
+//To add forms and the animations for the slides sections
 document.addEventListener("DOMContentLoaded", () => {
   injectSlideShapes().then(() => {
     const allSlides = document.querySelectorAll(".slide");
