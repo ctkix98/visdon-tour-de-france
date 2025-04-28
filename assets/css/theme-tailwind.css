@@ -1,6 +1,6 @@
- @import "../../node_modules/tailwindcss";
+@import "../../node_modules/tailwindcss";
 @import "../../assets/font/stylesheet.css";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @theme {
   --font-sans: "Open sans", sans-serif;
@@ -34,12 +34,91 @@
 }
 
 @layer components {
-  .card {
-    @apply flex justify-center items-center bg-yellow-500 text-black-950 font-bold rounded-br-lg rounded-tl-lg p-[50px];
+  
+
+  /* MENU composant réutilisable */
+
+  .grid-menu {
+    @apply relative w-full max-w-[800px] h-[600px];
+  }
+
+  .logo-container {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-3/4
+           aspect-square bg-white rounded-full flex items-center justify-center z-10;
+  }
+
+  .center {
+    @apply w-[104px];
+  }
+
+  /* Positioning */
+  /*top-left*/
+  .box-1 {
+    @apply top-[2%] left-[20%];
+  }
+
+  /*bottom-left*/
+  .box-2 {
+    @apply bottom-[30%] left-[17%];
+  }
+
+  /*bottom-center*/
+  .box-3 {
+    @apply bottom-[10%] left-[50%] -translate-x-1/2;
+  }
+
+  /*top-right*/
+  .box-4 {
+    @apply top-[2%] right-[20%];
+  }
+
+  /*bottom-right*/
+  .box-5 {
+    @apply bottom-[30%] right-[17%];
   }
 
   .menu-bubble {
-    @apply bg-black-950 hover:bg-yellow-500 text-white hover:text-black-950 rounded-full p-[2rem] w-[100px] h-[100px];
+    @apply flex bg-black-950 hover:bg-yellow-500 text-white hover:text-black-950 rounded-full  absolute w-[15vw] h-[15vw] items-center justify-center shadow-lg;
+  }
+  .menu-bubble:hover {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .logo-tdf {
+    @apply w-[30vw] h-[30vw] border-1 object-scale-down border-black-500 rounded-full p-1 bg-white;
+  }
+
+  /*Les différentes pages du menu*/
+  /* Structure pour toutes les sections du menu */
+  .section-wrapper {
+    @apply flex flex-row columns-3 gap-24 items-center -translate-x-[15vw];
+  }
+  .third-cloumn {
+    @apply w-[60vw] grow;
+  }
+
+  .btn-back {
+    @apply flex items-center justify-end text-black-950 border-1 rounded-full aspect-square  w-[30vw]  transition duration-300 ease-in-out pr-16;
+    &:hover {
+      @apply bg-black-950 text-white;
+    }
+  }
+
+  .menu-section-title {
+    @apply text-xl bg-yellow-500 text-black-950 rounded-full aspect-square p-8 flex items-center justify-center w-[15vw] box-border;
+  }
+  /* Section Reglement avec les card*/
+  .rules {
+    @apply grid grid-flow-col grid-rows-3 gap-4;
+  }
+  .card-container {
+    @apply relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] shadow-lg shadow-black/20 ;
+  }
+  .back-card {
+    @apply absolute inset-0 backface-hidden bg-black text-white flex items-start justify-center [transform:rotateY(180deg)] overflow-y-auto rounded-br-lg rounded-tl-lg p-8 ;
+  }
+  .front-card{
+    @apply absolute inset-0 backface-hidden bg-yellow-500 text-black flex items-center justify-center  rounded-br-lg rounded-tl-lg p-8;
   }
 
   /* Podium composant réutilisable */
@@ -70,46 +149,42 @@
   .tooltip-content {
     @apply hidden group-hover:block absolute left-full top-0 ml-6 bg-yellow-100 text-black p-4 rounded-lg  w-64 z-20;
   }
-
-  /* Section title */
-  @layer components {
-    .section-title {
-      @apply inline-block px-6 py-2 bg-yellow-500 text-black text-xl rounded-full font-primary;
-    }
-  }
-
-  /* Section countdown */
-  @layer components {
-    .countdown-header {
-      @apply text-center mt-8 mb-6;
-    }
-  
-    .countdown-header h3 {
-      @apply text-3xl font-bold font-primary text-black mb-1;
-    }
-  
-    .countdown-header p {
-      @apply text-base text-black;
-    }
-  
-    .countdown-timer {
-        @apply flex justify-center gap-6 bg-black-950 text-white py-6 px-8 rounded-lg mb-8 w-fit mx-auto;
-      }
-      
-      
-  
-    .time-block {
-      @apply flex flex-col items-center font-bold font-primary text-lg;
-    }
-  
-    .countdown-action {
-      @apply text-center;
-    }
-  
-    .countdown-action a {
-      @apply inline-block bg-yellow-500 text-black font-bold px-6 py-2 rounded-full hover:bg-yellow-400 transition;
-    }
-  }
-  
 }
 
+/* Section title */
+@layer components {
+  .section-title {
+    @apply inline-block px-6 py-2 bg-yellow-500 text-black text-xl rounded-full font-primary;
+  }
+}
+
+/* Section countdown */
+@layer components {
+  .countdown-header {
+    @apply text-center mt-8 mb-6;
+  }
+
+  .countdown-header h3 {
+    @apply text-3xl font-bold font-primary text-black mb-1;
+  }
+
+  .countdown-header p {
+    @apply text-base text-black;
+  }
+
+  .countdown-timer {
+    @apply flex justify-center gap-6 bg-black-950 text-white py-6 px-8 rounded-lg mb-8 w-fit mx-auto;
+  }
+
+  .time-block {
+    @apply flex flex-col items-center font-bold font-primary text-lg;
+  }
+
+  .countdown-action {
+    @apply text-center;
+  }
+
+  .countdown-action a {
+    @apply inline-block bg-yellow-500 text-black font-bold px-6 py-2 rounded-full hover:bg-yellow-400 transition;
+  }
+}

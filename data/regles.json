@@ -43,55 +43,7 @@
     "id": 9,
     "titre": "Règles de sécurité et de conduite",
     "contenu": "Les règles de sécurité et de conduite sont établies pour garantir la sécurité des coureurs, des spectateurs et des véhicules de soutien. Les coureurs doivent respecter les règles de la route et les instructions des commissaires de course."
-  },
-
-  {
-    "sportif": [
-      {
-        "id": 1,
-        "titre": "Règles",
-        "contenu": "Le Tour de France 2024 est régi par les règles de l'Union cycliste internationale (UCI). Les coureurs doivent respecter les règles de la route, les instructions des commissaires de course et les règles spécifiques de la compétition."
-      },
-      {
-        "id": 2,
-        "titre": "Identification des coureurs",
-        "contenu": "Les coureurs du Tour de France 2024 sont identifiés par leurs dossards et leurs transpondeurs électroniques. Les dossards seront attribués selon le classement des équipes et les transpondeurs seront utilisés pour suivre les temps et les positions des coureurs."
-      },
-      {
-        "id": 3,
-        "titre": "Vélos autorisés",
-        "contenu": "Les vélos utilisés au Tour de France 2024 doivent répondre aux normes de l'UCI en termes de sécurité et de performance. Les coureurs pourront utiliser des vélos équipés de composants spécifiques, tels que des roues à aérodynamisme amélioré et des systèmes de changement de vitesse électroniques."
-      },
-      {
-        "id": 4,
-        "titre": "Participation et déroulement",
-        "contenu": "Le Tour de France 2024 compte 21 étapes, dont 2 contre-la-montre individuels et 19 étapes en ligne. Les coureurs devront parcourir plus de 3 000 kilomètres en 23 jours de course."
-      },
-      {
-        "id": 5,
-        "titre": "Dépannage",
-        "contenu": "Les coureurs du Tour de France 2024 bénéficient d'une assistance technique et d'un dépannage en cas de crevaison ou de problème mécanique. Les équipes de mécaniciens seront présentes sur les étapes pour aider les coureurs à réparer leurs vélos."
-      },
-      {
-        "id": 6,
-        "titre": "Port du casque et équipement vestimentaire",
-        "contenu": "Les coureurs du Tour de France 2024 doivent porter un casque homologué et respecter les règles de l'UCI en matière d'équipement vestimentaire. Les coureurs devront porter des casques et des vêtements qui répondent aux normes de sécurité et de confort."
-      },
-      {
-        "id": 7,
-        "titre": "Classements et maillots distinctifs",
-        "contenu": "Les coureurs du Tour de France 2 024 sont classés en fonction de leurs performances sur chaque étape et du classement général. Les leaders des classements seront identifiés par des maillots distinctifs, tels que le maillot jaune pour le leader du classement général."
-      },
-      {
-        "id": 8,
-        "titre": "Primes",
-        "contenu": "Les coureurs du Tour de France 2024 peuvent gagner des primes en fonction de leurs performances sur chaque étape et du classement général. Les primes seront attribuées selon les règles de l'UCI et seront versées aux coureurs qui terminent dans les premières places."
-      },
-      {
-        "id": 9,
-        "titre": "Règles de sécurité et de conduite",
-        "contenu": "Les coureurs du Tour de France 2024 doivent respecter les règles de sécurité et de conduite pour garantir leur sécurité et celle des autres coureurs. Les coureurs devront suivre les instructions des commissaires de course et respecter les règles de la route."
-      }
-    ]
   }
+
+  
 ]

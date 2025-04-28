@@ -7,52 +7,54 @@
     <script src="index.js" type="module" defer defer></script>
     <link type="text/css" rel="stylesheet" href="normalize.css" />
     <link rel="icon" href="/assets/img/favicon_io/favicon.ico" />
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css" />
   </head>
   <body>
     <header>
-      <a id="logo" href="#menu-section">
-        <img src="/assets/img/favicon_io/logo_tdf.png" alt="logo tdf">
+      <a id="logo">
+        <img src="/assets/img/favicon_io/logo_tdf.png" alt="logo tdf" />
         Tour de France 2024
       </a>
     </header>
     <!-- section menu -->
-     <section id="menu-section">
-      <div id="teams" href="#teams-section" class="menu-bubble">
-        <p>equipes</p>
-      </div>
-      <div id="sporting-stakes" href="#stakes-section" class="menu-bubble">
-        <p>enjeux</p>
-      </div>
-      <div id="equipment" href="#equipment-section" class="menu-bubble">
-        <p>materiel</p>
-      </div>
-      <div id="route"  href="#route-section" class="menu-bubble">
-        <p class="font-thin">parcours</p>
-      </div>
-      <div id="rules"  href="#rules-section" class="menu-bubble">
-        <p class="font-black text-center">reglement</p>
-      </div>
-      <div id="logo-tdf">logo</div>
-     </section>
-     <!-- section teams -->
-      <section id="teams-section">
-        <div>
-          back
+    <section id="menu-wrapper">
+      <section
+        id="menu-section"
+        href="#menu-section"
+        class="grid-menu layout-wrapper active"
+      >
+        <div id="teams" href="#teams-section" class="menu-bubble">
+          <p>equipes</p>
         </div>
-        <div>
-          Equipes
+        <div id="sporting-stakes" href="#stakes-section" class="menu-bubble">
+          <p>enjeux</p>
         </div>
-        <div>
+        <div id="equipment" href="#equipment-section" class="menu-bubble">
+          <p>materiel</p>
+        </div>
+        <div id="route" href="#route-section" class="menu-bubble">
+          <p class="font-thin">parcours</p>
+        </div>
+        <div id="rules" href="#rules-section" class="menu-bubble">
+          <p class="font-black text-center">reglement</p>
+        </div>
+        <div id="logo-tdf">logo</div>
+      </section>
+      <!-- section teams -->
+      <section id="teams-section" class="active section-wrapper">
+        <a href="#menu-section" class="btn-back"> back </a>
+
+        <div class="menu-section-title">Equipes</div>
+        <div class="third-cloumn">
           <div>
             <div class="selected">
-              <div><img src="" alt=""></div>
+              <div><img src="" alt="" /></div>
               <div>
                 <div>
                   <h6>Team Visma | Lease a Bike</h6>
                   <p>Pays-Bas</p>
                 </div>
-               <!-- ce div renvoie à une deuxième colonne a partir une certaine hauteur -->
+                <!-- ce div renvoie à une deuxième colonne a partir une certaine hauteur -->
                 <div>
                   <!-- mettre un before avec le num du coureur -->
                   <p>Name</p>
@@ -157,122 +159,171 @@
           </div>
         </div>
       </section>
-    <!-- section stakes -->
-     <section id="stakes-section">
-      <div class="btn-back">
-        back
-      </div>
-      <div class="section-title">
-        enjeux
-      </div>
-      <div class="visualisation">
-        <div class="jersey-navigation">
-          <div class="jersey-navigation-item">
-            <img src="" alt="">
-            <p>Etape</p>
+      <!-- section stakes -->
+      <section id="stakes-section" class="active section-wrapper">
+        <a href="#menu-section" class="btn-back">back </a>
+        <div class="menu-section-title">Enjeux</div>
+        <div class="visualisation third-cloumn">
+          <div class="jersey-navigation">
+            <div class="jersey-navigation-item">
+              <img src="" alt="" />
+              <p>Etape</p>
+            </div>
+            <div class="jersey-navigation-item">
+              <img src="" alt="" />
+              <p>individuel</p>
+            </div>
+            <div class="jersey-navigation-item">
+              <img src="" alt="" />
+              <p>points</p>
+            </div>
+            <div class="jersey-navigation-item">
+              <img src="" alt="" />
+              <p>Grimpeur</p>
+            </div>
+            <div class="jersey-navigation-item">
+              <img src="" alt="" />
+              <p>jeune</p>
+            </div>
+            <div class="jersey-navigation-item">
+              <img src="" alt="" />
+              <p>Equipe</p>
+            </div>
           </div>
-          <div class="jersey-navigation-item">
-            <img src="" alt="">
-            <p>individuel</p>
-          </div>
-          <div class="jersey-navigation-item">
-            <img src="" alt="">
-            <p>points</p>
-          </div>
-          <div class="jersey-navigation-item">
-            <img src="" alt="">
-            <p>Grimpeur</p>
-          </div>
-          <div class="jersey-navigation-item">
-            <img src="" alt="">
-            <p>jeune</p>
-          </div>
-          <div class="jersey-navigation-item">
-            <img src="" alt="">
-            <p>Equipe</p>
+          <div class="jersey-information">
+            <div class="jersey-display">
+              <h6>Maillot nom</h6>
+              <img src="" alt="" />
+            </div>
+            <div class="jersey-info-display">
+              <p>
+                Maillot blanc à pois rouges pour le classement du meilleur
+                grimpeur parrainé par E.Leclerc.Les points sont attribués au
+                passage au sommet de chaque col ou côte et aux arrivées en
+                altitude.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="jersey-information">
-          <div class="jersey-display">
-            <h6>Maillot nom</h6>
-            <img src="" alt="">
-          </div>
-          <div class="jersey-info-display">
-            <p>Maillot blanc à pois rouges pour le classement du meilleur grimpeur parrainé par E.Leclerc.Les points sont attribués au passage au sommet de chaque col ou côte et aux arrivées en altitude.</p>
+      </section>
+      <!-- section equipment -->
+      <section id="equipment-section" class="active section-wrapper">
+        <a href="#menu-section" class="btn-back"> back </a>
+        <div class="menu-section-title">Equipement</div>
+        <div class="third-cloumn">
+          <div class="modal-euqipment">
+            <p>Titre</p>
+            <p>
+              Les casques utilisés sur le Tour de France allient légèreté,
+              aérodynamisme et ventilation optimale pour maximiser la
+              performance des coureurs. Conçus avec des matériaux high-tech, ils
+              offrent aussi une protection essentielle en cas de chute.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- section route -->
+      <section id="route-section" class="active section-wrapper">
+        <a href="#menu-section" class="btn-back"> back </a>
+        <div>parcours</div>
+        <div  class="third-cloumn">
+          <!-- faire avec d3 ? -->
+        </div>
+      </section>
+      <!-- section rules -->
+      <section id="rules-section" class="active section-wrapper -translate-x-[10vw]">
+        <a href="#menu-section" class="btn-back"> back </a>
+        <div class="menu-section-title">regles</div>
+        
+        <div class="rules third-cloumn">
+          <div class="group min-h-64  w-74 [perspective:1000px]   ">
+            <div
+              class="card-container"
+            >
+              <!-- Face avant -->
+              <div
+                class="front-card"
+              >
+                <p>Face avant</p>
+              </div>
+              <!-- Face arrière -->
+              <div
+                class="back-card"  
+              >
+                <p>
 
-     </section>
-     <!-- section equipment -->
-     <section id="equipment-section">
-      <div>
-        back
-      </div>
-      <div>
-        Materiel
-      </div>
-      <div>
-        <div class="modal-euqipment">
-          <p>Titre</p>
-          <p>Les casques utilisés sur le Tour de France allient légèreté, aérodynamisme et ventilation optimale pour maximiser la performance des coureurs. Conçus avec des matériaux high-tech, ils offrent aussi une protection essentielle en cas de chute.</p>
-          
+                  Sure, go ahead, laugh if you want to. I've seen your type before: Flashy, making the scene, flaunting convention. Yeah, I know what you're thinking. What's this guy making such a big stink about old library books? Well, let me give you a hint, junior.
+                  
+                  Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better?</p>
+              </div>
+            </div>
+          </div>
+        
+          <div>
+            <div class="group h-64 w-64 [perspective:1000px]">
+              <div
+                class="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+              >
+                <!-- Face avant -->
+                <div
+                  class="absolute inset-0 backface-hidden bg-blue-500 text-white flex items-center justify-center"
+                >
+                  <p>Face avant</p>
+                </div>
+                <!-- Face arrière -->
+                <div
+                  class="absolute inset-0 backface-hidden bg-red-500 text-white flex items-center justify-center [transform:rotateY(180deg)]"
+                >
+                  <p>Face arrière</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="group h-64 w-64 [perspective:1000px]">
+              <div
+                class="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+              >
+                <!-- Face avant -->
+                <div
+                  class="absolute inset-0 backface-hidden bg-blue-500 text-white flex items-center justify-center"
+                >
+                  <p>Face avant</p>
+                </div>
+                <!-- Face arrière -->
+                <div
+                  class="absolute inset-0 backface-hidden bg-red-500 text-white flex items-center justify-center [transform:rotateY(180deg)]"
+                >
+                  <p>Face arrière</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="group h-64 w-64 [perspective:1000px]">
+              <div
+                class="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+              >
+                <!-- Face avant -->
+                <div
+                  class="absolute inset-0 backface-hidden bg-blue-500 text-white flex items-center justify-center"
+                >
+                  <p>Face avant</p>
+                </div>
+                <!-- Face arrière -->
+                <div
+                  class="absolute inset-0 backface-hidden bg-red-500 text-white flex items-center justify-center [transform:rotateY(180deg)]"
+                >
+                  <p>Face arrière</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-     </section>
-     <!-- section route -->
-     <section id="route-section">
-      <div>
-        back
-      </div>
-      <div>
-        parcours
-      </div>
-      <div>
-        <!-- faire avec d3 ? -->
-        <div>
-          ?
-        </div>
-      </div>
-     </section>
-     <!-- section rules -->
-     <section id="rules-section">
-      <div>
-        back
-      </div>
-      <div>
-        regles
-      </div>
-      <div>
-        <div class="card-closed">
-          <p>text</p>
-        </div>
-        <div class="card-open">
-          <p>text</p>
-        </div>
-        <div>
-          <p>text</p>
-        </div>
-        <div>
-          <p>text</p>
-        </div>
-        <div>
-          <p>text</p>
-        </div>
-        <div>
-          <p>text</p>
-        </div>
-        <div>
-          <p>text</p>
-        </div>
-        <div>
-          <p>text</p>
-        </div>
-      </div>
-     </section>
-
+      </section>
+    </section>
     <!-- section carte -->
-    <section id="map-section">
+    <section id="map-section" class="active">
       <img
         class="france-map"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDFpj3ngVgwSqFhgfoPwwmn_Gi-zmbG8BHLQ&s"
@@ -335,17 +386,20 @@
       <img src="/assets/placeholders/rider.png" alt="R.Evenepoel" />
     </section>
 
-
     <!-- Section podiums -->
     <section id="podiums-section" class="px-8 py-12">
       <h2 class="section-title">Les podiums</h2>
-    
+
       <!-- 🏁 Vainqueur de la dernière étape -->
       <div class="mb-12">
         <h3 class="text-xl font-bold mb-4">Vainqueur de la dernière étape</h3>
         <div class="podium-block group">
           <div class="podium-character">
-            <img src="/assets/placeholders/rider.png" alt="Tadej Pogacar" class="podium-img" />
+            <img
+              src="/assets/placeholders/rider.png"
+              alt="Tadej Pogacar"
+              class="podium-img"
+            />
             <div id="tooltip-graphic-etape" class="tooltip-graphic"></div>
             <div class="tooltip-content">
               <p class="tooltip-title">Tadej Pogacar</p>
@@ -359,15 +413,19 @@
           </div>
         </div>
       </div>
-    
+
       <!-- 🥇 Classement général -->
       <div class="mb-12">
         <h3 class="text-xl font-bold mb-4">Classement général</h3>
-    
+
         <!-- 1er -->
         <div class="podium-block group">
           <div class="podium-character">
-            <img src="/assets/placeholders/rider.png" alt="Jonas Vingegaard" class="podium-img" />
+            <img
+              src="/assets/placeholders/rider.png"
+              alt="Jonas Vingegaard"
+              class="podium-img"
+            />
             <div id="tooltip-graphic-vg-1" class="tooltip-graphic"></div>
             <div class="tooltip-content">
               <p class="tooltip-title">Jonas Vingegaard 🇩🇰</p>
@@ -379,11 +437,15 @@
             </div>
           </div>
         </div>
-    
+
         <!-- 2e -->
         <div class="podium-block group">
           <div class="podium-character">
-            <img src="/assets/placeholders/rider.png" alt="Tadej Pogacar" class="podium-img" />
+            <img
+              src="/assets/placeholders/rider.png"
+              alt="Tadej Pogacar"
+              class="podium-img"
+            />
             <div id="tooltip-graphic-vg-2" class="tooltip-graphic"></div>
             <div class="tooltip-content">
               <p class="tooltip-title">Tadej Pogacar 🇸🇮</p>
@@ -395,11 +457,15 @@
             </div>
           </div>
         </div>
-    
+
         <!-- 3e -->
         <div class="podium-block group">
           <div class="podium-character">
-            <img src="/assets/placeholders/rider.png" alt="Remco Evenepoel" class="podium-img" />
+            <img
+              src="/assets/placeholders/rider.png"
+              alt="Remco Evenepoel"
+              class="podium-img"
+            />
             <div id="tooltip-graphic-vg-3" class="tooltip-graphic"></div>
             <div class="tooltip-content">
               <p class="tooltip-title">Remco Evenepoel 🇧🇪</p>
@@ -412,16 +478,25 @@
           </div>
         </div>
       </div>
-    
+
       <!-- 👕 Maillots distinctifs -->
       <div>
-        <h3 class="text-xl font-bold mb-4">Gagnants des maillots distinctifs</h3>
-    
+        <h3 class="text-xl font-bold mb-4">
+          Gagnants des maillots distinctifs
+        </h3>
+
         <!-- Blanc -->
         <div class="podium-block group">
           <div class="podium-character">
-            <img src="/assets/placeholders/rider.png" alt="Remco Evenepoel" class="podium-img" />
-            <div id="tooltip-graphic-maillot-blanc" class="tooltip-graphic"></div>
+            <img
+              src="/assets/placeholders/rider.png"
+              alt="Remco Evenepoel"
+              class="podium-img"
+            />
+            <div
+              id="tooltip-graphic-maillot-blanc"
+              class="tooltip-graphic"
+            ></div>
             <div class="tooltip-content">
               <p class="tooltip-title">Remco Evenepoel 🇧🇪</p>
               <p class="tooltip-text">Équipe : Soudal Quick-Step</p>
@@ -430,12 +505,19 @@
             </div>
           </div>
         </div>
-    
+
         <!-- Jaune -->
         <div class="podium-block group">
           <div class="podium-character">
-            <img src="/assets/placeholders/rider.png" alt="Jonas Vingegaard" class="podium-img" />
-            <div id="tooltip-graphic-maillot-jaune" class="tooltip-graphic"></div>
+            <img
+              src="/assets/placeholders/rider.png"
+              alt="Jonas Vingegaard"
+              class="podium-img"
+            />
+            <div
+              id="tooltip-graphic-maillot-jaune"
+              class="tooltip-graphic"
+            ></div>
             <div class="tooltip-content">
               <p class="tooltip-title">Jonas Vingegaard 🇩🇰</p>
               <p class="tooltip-text">Équipe : Jumbo-Visma</p>
@@ -444,12 +526,19 @@
             </div>
           </div>
         </div>
-    
+
         <!-- Vert -->
         <div class="podium-block group">
           <div class="podium-character">
-            <img src="/assets/placeholders/rider.png" alt="Wout Van Aert" class="podium-img" />
-            <div id="tooltip-graphic-maillot-vert" class="tooltip-graphic"></div>
+            <img
+              src="/assets/placeholders/rider.png"
+              alt="Wout Van Aert"
+              class="podium-img"
+            />
+            <div
+              id="tooltip-graphic-maillot-vert"
+              class="tooltip-graphic"
+            ></div>
             <div class="tooltip-content">
               <p class="tooltip-title">Wout Van Aert 🇧🇪</p>
               <p class="tooltip-text">Équipe : Jumbo-Visma</p>
@@ -458,12 +547,19 @@
             </div>
           </div>
         </div>
-    
+
         <!-- Pois -->
         <div class="podium-block group">
           <div class="podium-character">
-            <img src="/assets/placeholders/rider.png" alt="Giulio Ciccone" class="podium-img" />
-            <div id="tooltip-graphic-maillot-pois" class="tooltip-graphic"></div>
+            <img
+              src="/assets/placeholders/rider.png"
+              alt="Giulio Ciccone"
+              class="podium-img"
+            />
+            <div
+              id="tooltip-graphic-maillot-pois"
+              class="tooltip-graphic"
+            ></div>
             <div class="tooltip-content">
               <p class="tooltip-title">Giulio Ciccone 🇮🇹</p>
               <p class="tooltip-text">Équipe : Lidl-Trek</p>
@@ -474,8 +570,6 @@
         </div>
       </div>
     </section>
-    
-    
 
     <!-- Section compte à rebours -->
     <section id="countdown-section" class="px-8 py-12">
