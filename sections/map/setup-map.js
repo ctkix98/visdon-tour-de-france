@@ -3,37 +3,32 @@ import { geoMercator, geoPath } from "d3-geo";
 import { select } from "d3-selection";
 import { json } from "d3-fetch";
 
-Promise.all([
-  json("../../data/map/france.geojson"),
-  json("../../data/map/italy.geojson"),
-]).then(([france, italie]) => {
-  // Créer un élément SVG
-  const width = 800;
-  const height = 600;
-  const svg = select("#map-section")
-    .append("svg")
-    .attr("width", width)
-    .attr("height", height);
+const width = document.documentElement.clientWidth;
+const height = window.innerHeight;
+export const createMap = () => {
+  return new Promise((resolve) => {
+    json("../../data/map/france_italie_simplified.geojson").then((data) => {
+      const svg = select("#map-section")
+        .insert("svg", "img")
+        .attr("width", "100%")
+        .attr("height", "100%")
+        .attr("viewBox", `0 0 ${width} ${height}`);
 
-  // Concaténer les données
-  const data = {
-    type: "FeatureCollection",
-    features: france.features.concat(italie.features),
-  };
+      const projection = geoMercator().fitSize([width, height], data);
+      const path = geoPath().projection(projection);
 
-  // Créer un générateur de chemin
-  const projection = geoMercator().fitSize([width, height], data);
-  const path = geoPath().projection(projection);
+      svg
+        .selectAll("path")
+        .data(data.features)
+        .enter()
+        .append("path")
+        .attr("d", path)
+        .attr("class", "fill-yellow-500 stroke-[0.05] stroke-sky-900");
 
-  // Ajouter les chemins (les régions) à l'élément SVG
-  svg
-    .selectAll("path")
-    .data(data.features)
-    .enter()
-    .append("path")
-    .attr("d", path)
-    .attr("fill", "lightblue")
-    .attr("stroke", "black");
-});
+      // Résoudre la promesse avec la projection
+      resolve(projection);
+    });
+  });
+};
 
-document.querySelector(".france-map").remove()
+document.querySelector(".france-map").remove();

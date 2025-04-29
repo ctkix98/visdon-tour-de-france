@@ -30,9 +30,15 @@ a#logo img{
     aspect-ratio: 38.00/29.45;
 }
 
+<<<<<<< HEAD
  section [id*="section"]{
     min-width: 100vw;
     min-height: 100vh;  
+=======
+ section{
+    min-width: 100%;
+    min-height: auto;  
+>>>>>>> MapSection
 
 }
 

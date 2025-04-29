@@ -3,6 +3,7 @@ import "/sections/menu/menu.js"
 import "/custom-elements/menu-bubble.js";
 import "/custom-elements/RulesCard.js";
 import "/sections/menu/rules.js"
+import "/sections/map/setup-traces.js"
 
 import { displayCategories } from "./sections/menu/menu";
 import { displaySection, activateLink} from "./helpers";
