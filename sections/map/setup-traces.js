@@ -9,7 +9,6 @@ const urlEnd = "-route.gpx";
 const projection = await createMap();
 const path = geoPath().projection(projection);
 
-
 const createTraces = async (stageNumber) => {
   xml(`${urlStart}${stageNumber}${urlEnd}`).then((data) => {
     const svg = select("svg"); // Sélectionnez l'élément SVG existant
@@ -20,7 +19,6 @@ const createTraces = async (stageNumber) => {
       return [lon, lat];
     });
 
-
     const line = {
       type: "Feature",
       geometry: {
@@ -29,19 +27,15 @@ const createTraces = async (stageNumber) => {
       },
       properties: {},
     };
+    appendAndStyles(line, "stroke-green-900 fill-none stroke-[0.5]");
     setStartPoints(line.geometry.coordinates[0]);
-    setLastPoints(line.geometry.coordinates[line.geometry.coordinates.length-1])
-
-    svg
-      .append("path")
-      .datum(line)
-      .attr("d", path)
-      .attr("class", "stroke-green-900 fill-none stroke-[0.5]");
+    setLastPoints(
+      line.geometry.coordinates[line.geometry.coordinates.length - 1]
+    );
   });
 };
 
-const setImportantPoint = (coordinates) => {
-  const svg = select("svg");
+const setImportantPoint = (coordinates, natureOfPoint) => {
   const point = {
     type: "Feature",
     geometry: {
@@ -50,21 +44,32 @@ const setImportantPoint = (coordinates) => {
     },
     properties: {},
   };
-  svg
-    .append("path")
-    .datum(point)
-    .attr("d", path)
-    .attr("class", "stroke-blue-900 fill-none stroke-5");
+
+  switch (natureOfPoint) {
+    case "start":
+      appendAndStyles(point, "stroke-blue-900 fill-none stroke-5");
+      break;
+    case "end":
+      appendAndStyles(point, "stroke-red-900 fill-none stroke-5");
+
+    default:
+      break;
+  }
 };
 
 const setStartPoints = (param) => {
-    setImportantPoint(param)
-    console.log(param)
-}
+  setImportantPoint(param, "start");
+};
 const setLastPoints = (param) => {
-    setImportantPoint(param)
-}
+  setImportantPoint(param, "end");
+};
+
+const appendAndStyles = (result, style) => {
+  const svg = select("svg");
+
+  svg.append("path").datum(result).attr("d", path).attr("class", style);
+};
 
 for (let i = 1; i <= etapes.length; i++) {
-  await createTraces(i);
+  createTraces(i);
 }
