@@ -11,7 +11,7 @@ export function injectSlideShapes() {
       { top: 85, left: 5, color: "shape-black" },
       { top: 70, left: 20, color: "shape-yellow" },
       { top: 25, left: 5, color: "shape-black" },
-      { top: 30, left: 40, color: "shape-white" },
+      { top: 22, left: 40, color: "shape-white" },
       { top: 75, left: 45, color: "shape-black" },
     ];
 
