@@ -478,9 +478,10 @@
           Maillots distinctifs
         </button>
       </div>
+      
 
       <!-- 🏁 Vainqueur de la dernière étape -->
-      <div class="mb-12">
+      <div id="podium-etape" class="mb-12">
         <h3 class="text-xl font-bold mb-4">Vainqueur de la dernière étape</h3>
         <div class="podium-block group">
           <div class="podium-character">
@@ -504,7 +505,7 @@
       </div>
 
       <!-- 🥇 Classement général -->
-      <div class="mb-12">
+      <div id="podium-general" class="mb-12">
         <h3 class="text-xl font-bold mb-4">Classement général</h3>
 
         <!-- 1er -->
@@ -569,10 +570,13 @@
       </div>
 
       <!-- 👕 Maillots distinctifs -->
-      <div>
+      <div id="podium-maillots">
         <h3 class="text-xl font-bold mb-4">
           Gagnants des maillots distinctifs
         </h3>
+        <button class="maillot-nav maillot-prev" aria-label="Précédent">
+          &#9664;
+        </button>
 
         <!-- Blanc -->
         <div class="podium-block group">
@@ -657,6 +661,10 @@
             </div>
           </div>
         </div>
+        <!-- Flèche droite -->
+        <button class="maillot-nav maillot-next" aria-label="Suivant">
+          &#9654;
+        </button>
       </div>
     </section>
 
