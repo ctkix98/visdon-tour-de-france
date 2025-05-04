@@ -7,7 +7,7 @@
     <script src="index.js" type="module" defer></script>
     <!-- <link type="text/css" rel="stylesheet" href="assets/css/normalize.css" /> -->
     <link rel="icon" href="/assets/img/favicon_io/favicon.ico" />
-    <link rel="stylesheet" href="/assets/css/index.css"  />
+    <link rel="stylesheet" href="/assets/css/index.css" />
     <!-- <link rel="stylesheet" href="/assets/css/dev.css" /> -->
   </head>
   <body>
@@ -26,14 +26,15 @@
         Votre navigateur ne supporte pas la vidéo HTML5.
       </video>
     </section>
-      
 
     <!--Section slide-->
     <section class="slide">
       <div class="slide-content">
-        <p>Avant le coup d’envoi, découvre tout ce qui rend cette course unique</p>
+        <p>
+          Avant le coup d’envoi, découvre tout ce qui rend cette course unique
+        </p>
       </div>
-      </section>
+    </section>
     <!-- section menu -->
     <section id="menu-wrapper">
       <section
@@ -184,27 +185,45 @@
         <div class="third-cloumn flex flex-col">
           <div class="jersey-navigation">
             <a href="#stakes-section-5" class="jersey-navigation-item">
-              <img src="./assets/maillots/etape.png" alt="Classement par étape" />
+              <img
+                src="./assets/maillots/etape.png"
+                alt="Classement par étape"
+              />
               <p>Etape</p>
             </a>
-            <a href="#stakes-section-1" class="jersey-navigation-item ">
-              <img src="./assets/maillots/maillot_jaune_devant.png" alt="Maillot jaune" />
+            <a href="#stakes-section-1" class="jersey-navigation-item">
+              <img
+                src="./assets/maillots/maillot_jaune_devant.png"
+                alt="Maillot jaune"
+              />
               <p>individuel</p>
             </a>
             <a href="#stakes-section-2" class="jersey-navigation-item">
-              <img src="./assets/maillots/maillot_vert_devant.png" alt="Maillot vert" />
+              <img
+                src="./assets/maillots/maillot_vert_devant.png"
+                alt="Maillot vert"
+              />
               <p>points</p>
             </a>
             <a href="#stakes-section-3" class="jersey-navigation-item">
-              <img src="./assets/maillots/maillot_pois_devant.png" alt="Maillot à pois" />
+              <img
+                src="./assets/maillots/maillot_pois_devant.png"
+                alt="Maillot à pois"
+              />
               <p>Grimpeur</p>
             </a>
             <a href="#stakes-section-4" class="jersey-navigation-item">
-              <img src="./assets/maillots/maillot_blanc_devant.png" alt="Maillot blanc" />
+              <img
+                src="./assets/maillots/maillot_blanc_devant.png"
+                alt="Maillot blanc"
+              />
               <p>jeune</p>
             </a>
             <a href="#stakes-section-6" class="jersey-navigation-item">
-              <img src="./assets/maillots/equipe.png" alt="Classement par équipe" />
+              <img
+                src="./assets/maillots/equipe.png"
+                alt="Classement par équipe"
+              />
               <p>Equipe</p>
             </a>
           </div>
@@ -350,10 +369,13 @@
     <!--Section slide-->
     <section class="slide">
       <div class="slide-content">
-        <p>Topo, matos, maillots… tout est prêt. À toi de plonger dans la course, étape par étape.</p>
+        <p>
+          Topo, matos, maillots… tout est prêt. À toi de plonger dans la course,
+          étape par étape.
+        </p>
       </div>
     </section>
-    
+
     <!-- section carte -->
     <section id="map-section" class="active">
       <img
@@ -400,7 +422,7 @@
             </li>
           </ol>
           <rider-infos>
-            <img src="" alt=""/>
+            <img src="" alt="" />
             <p>Prénom</p>
             <p>Nom</p>
             <p>équipe</p>
@@ -410,19 +432,17 @@
       </stage-infos>
     </section>
 
-        <!--Section slide-->
-        <section class="slide">
-          <div class="stage-slide">
-            <h2 class="stage-title">ETAPE 21</h2>
-            <h3 class="stage-subtitle">MONACO - NICE</h3>
-            <p class="slide-content">
-              C’est l’ultime test : un contre-la-montre décisif pour la gloire.
-              Qui signera l’exploit final ?
-            </p>
-          </div>
-        </section>
-        
-
+    <!--Section slide-->
+    <section class="slide">
+      <div class="stage-slide">
+        <h2 class="stage-title">ETAPE 21</h2>
+        <h3 class="stage-subtitle">MONACO - NICE</h3>
+        <p class="slide-content">
+          C’est l’ultime test : un contre-la-montre décisif pour la gloire. Qui
+          signera l’exploit final ?
+        </p>
+      </div>
+    </section>
 
     <!-- Section de la finish line -->
     <section id="finish-section" class="px-8 py-12">
@@ -432,16 +452,32 @@
       <img src="/assets/placeholders/rider.png" alt="R.Evenepoel" />
     </section>
 
-        <!--Section slide-->
-        <section class="slide">
-          <div class="slide-content">
-            <p>Le chrono s’est arrêté, les vainqueurs sont connus… cap sur les podiums !</p>
-          </div>
-        </section>
-        
+    <!--Section slide-->
+    <section class="slide">
+      <div class="slide-content">
+        <p>
+          Le chrono s’est arrêté, les vainqueurs sont connus… cap sur les
+          podiums !
+        </p>
+      </div>
+    </section>
+
     <!-- Section podiums -->
     <section id="podiums-section" class="px-8 py-12">
       <h2 class="section-title">Les podiums</h2>
+
+      <!-- Navigation Tabs -->
+      <div class="podium-tabs">
+        <button class="tab-button active" data-tab="tab-etape">
+          Vainqueur de l’étape
+        </button>
+        <button class="tab-button" data-tab="tab-general">
+          Classement général
+        </button>
+        <button class="tab-button" data-tab="tab-maillots">
+          Maillots distinctifs
+        </button>
+      </div>
 
       <!-- 🏁 Vainqueur de la dernière étape -->
       <div class="mb-12">
@@ -630,7 +666,7 @@
         <p>Clap de fin ? Pas vraiment. Le prochain Tour est déjà en route !</p>
       </div>
     </section>
-    
+
     <!-- Section compte à rebours -->
     <section id="countdown-section" class="px-8 py-12">
       <h2 class="section-title">Next to come</h2>
