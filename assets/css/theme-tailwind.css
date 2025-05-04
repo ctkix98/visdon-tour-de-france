@@ -184,6 +184,39 @@
     @apply absolute inset-0 backface-hidden bg-yellow-500 text-black flex items-center justify-center  rounded-br-lg rounded-tl-lg p-8;
   }
 
+  /* Section enjeux */
+  .jersey-navigation {
+    @apply flex flex-row  items-start justify-start min-w-fit  border-b-2 border-black-300 bg-black-50 overflow-x-auto;
+  }
+  .jersey-navigation-item{
+    @apply flex flex-row items-center justify-center cursor-pointer p-4 min-w-fit flex-shrink-0;
+    p{
+      @apply uppercase font-thin;
+    }
+  }
+  .jersey-navigation-item:hover  {
+    @apply bg-black-950 text-white transition duration-300 ease-in-out;
+  }
+  .jersey-navigation-item.active{
+    @apply bg-black-950 text-white;
+  }
+  .jersey-navigation-item img{
+    @apply w-[50px] h-[50px] object-cover ;
+  }
+  .jersey-information{
+    @apply flex flex-row items-center justify-center gap-[5%] mt-10;
+  }
+  .jersey-display{
+    @apply flex flex-col items-center justify-center gap-4 min-w-[15vw];
+    h6{
+      @apply text-2xl font-bold
+      text-black-950 uppercase tracking-wide;
+    }
+  }
+  .jersey-info-display{
+    @apply p-[5%] text-xl font-thin
+  }
+
   /* Podium composant réutilisable */
   .podium-block {
     @apply relative flex flex-col items-center mb-6;

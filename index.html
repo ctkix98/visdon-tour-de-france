@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour de France 2024</title>
-    <script src="index.js" type="module" defer defer></script>
-    <link type="text/css" rel="stylesheet" href="normalize.css" />
+    <script src="index.js" type="module" defer></script>
+    <!-- <link type="text/css" rel="stylesheet" href="assets/css/normalize.css" /> -->
     <link rel="icon" href="/assets/img/favicon_io/favicon.ico" />
-    <link rel="stylesheet" href="/assets/css/index.css" />
-    <!-- <link rel="slides.css" href="/assets/css/slides.css" /> -->
+    <link rel="stylesheet" href="/assets/css/index.css"  />
+    <!-- <link rel="stylesheet" href="/assets/css/dev.css" /> -->
   </head>
   <body>
     <header>
@@ -181,45 +181,47 @@
       <section id="stakes-section" class="active section-wrapper">
         <a href="#menu-section" class="btn-back">back </a>
         <div class="menu-section-title">Enjeux</div>
-        <div class="visualisation third-cloumn">
+        <div class="third-cloumn flex flex-col">
           <div class="jersey-navigation">
-            <div class="jersey-navigation-item">
-              <img src="" alt="" />
+            <a href="#stakes-section-5" class="jersey-navigation-item">
+              <img src="./assets/maillots/etape.png" alt="Classement par étape" />
               <p>Etape</p>
-            </div>
-            <div class="jersey-navigation-item">
-              <img src="" alt="" />
+            </a>
+            <a href="#stakes-section-1" class="jersey-navigation-item ">
+              <img src="./assets/maillots/maillot_jaune_devant.png" alt="Maillot jaune" />
               <p>individuel</p>
-            </div>
-            <div class="jersey-navigation-item">
-              <img src="" alt="" />
+            </a>
+            <a href="#stakes-section-2" class="jersey-navigation-item">
+              <img src="./assets/maillots/maillot_vert_devant.png" alt="Maillot vert" />
               <p>points</p>
-            </div>
-            <div class="jersey-navigation-item">
-              <img src="" alt="" />
+            </a>
+            <a href="#stakes-section-3" class="jersey-navigation-item">
+              <img src="./assets/maillots/maillot_pois_devant.png" alt="Maillot à pois" />
               <p>Grimpeur</p>
-            </div>
-            <div class="jersey-navigation-item">
-              <img src="" alt="" />
+            </a>
+            <a href="#stakes-section-4" class="jersey-navigation-item">
+              <img src="./assets/maillots/maillot_blanc_devant.png" alt="Maillot blanc" />
               <p>jeune</p>
-            </div>
-            <div class="jersey-navigation-item">
-              <img src="" alt="" />
+            </a>
+            <a href="#stakes-section-6" class="jersey-navigation-item">
+              <img src="./assets/maillots/equipe.png" alt="Classement par équipe" />
               <p>Equipe</p>
-            </div>
+            </a>
           </div>
-          <div class="jersey-information">
-            <div class="jersey-display">
-              <h6>Maillot nom</h6>
-              <img src="" alt="" />
-            </div>
-            <div class="jersey-info-display">
-              <p>
-                Maillot blanc à pois rouges pour le classement du meilleur
-                grimpeur parrainé par E.Leclerc.Les points sont attribués au
-                passage au sommet de chaque col ou côte et aux arrivées en
-                altitude.
-              </p>
+          <div id="jersey-info-container">
+            <div class="jersey-information">
+              <div class="jersey-display">
+                <h6>Maillot nom</h6>
+                <img src="./assets/maillots/maillot_jaune_devant.png" alt="" />
+              </div>
+              <div class="jersey-info-display">
+                <p>
+                  Maillot blanc à pois rouges pour le classement du meilleur
+                  grimpeur parrainé par E.Leclerc.Les points sont attribués au
+                  passage au sommet de chaque col ou côte et aux arrivées en
+                  altitude.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -398,7 +400,7 @@
             </li>
           </ol>
           <rider-infos>
-            <img src="" alt="" />
+            <img src="" alt=""/>
             <p>Prénom</p>
             <p>Nom</p>
             <p>équipe</p>
