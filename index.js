@@ -2,11 +2,15 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 import "/sections/menu/menu.js"
 import "/custom-elements/menu-bubble.js";
 import "/custom-elements/RulesCard.js";
+import "/custom-elements/jerseyInfoCard.js";
 import "/sections/menu/rules.js"
+import "/sections/map/setup-traces.js"
+import "/sections/menu/stakes.js"
 
 import { displayCategories } from "./sections/menu/menu";
 import { displaySection, activateLink} from "./helpers";
 import { displayCards } from "./sections/menu/rules";
+import { displayJerseyDetails } from "./sections/menu/stakes";
 
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
@@ -26,8 +30,16 @@ const routes = () => {
       break;
 
       case '#stakes':
+        if(hashs[2]) {
+          displayJerseyDetails(hashs[2])
           displaySection('stakes')
-          //displayCategories();
+        }
+        else {
+          displayJerseyDetails(1)
+          displaySection('stakes')
+        }
+        
+    
       break;
 
       case '#equipment':
