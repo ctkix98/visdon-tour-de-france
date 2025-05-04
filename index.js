@@ -11,17 +11,16 @@ import { displayCategories } from "./sections/menu/menu";
 import { displaySection, activateLink } from "./helpers";
 import { displayCards } from "./sections/menu/rules";
 import { displayJerseyDetails } from "./sections/menu/stakes";
-import { initSlideAnimations } from "./sections/slides/slidesAnimations.js";
+import { initSlideAnimations } from "./sections/slides/slidesAnimations";
 
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
 
 console.log("coucou");
 
-//
-document.addEventListener("DOMContentLoaded", () => {
-  initSlideAnimations();
-});
+//To create the slides animations
+initSlideAnimations()
+
 
 const routes = () => {
   const hash = window.location.hash || "#menu-section";

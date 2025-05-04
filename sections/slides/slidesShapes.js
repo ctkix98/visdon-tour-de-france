@@ -1,6 +1,7 @@
 import * as d3 from "d3";
 
 export function injectSlideShapes() {
+ // console.log("Je suis dans la création des bulles")
   return new Promise((resolve) => {
     const SHAPE_POSITIONS = [
       { top: 5, left: -5, color: "shape-yellow" },
@@ -11,7 +12,7 @@ export function injectSlideShapes() {
       { top: 85, left: 5, color: "shape-black" },
       { top: 70, left: 20, color: "shape-yellow" },
       { top: 25, left: 5, color: "shape-black" },
-      { top: 22, left: 40, color: "shape-white" },
+      { top: 13, left: 40, color: "shape-white" },
       { top: 75, left: 45, color: "shape-black" },
     ];
 

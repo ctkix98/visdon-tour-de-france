@@ -1,6 +1,7 @@
 import { injectSlideShapes } from "./slidesShapes.js";
 
 export function initSlideAnimations() {
+    //console.log("Je me trouve dans les bulles")
     injectSlideShapes().then(() => {
         const allSlides = document.querySelectorAll(".slide");
     
