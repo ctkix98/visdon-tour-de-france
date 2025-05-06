@@ -242,15 +242,15 @@
       @apply opacity-100;
     }
   
-    .tooltip-content {
+    /* .tooltip-content {
       @apply hidden group-hover:block absolute bottom-full left-1/2 -translate-x-1/2 
-             w-100 h-80 z-20 mb-2 text-center flex items-center justify-center;
+             w-[80vw] h-[60vh] z-10 mb-2;
       background-color: theme("colors.yellow.100");
-      border-top-left-radius: 150px;
-      border-top-right-radius: 150px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
+      border-top-left-radius: 100vw;
+      border-top-right-radius: 100vw;
+    } */
+    
+    
     
     
   

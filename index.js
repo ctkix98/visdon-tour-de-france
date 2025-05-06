@@ -14,6 +14,8 @@ import { displayCards } from "./sections/menu/rules";
 import { displayJerseyDetails } from "./sections/menu/stakes";
 import { initSlideAnimations } from "./sections/slides/slidesAnimations";
 import { initPodiumsTabs } from "./sections/podiums/podiumsTabs";
+import { showWinnerStage } from "./sections/podiums/winnerStage.js";
+import { populateGeneralPodium } from "./sections/podiums/winnersGC.js";
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
 
@@ -21,7 +23,11 @@ console.log("coucou");
 
 //To create the slides animations
 initSlideAnimations()
+
+//Section podiums
 initPodiumsTabs();
+showWinnerStage();
+populateGeneralPodium();
 
 
 const routes = () => {
