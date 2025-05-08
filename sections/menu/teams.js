@@ -14,7 +14,7 @@ const displayTeams = async() => {
     equipes.forEach((team) => {
         const card = document.createElement('div');
         card.className = `
-            team-card bg-black text-white overflow-hidden transition-all duration-500 max-h-20 cursor-pointer rounded-tl-[25px] rounded-tr-[5px] rounded-br-[25px]rounded-bl-[5px] mb-8;
+            team-card bg-black text-white overflow-hidden transition-all duration-500 max-h-20 cursor-pointer rounded-tl-[25px] rounded-tr-[5px] rounded-br-[25px] rounded-bl-[5px] mb-8;
         `;
 
         card.innerHTML = `

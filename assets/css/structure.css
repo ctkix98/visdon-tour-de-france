@@ -44,7 +44,9 @@ section#menu-wrapper {
   overflow-y: hidden;
   flex-grow: 1;
 }
-
+.hide {
+  display: none;
+}
 /* section#menu-section {
     display: flex;
     flex-direction: row;

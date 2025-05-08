@@ -9,7 +9,7 @@ import "/sections/menu/stakes.js"
 import "/sections/menu/teams.js"
 
 import { displayCategories } from "./sections/menu/menu";
-import { displaySection, activateLink } from "./helpers";
+import { displaySection, activateLink, toggleMenu } from "./helpers";
 import { displayCards } from "./sections/menu/rules";
 import { displayJerseyDetails } from "./sections/menu/stakes";
 import { initSlideAnimations } from "./sections/slides/slidesAnimations";
@@ -43,28 +43,31 @@ const routes = () => {
         else {
           displayJerseyDetails(1)
           displaySection('stakes')
+          
         }
-        
+        toggleMenu()
       break;
 
     case "#equipment":
       displaySection("equipment");
-      //displayCategories();
+      toggleMenu()
       break;
 
     case "#route":
       displaySection("route");
-      //displayCategories();
+      toggleMenu()
       break;
 
     case "#rules":
       displaySection("rules");
       displayCards();
+      toggleMenu()
       break;
 
       case "#teams":
         displaySection("teams");
         displayTeams();
+        toggleMenu()
         break;  
   }
 };
