@@ -3,154 +3,147 @@
     {
       "id": 1,
       "nom": "Team Visma | Lease a Bike",
-      "image": "assets/images/equipes/1_visma_logo.png",
+      "image": "assets/equipes/1_visma_logo.png",
       "nationalite": "Pays-Bas",
       "coureurs": [1, 2, 3, 4, 5, 6, 7, 8]  
     },
     {
       "id": 2,
       "nom": "UAE Team Emirates",
-      "image": "assets/images/equipes/2_emirates_logo.jpg",
+      "image": "assets/equipes/2_emirates_logo.jpg",
       "nationalite": "Émirats arabes unis",
       "coureurs": [11, 12, 13, 14, 15, 16, 17, 18]
     },
     {
       "id": 3,
       "nom": "Team Jayco Alula",
-      "image": "assets/images/equipes/3_jayco_logo.jpg",
+      "image": "assets/equipes/3_jayco_logo.jpg",
       "nationalite": "Australie",
       "coureurs": [21, 22, 23, 24, 25, 26, 27, 28]
     },
     {
       "id": 4,
       "nom": "Ineos Grenadiers",
-      "image": "assets/images/equipes/4_ineos_logo.png",
+      "image": "assets/equipes/4_ineos_logo.png",
       "nationalite": "Grande-Bretagne",
       "coureurs": [31, 32, 33, 34, 35, 36, 37, 38]
     },
     {
       "id": 5,
       "nom": "Lidl-Trek",
-      "image": "assets/images/equipes/5_lidl_logo.png",
+      "image": "assets/equipes/5_lidl_logo.png",
       "nationalite": "États-Unis",
       "coureurs": [41, 42, 43, 44, 45, 46, 47, 48]
     },
     {
       "id": 6,
       "nom": "Decathlon Ag2r La Mondiale Team",
-      "image": "assets/images/equipes/6_decathlon_logo.png",
+      "image": "assets/equipes/6_decathlon_logo.png",
       "nationalite": "France",
       "coureurs": [51, 52, 53, 54, 55, 56, 57, 58]
     },
     {
       "id": 7,
       "nom": "Bahrain Victorious",
-      "image": "assets/images/equipes/7_bahrain_logo.jpg",
+      "image": "assets/equipes/7_bahrain_logo.jpg",
       "nationalite": "Bahrein",
       "coureurs": [61, 62, 63, 64, 65, 66, 67, 68]
     },
     {
       "id": 8,
       "nom": "Soudal Quick-Step",
-      "image": "assets/images/equipes/8_soudal_logo.jpg",
+      "image": "assets/equipes/8_soudal_logo.jpg",
       "nationalite": "Belgique",
       "coureurs": [71, 72, 73, 74, 75, 76, 77, 78]
     },
     {
       "id": 9,
       "nom": "Red Bull - Bora - Hansgrohe",
-      "image": "assets/images/equipes/9_redbull_logo.jpg",
+      "image": "assets/equipes/9_redbull_logo.jpg",
       "nationalite": "Allemagne",
       "coureurs": [81, 82, 83, 84, 85, 86, 87, 88]
     },
     {
       "id": 10,
       "nom": "Groupama-FDJ",
-      "image": "assets/images/equipes/10_groupama_logo.jpg",
+      "image": "assets/equipes/10_groupama_logo.jpg",
       "nationalite": "France",
       "coureurs": [91, 92, 93, 94, 95, 96, 97, 98]
     },
     {
       "id": 11,
       "nom": "Alpecin-Deceuninck",
-      "image": "assets/images/equipes/11_alpecin_logo.jpg",
+      "image": "assets/equipes/11_alpecin_logo.jpg",
       "nationalite": "Belgique",
       "coureurs": [101, 102, 103, 104, 105, 106, 107, 108]
     },
     {
       "id": 12,
       "nom": "EF Education - Easypost",
-      "image": "assets/images/equipes/12_ef_logo.jpg",
+      "image": "assets/equipes/12_ef_logo.jpg",
       "nationalite": "États-Unis",
       "coureurs": [111, 112, 113, 114, 115, 116, 117, 118]
     },
     {
       "id": 13,
       "nom": "Lotto Dstny",
-      "image": "assets/images/equipes/13_lotto_logo.jpg",
+      "image": "assets/equipes/13_lotto_logo.jpg",
       "nationalite": "Belgique",
       "coureurs": [121, 122, 123, 124, 125, 126, 127, 128]
     },
     {
       "id": 14,
       "nom": "Israel - Premier Tech",
-      "image": "assets/images/equipes/14_israel_logo.jpg",
+      "image": "assets/equipes/14_israel_logo.jpg",
       "nationalite": "Israël",
       "coureurs": [131, 132, 133, 134, 135, 136, 137, 138]
     },
     {
       "id": 15,
       "nom": "Cofidis",
-      "image": "assets/images/equipes/15_cofidis_logo.jpg",
+      "image": "assets/equipes/15_cofidis_logo.jpg",
       "nationalite": "France",
       "coureurs": [141, 142, 143, 144, 145, 146, 147, 148]
     },
     {
       "id": 16,
       "nom": "Movistar Team",
-      "image": "assets/images/equipes/16_movistar_logo.jpg",
+      "image": "assets/equipes/16_movistar_logo.jpg",
       "nationalite": "Espagne",
       "coureurs": [151, 152, 153, 154, 155, 156, 157, 158]
     },
     {
       "id": 17,
       "nom": "Arkea-B&B Hotels",
-      "image": "assets/images/equipes/17_arkea_logo.png",
+      "image": "assets/equipes/17_arkea_logo.png",
       "nationalite": "France",
       "coureurs": [161, 162, 163, 164, 165, 166, 167, 168]
     },
     {
       "id": 18,
       "nom": "Intermarché - Wanty",
-      "image": "assets/images/equipes/18_intermarche_logo.png",
+      "image": "assets/equipes/18_intermarche_logo.png",
       "nationalite": "Belgique",
       "coureurs": [171, 172, 173, 174, 175, 176, 177, 178]
     },
     {
       "id": 19,
       "nom": "Team DSM-Firmenich PostNL",
-      "image": "assets/images/equipes/19_dsm_logo.jpg",
+      "image": "assets/equipes/19_dsm_logo.jpg",
       "nationalite": "Pays-Bas",
       "coureurs": [181, 182, 183, 184, 185, 186, 187, 188]
     },
     {
       "id": 20,
       "nom": "Astana Qazaqstan Team",
-      "image": "assets/images/equipes/20_astana_logo.jpg",
-      "nationalite": "Kazakhstan",
-      "coureurs": [191, 192, 193, 194, 195, 196, 197, 198]
-    },
-    {
-      "id": 21,
-      "nom": "Uno-X Mobility",
-      "image": "assets/images/equipes/21_unox_logo.jpg",
+      "image": "assets/equipes/21_unox_logo.jpg",
       "nationalite": "Norvège",
       "coureurs": [201, 202, 203, 204, 205, 206, 207, 208]
     },
     {
       "id": 22,
       "nom": "TotalEnergies",
-      "image": "assets/images/equipes/22_totalenergies_logo.jpg",
+      "image": "assets/equipes/22_totalenergies_logo.jpg",
       "nationalite": "France",
       "coureurs": [211, 212, 213, 214, 215, 216, 217, 218]
     }

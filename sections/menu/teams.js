@@ -1,0 +1,56 @@
+// recupérer les informations du fichier json
+import teamsJson from '../../data/equipe.json' assert { type: 'json' };
+import runnerJson from '../../data/coureur.json' assert { type: 'json' };
+
+const equipes = teamsJson.equipes;
+const teamList = document.querySelector('#teams-section .third-cloumn > div');
+console.log(equipes);
+
+const displayTeams = async() => {
+    // vider le contenu de l'élément
+    teamList.innerHTML = '';
+    
+    // Créer une div pour chaque équipe
+    equipes.forEach((team) => {
+        const card = document.createElement('div');
+        card.className = `
+            team-card bg-black text-white overflow-hidden transition-all duration-500 max-h-20 cursor-pointer rounded-tl-[25px] rounded-tr-[5px] rounded-br-[25px]rounded-bl-[5px] mb-8;
+        `;
+
+        card.innerHTML = `
+            <div class="flex items-center gap-4 p-4">
+                <img src="${team.image}" alt="${team.nom}" class="w-12 h-12 object-contain" />
+                <div>
+                    <h3 class="text-lg font-semibold">${team.nom}</h3>
+                    <p class="text-sm text-gray-400">${team.nationalite}</p>
+                </div>
+            </div>
+            <div class="team-details opacity-0 px-4 pb-4 transition-opacity duration-300">
+                <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm mt-2">
+                    ${team.coureurs.map((id, i) => `
+                        <div class="before:content-['${i + 1}.'] before:mr-1">Coureur #${id}</div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+                        
+        // Ajouter le listener
+        card.addEventListener('click', () => {
+            document.querySelectorAll('.team-card').forEach(el => {
+                el.classList.remove('max-h-96');
+                el.classList.add('max-h-20');
+                el.querySelector('.team-details').classList.remove('opacity-100');
+                el.querySelector('.team-details').classList.add('opacity-0');
+            });
+
+            card.classList.remove('max-h-20');
+            card.classList.add('max-h-96');
+            card.querySelector('.team-details').classList.remove('opacity-0');
+            card.querySelector('.team-details').classList.add('opacity-100');
+        });
+
+        teamList.appendChild(card);
+    });
+}
+
+export { displayTeams }; 

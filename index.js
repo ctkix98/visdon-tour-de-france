@@ -6,12 +6,14 @@ import "/custom-elements/jerseyInfoCard.js";
 import "/sections/menu/rules.js"
 import "/sections/map/setup-traces.js"
 import "/sections/menu/stakes.js"
+import "/sections/menu/teams.js"
 
 import { displayCategories } from "./sections/menu/menu";
 import { displaySection, activateLink } from "./helpers";
 import { displayCards } from "./sections/menu/rules";
 import { displayJerseyDetails } from "./sections/menu/stakes";
 import { initSlideAnimations } from "./sections/slides/slidesAnimations";
+import { displayTeams } from "./sections/menu/teams";
 
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
@@ -59,6 +61,11 @@ const routes = () => {
       displaySection("rules");
       displayCards();
       break;
+
+      case "#teams":
+        displaySection("teams");
+        displayTeams();
+        break;  
   }
 };
 
