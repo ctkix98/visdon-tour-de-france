@@ -3,6 +3,7 @@ import teamsJson from '../../data/equipe.json' assert { type: 'json' };
 import runnerJson from '../../data/coureur.json' assert { type: 'json' };
 
 const equipes = teamsJson.equipes;
+const coureurs = runnerJson.coureurs;
 const teamList = document.querySelector('#teams-section .third-cloumn > div');
 console.log(equipes);
 
@@ -29,9 +30,15 @@ const displayTeams = async() => {
                     </div>
                     <div class="team-details opacity-0 px-4 pb-4 transition-opacity duration-300">
                         <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm mt-2">
-                            ${team.coureurs.map((id, i) => `
-                                <div class="before:content-['${i + 1}.'] before:mr-1">Coureur #${id}</div>
-                            `).join('')}
+                            ${team.coureurs.map((id, i) => {
+                                const coureur = coureurs.find(c => c.id === id.toString());
+                                return `
+                                    <div class="flex items-center gap-2">
+                                        <span class="bg-yellow-500 text-black px-2 py-0.5 rounded-tl-[10px] rounded-tr-[0px] rounded-br-[10px] rounded-bl-[0px] text-xs">${id}</span>
+                                        <span>${coureur ? `${coureur.prenom} ${coureur.nom}` : `Coureur #${id}`}</span>
+                                    </div>
+                                `;
+                            }).join('')}
                         </div>
                     </div>
                 </div>
