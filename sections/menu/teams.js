@@ -14,28 +14,35 @@ const displayTeams = async() => {
     equipes.forEach((team) => {
         const card = document.createElement('div');
         card.className = `
-            team-card bg-black text-white overflow-hidden transition-all duration-500 max-h-20 cursor-pointer rounded-tl-[25px] rounded-tr-[5px] rounded-br-[25px] rounded-bl-[5px] mb-8;
+            team-card flex overflow-hidden transition-all duration-500 max-h-20 cursor-pointer rounded-tl-[25px] rounded-tr-[5px] rounded-br-[25px] rounded-bl-[5px] mb-8;
         `;
 
         card.innerHTML = `
-            <div class="flex items-center gap-4 p-4">
-                <img src="${team.image}" alt="${team.nom}" class="w-12 h-12 object-contain" />
-                <div>
-                    <h3 class="text-lg font-semibold">${team.nom}</h3>
-                    <p class="text-sm text-gray-400">${team.nationalite}</p>
+            <div class="flex w-full">
+                <div class="bg-yellow-500 p-4 flex items-center justify-center w-1/3">
+                    <img src="${team.image}" alt="${team.nom}" class="w-12 h-12 object-contain" />
                 </div>
-            </div>
-            <div class="team-details opacity-0 px-4 pb-4 transition-opacity duration-300">
-                <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm mt-2">
-                    ${team.coureurs.map((id, i) => `
-                        <div class="before:content-['${i + 1}.'] before:mr-1">Coureur #${id}</div>
-                    `).join('')}
+                <div class="bg-black text-white w-2/3">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">${team.nom}</h3>
+                        <p class="text-sm text-gray-400">${team.nationalite}</p>
+                    </div>
+                    <div class="team-details opacity-0 px-4 pb-4 transition-opacity duration-300">
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm mt-2">
+                            ${team.coureurs.map((id, i) => `
+                                <div class="before:content-['${i + 1}.'] before:mr-1">Coureur #${id}</div>
+                            `).join('')}
+                        </div>
+                    </div>
                 </div>
             </div>
         `;
-                        
+
         // Ajouter le listener
         card.addEventListener('click', () => {
+            const isExpanded = card.classList.contains('max-h-96');
+            
+            // Reset all cards
             document.querySelectorAll('.team-card').forEach(el => {
                 el.classList.remove('max-h-96');
                 el.classList.add('max-h-20');
@@ -43,10 +50,13 @@ const displayTeams = async() => {
                 el.querySelector('.team-details').classList.add('opacity-0');
             });
 
-            card.classList.remove('max-h-20');
-            card.classList.add('max-h-96');
-            card.querySelector('.team-details').classList.remove('opacity-0');
-            card.querySelector('.team-details').classList.add('opacity-100');
+            // If the clicked card wasn't expanded, expand it
+            if (!isExpanded) {
+                card.classList.remove('max-h-20');
+                card.classList.add('max-h-96');
+                card.querySelector('.team-details').classList.remove('opacity-0');
+                card.querySelector('.team-details').classList.add('opacity-100');
+            }
         });
 
         teamList.appendChild(card);
