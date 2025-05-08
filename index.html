@@ -480,8 +480,8 @@
       </div>
 
       <!-- 🏁 Vainqueur de la dernière étape -->
-      <div id="podium-etape" class="mb-12">
-        <h3 class="text-xl font-bold mb-4">Vainqueur de la dernière étape</h3>
+      <div id="podium-etape" class="full-screen-podium" class="mb-12">
+        <h3 id="stage-winner-title" class="stage-winner-title">Vainqueur de la dernière étape</h3>
         <div class="podium-block group">
           <div class="podium-character">
             <img
@@ -489,22 +489,33 @@
               alt="Tadej Pogacar"
               class="podium-img"
             />
-            <div id="tooltip-graphic-etape" class="tooltip-graphic"></div>
             <div class="tooltip-content" id="tooltip-etape-content">
-              <p class="tooltip-title">Tadej Pogacar</p>
-              <p class="tooltip-text">Course : Contre la montre</p>
-              <p class="tooltip-text">Distance : 34 km</p>
-              <p class="tooltip-text">Parcours : Monaco - Nice</p>
-              <p class="tooltip-text">Temps : 00h 45' 24''</p>
-              <p class="tooltip-text">6e victoire d'étape</p>
-              <p class="tooltip-text">Équipe : UAE Team Emirates</p>
+              <div class="tooltip-header text-center mb-4">
+                <p class="font-bold text-black-950 text-lg">Monaco – Nice</p>
+                <p class="text-sm text-black-700">Course contre la montre</p>
+              </div>
+              <div class="tooltip-info flex justify-between text-sm text-black-900">
+                <div>
+                  <p class="font-bold">Distance</p>
+                  <p>33.7 km</p>
+                </div>
+                <div>
+                  <p class="font-bold">Temps</p>
+                  <p>00h 45' 24"</p>
+                </div>
+                <div>
+                  <p class="font-bold">Équipe</p>
+                  <p>UAE TEAM EMIRATES</p>
+                </div>
+              </div>
             </div>
+            
           </div>
         </div>
       </div>
 
       <!-- 🥇 Classement général -->
-      <div id="podium-general" class="mb-12">
+      <div id="podium-general" class="full-screen-podium" class="mb-12">
         <h3 class="text-xl font-bold mb-4">Classement général</h3>
         <div id="general-podium-container">
           <!-- 1er -->
@@ -570,7 +581,7 @@
       </div>
 
       <!-- 👕 Maillots distinctifs -->
-      <div id="podium-maillots">
+      <div id="podium-maillots" class="full-screen-podium">
         <h3 class="text-xl font-bold mb-4">
           Gagnants des maillots distinctifs
         </h3>

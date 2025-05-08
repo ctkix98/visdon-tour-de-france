@@ -220,48 +220,47 @@
   }
 
   /* Podium composant réutilisable */
-  @layer components {
-    .podium-block {
-      @apply relative flex flex-col items-center mb-6;
+    .full-screen-podium {
+      @apply relative w-screen h-screen overflow-hidden flex flex-col items-center justify-center px-8 py-12;
     }
-  
-    .podium-character {
-      @apply relative cursor-pointer;
-    }
-  
-    .podium-img {
-      @apply relative z-10 transition-transform duration-300 ease-in-out;
-    }
-  
-    .tooltip-graphic {
-      @apply absolute left-1/2 top-1/2 w-48 h-48 z-0 rounded-full opacity-0 transition-opacity duration-300 ease-in-out pointer-events-none -translate-x-1/2 -translate-y-1/2;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, transparent 70%);
-    }
-  
-    .group:hover .tooltip-graphic {
-      @apply opacity-100;
-    }
-  
-    /* .tooltip-content {
-      @apply hidden group-hover:block absolute bottom-full left-1/2 -translate-x-1/2 
-             w-[80vw] h-[60vh] z-10 mb-2;
-      background-color: theme("colors.yellow.100");
-      border-top-left-radius: 100vw;
-      border-top-right-radius: 100vw;
-    } */
     
-    
-    
-    
-  
-    .tooltip-title {
-      @apply font-bold text-yellow-700 mb-2;
-    }
-  
-    .tooltip-text {
-      @apply text-sm;
-    }
+  .stage-winner-title {
+    @apply text-center text-4xl font-bold uppercase my-5;
   }
+  
+  
+  .podium-block {
+    @apply relative flex flex-col items-center mb-6;
+  }
+
+  .podium-character {
+    @apply relative cursor-pointer; /* ✅ Suppression de `group` ici */
+  }
+
+  .podium-img {
+    @apply z-10 transition-transform duration-300 ease-in-out group-hover:drop-shadow-lg;
+  }
+
+  .tooltip-graphic {
+    @apply absolute left-full top-1/2 -translate-y-1/2 ml-4 w-[300px] h-[150px] pointer-events-none z-0;
+  }
+
+
+  .tooltip-text {
+    @apply text-sm;
+  }
+
+  .tooltip-content {
+    @apply hidden group-hover:block absolute left-full top-0 ml-6 bg-yellow-100 text-black p-4 rounded-lg  w-64 z-20;
+  }
+
+  .tooltip-header {
+    @apply mb-4;
+  }
+  .tooltip-info {
+    @apply flex justify-between gap-4;
+  }
+
 }
   
 
