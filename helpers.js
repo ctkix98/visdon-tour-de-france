@@ -12,15 +12,18 @@ const displaySection = (id) => {
   const toggleMenu = () => {
     const notMenuSections = document.querySelectorAll('body>*:not(#menu-wrapper)');
 
-const backButton = document.querySelector('.btn-back');
+const backButton = document.querySelectorAll('a.btn-back');
 
     notMenuSections.forEach(section => {
       section.classList.add('hide');
     });
 
-    backButton.addEventListener('click', () => {
-      notMenuSections.forEach(section => {
-        section.classList.remove('hide');
+    backButton.forEach(button => {
+      button.addEventListener('click', () => {
+        notMenuSections.forEach(section => {
+          section.classList.remove('hide');
+          console.log('back button clicked');
+        });
       });
     });
   };

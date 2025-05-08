@@ -45,7 +45,13 @@ section#menu-wrapper {
   flex-grow: 1;
 }
 .hide {
-  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 /* section#menu-section {
     display: flex;
