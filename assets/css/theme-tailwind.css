@@ -228,38 +228,18 @@
     @apply text-center text-4xl font-bold uppercase my-5;
   }
   
+  .winner-layout {
+    @apply flex items-end justify-center gap-12 px-8;
+  }
   
-  .podium-block {
-    @apply relative flex flex-col items-center mb-6;
+  .winner-infos {
+    @apply flex flex-col justify-end mb-4 text-black max-w-md;
   }
-
-  .podium-character {
-    @apply relative cursor-pointer; /* ✅ Suppression de `group` ici */
+  
+  .stage-winner-title {
+    @apply text-center text-3xl font-primary font-bold uppercase text-black mb-8;
   }
-
-  .podium-img {
-    @apply z-10 transition-transform duration-300 ease-in-out group-hover:drop-shadow-lg;
-  }
-
-  .tooltip-graphic {
-    @apply absolute left-full top-1/2 -translate-y-1/2 ml-4 w-[300px] h-[150px] pointer-events-none z-0;
-  }
-
-
-  .tooltip-text {
-    @apply text-sm;
-  }
-
-  .tooltip-content {
-    @apply hidden group-hover:block absolute left-full top-0 ml-6 bg-yellow-100 text-black p-4 rounded-lg  w-64 z-20;
-  }
-
-  .tooltip-header {
-    @apply mb-4;
-  }
-  .tooltip-info {
-    @apply flex justify-between gap-4;
-  }
+  
 
 }
   

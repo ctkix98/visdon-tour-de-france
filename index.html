@@ -479,40 +479,73 @@
         </button>
       </div>
 
-      <!-- 🏁 Vainqueur de la dernière étape -->
-      <div id="podium-etape" class="full-screen-podium" class="mb-12">
-        <h3 id="stage-winner-title" class="stage-winner-title">Vainqueur de la dernière étape</h3>
-        <div class="podium-block group">
-          <div class="podium-character">
-            <img
-              src="/assets/placeholders/rider.png"
-              alt="Tadej Pogacar"
-              class="podium-img"
-            />
-            <div class="tooltip-content" id="tooltip-etape-content">
-              <div class="tooltip-header text-center mb-4">
-                <p class="font-bold text-black-950 text-lg">Monaco – Nice</p>
-                <p class="text-sm text-black-700">Course contre la montre</p>
-              </div>
-              <div class="tooltip-info flex justify-between text-sm text-black-900">
-                <div>
-                  <p class="font-bold">Distance</p>
-                  <p>33.7 km</p>
-                </div>
-                <div>
-                  <p class="font-bold">Temps</p>
-                  <p>00h 45' 24"</p>
-                </div>
-                <div>
-                  <p class="font-bold">Équipe</p>
-                  <p>UAE TEAM EMIRATES</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
+<!-- 🏁 Vainqueur de la dernière étape -->
+<section id="podium-etape" class="w-screen h-screen flex flex-col items-center justify-start px-8 py-12 bg-white overflow-hidden">
+
+  <!-- Titre parcours -->
+  <h2 id="stage-winner-title" class="text-4xl font-bold uppercase text-center text-black mb-2">
+    Monaco – Nice
+  </h2>
+
+  <!-- Sous-titre étape + distance -->
+  <p id="stage-winner-subtitle" class="text-base text-black font-semibold mb-8">
+    Étape 21 — 33.7 km
+  </p>
+
+  <!-- Bloc principal avec fond de drapeau -->
+  <div class="relative w-full h-[60vh] flex items-end justify-center overflow-hidden">
+
+    <!-- Fond drapeau -->
+    <div id="flag-background" class="absolute inset-0 z-0">
+      <img src="/assets/flags/slo.png" alt="Drapeau" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/60"></div>
+    </div>
+
+    <!-- Flèche gauche -->
+    <button id="winner-prev" class="absolute left-4 top-1/2 -translate-y-1/2 text-yellow-400 text-3xl z-10">
+      &#9664;
+    </button>
+
+    <!-- Contenu coureur -->
+    <div class="relative z-10 flex items-end gap-12 max-w-6xl w-full ">
+      <!-- Image coureur -->
+      <div>
+        <img
+          src="/assets/placeholders/rider.png"
+          alt="Tadej Pogacar"
+          class="w-[250px] h-auto"
+          id="winner-stage-img"
+        />
       </div>
+
+      <!-- Infos coureur -->
+      <div id="winner-stage-infos" class="flex flex-col justify-end mb-4 text-white max-w-md space-y-1">
+        <!-- Position + temps -->
+        <div class="flex items-end gap-6">
+          <div class="text-[10rem] font-bold leading-none">
+            <span id="winner-rank">1</span>
+          </div>
+          <div id="winner-temps" class="text-2xl font-semibold">43m 22s</div>
+        </div>
+
+        <!-- Nom + Nationalité -->
+        <h4 id="winner-name" class="text-2xl font-bold">
+          Tadej POGACAR <span id="winner-nation" class="text-sm font-light uppercase">SLO</span>
+        </h4>
+
+        <!-- Équipe -->
+        <p id="winner-team" class="text-sm font-light">UAE TEAM EMIRATES</p>
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button id="winner-next" class="absolute right-4 top-1/2 -translate-y-1/2 text-yellow-400 text-3xl z-10">
+      &#9654;
+    </button>
+
+  </div>
+</section>
+
 
       <!-- 🥇 Classement général -->
       <div id="podium-general" class="full-screen-podium" class="mb-12">
