@@ -7,6 +7,8 @@ import "/sections/menu/rules.js"
 import "/sections/map/setup-traces.js"
 import "/sections/menu/stakes.js"
 import "/sections/menu/teams.js"
+import "/sections/menu/route.js"
+import "/sections/menu/setup-curve.js"
 
 import { displayCategories } from "./sections/menu/menu";
 import { displaySection, activateLink, toggleMenu } from "./helpers";
@@ -55,6 +57,8 @@ const routes = () => {
 
     case "#route":
       displaySection("route");
+      // createElevationCurve();
+      console.log("courbe créée depuis index")
       toggleMenu()
       break;
 
