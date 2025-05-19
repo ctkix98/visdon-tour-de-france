@@ -1,0 +1,29 @@
+@layer components {
+  .podium-tabs {
+    @apply flex justify-center my-6 rounded-full w-fit mx-auto;
+    background-color: theme("colors.black.100");
+    gap: 0; /* pas d’espacement entre les boutons */
+    overflow: hidden; /* masque tout dépassement */
+  }
+
+  .tab-button {
+    @apply px-6 py-2 font-bold text-black transition-all duration-300;
+    @apply rounded-none; /* on enlève les coins arrondis ici */
+  }
+
+  .tab-button:first-child {
+    @apply rounded-l-full;
+  }
+
+  .tab-button:last-child {
+    @apply rounded-r-full;
+  }
+
+  .tab-button.active {
+    @apply bg-black-950 text-white;
+  }
+  .tab-button {
+    @apply px-4 py-2 rounded-full text-black bg-black-100 font-bold transition-all duration-300 cursor-pointer;
+  }
+  
+}

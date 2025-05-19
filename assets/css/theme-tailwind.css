@@ -1,6 +1,8 @@
 @import "../../node_modules/tailwindcss";
 @import "../../assets/font/stylesheet.css";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "./podiums.css";
+
 
 @theme {
   --font-sans: "Open sans", sans-serif;
@@ -218,34 +220,29 @@
   }
 
   /* Podium composant réutilisable */
-  .podium-block {
-    @apply relative flex flex-col items-center mb-6;
+    .full-screen-podium {
+      @apply relative w-screen h-screen overflow-hidden flex flex-col items-center justify-center px-8 py-12;
+    }
+    
+  .stage-winner-title {
+    @apply text-center text-4xl font-bold uppercase my-5;
   }
+  
+  .winner-layout {
+    @apply flex items-end justify-center gap-12 px-8;
+  }
+  
+  .winner-infos {
+    @apply flex flex-col justify-end mb-4 text-black max-w-md;
+  }
+  
+  .stage-winner-title {
+    @apply text-center text-3xl font-primary font-bold uppercase text-black mb-8;
+  }
+  
 
-  .podium-character {
-    @apply relative cursor-pointer; /* ✅ Suppression de `group` ici */
-  }
-
-  .podium-img {
-    @apply z-10 transition-transform duration-300 ease-in-out group-hover:drop-shadow-lg;
-  }
-
-  .tooltip-graphic {
-    @apply absolute left-full top-1/2 -translate-y-1/2 ml-4 w-[300px] h-[150px] pointer-events-none z-0;
-  }
-
-  .tooltip-title {
-    @apply font-bold text-yellow-700 mb-2;
-  }
-
-  .tooltip-text {
-    @apply text-sm;
-  }
-
-  .tooltip-content {
-    @apply hidden group-hover:block absolute left-full top-0 ml-6 bg-yellow-100 text-black p-4 rounded-lg  w-64 z-20;
-  }
 }
+  
 
 /* Section title */
 @layer components {
@@ -256,25 +253,34 @@
 
 /* Section countdown */
 @layer components {
+  .countdown-section {
+    @apply min-h-screen flex flex-col justify-center px-8 py-12;
+    @apply relative w-screen h-screen overflow-hidden flex justify-center px-8 py-12;
+  }
+
   .countdown-header {
     @apply text-center mt-8 mb-6;
   }
 
   .countdown-header h3 {
-    @apply text-3xl font-bold font-primary text-black mb-1;
+    @apply text-5xl font-bold font-primary text-black mb-1;
   }
 
   .countdown-header p {
     @apply text-base text-black;
   }
-
+  
   .countdown-timer {
-    @apply flex justify-center gap-6 bg-black-950 text-white py-6 px-8 rounded-lg mb-8 w-fit mx-auto;
-  }
+  @apply flex justify-center gap-12 bg-black text-white py-12 px-16 rounded-xl mb-8 w-full max-w-4xl mx-auto;
+}
 
   .time-block {
-    @apply flex flex-col items-center font-bold font-primary text-lg;
-  }
+  @apply flex flex-col items-center font-bold font-primary text-4xl;
+}
+
+.time-block p:first-child {
+  @apply text-base font-normal text-gray-300 mb-2;
+}
 
   .countdown-action {
     @apply text-center;
@@ -283,4 +289,5 @@
   .countdown-action a {
     @apply inline-block bg-yellow-500 text-black font-bold px-6 py-2 rounded-full hover:bg-yellow-400 transition;
   }
+
 }
