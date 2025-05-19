@@ -253,25 +253,34 @@
 
 /* Section countdown */
 @layer components {
+  .countdown-section {
+    @apply min-h-screen flex flex-col justify-center px-8 py-12;
+    @apply relative w-screen h-screen overflow-hidden flex justify-center px-8 py-12;
+  }
+
   .countdown-header {
     @apply text-center mt-8 mb-6;
   }
 
   .countdown-header h3 {
-    @apply text-3xl font-bold font-primary text-black mb-1;
+    @apply text-5xl font-bold font-primary text-black mb-1;
   }
 
   .countdown-header p {
     @apply text-base text-black;
   }
-
+  
   .countdown-timer {
-    @apply flex justify-center gap-6 bg-black-950 text-white py-6 px-8 rounded-lg mb-8 w-fit mx-auto;
-  }
+  @apply flex justify-center gap-12 bg-black text-white py-12 px-16 rounded-xl mb-8 w-full max-w-4xl mx-auto;
+}
 
   .time-block {
-    @apply flex flex-col items-center font-bold font-primary text-lg;
-  }
+  @apply flex flex-col items-center font-bold font-primary text-4xl;
+}
+
+.time-block p:first-child {
+  @apply text-base font-normal text-gray-300 mb-2;
+}
 
   .countdown-action {
     @apply text-center;
@@ -280,4 +289,5 @@
   .countdown-action a {
     @apply inline-block bg-yellow-500 text-black font-bold px-6 py-2 rounded-full hover:bg-yellow-400 transition;
   }
+
 }
