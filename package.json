@@ -1,12 +1,12 @@
 {
-    "name": "webmobui-private",
+    "name": "visdon-tour-de-france",
     "version": "0.0.1",
     "description": "",
     "private": true,
     "type": "module",
     "source": "src/index.html",
     "scripts": {
-        "start": "vite",
+        "dev": "vite",
         "build": "vite build",
         "preview": "vite preview"
     },
