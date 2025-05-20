@@ -16,7 +16,7 @@ import { displayCards } from "./sections/menu/rules";
 import { displayJerseyDetails } from "./sections/menu/stakes";
 import { initSlideAnimations } from "./sections/slides/slidesAnimations";
 import { displayTeams } from "./sections/menu/teams";
-import { main } from "./sections/menu/setup-curve"
+import { createFullElevationProfile } from "./sections/menu/setup-curve"
 
 import { initPodiumsTabs } from "./sections/podiums/podiumsTabs";
 import { showWinnerStage } from "./sections/podiums/winnerStage.js";
@@ -79,8 +79,7 @@ const routes = () => {
 
     case "#route":
       displaySection("route");
-      main();
-      console.log("courbe créée depuis index")
+      createFullElevationProfile();
       toggleMenu()
       break;
 
