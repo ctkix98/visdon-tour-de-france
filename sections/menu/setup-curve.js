@@ -3,35 +3,71 @@ import { scaleLinear } from "d3-scale";
 import { line } from "d3-shape";
 import { select } from "d3-selection";
 import { max, min } from "d3-array";
+import { axisBottom, axisLeft } from "d3-axis";
 import etapes from "../../data/etapes.json";
 
 const urlStart = "../../coordonnees_etapes/stage-";
 const urlEnd = "-route.gpx";
 const margin = { top: 20, right: 20, bottom: 30, left: 40 };
-const width = 500 - margin.left - margin.right;
-const height = 300 - margin.top + margin.bottom;
+const width = 5000 - margin.left - margin.right;
+const height = 1000 - margin.top + margin.bottom;
 
 let elevations = [];
 let distances = [0];
+
+// Fonction pour calculer la distance entre deux points en kilomètres
+function calculateDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371; // Rayon de la Terre en km
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = 
+    Math.sin(dLat/2) * Math.sin(dLat/2) +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+    Math.sin(dLon/2) * Math.sin(dLon/2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  return R * c;
+}
 
 const loadElevationData = async (stageNumber) => {
   const data = await xml(`${urlStart}${stageNumber}${urlEnd}`);
   const trkpts = data.querySelectorAll("trkpt");
   
-  // Filtrer les points qui ont une élévation
-  const validPoints = Array.from(trkpts).filter(trkpt => trkpt.querySelector("ele"));
+  let lastValidElevation = 0;
+  let lastLat = null;
+  let lastLon = null;
+  let totalDistance = distances[distances.length - 1];
   
-  const etapeElevations = validPoints.map((trkpt) => {
-    const ele = trkpt.querySelector("ele").textContent.trim();
-    return parseFloat(ele);
+  const etapeElevations = Array.from(trkpts).map((trkpt) => {
+    const eleElement = trkpt.querySelector("ele");
+    const lat = parseFloat(trkpt.getAttribute("lat"));
+    const lon = parseFloat(trkpt.getAttribute("lon"));
+    
+    // Calculer la distance depuis le dernier point
+    if (lastLat !== null && lastLon !== null) {
+      const distance = calculateDistance(lastLat, lastLon, lat, lon);
+      totalDistance += distance;
+      distances.push(totalDistance);
+    } else {
+      distances.push(totalDistance);
+    }
+    
+    lastLat = lat;
+    lastLon = lon;
+    
+    if (!eleElement) return lastValidElevation;
+    
+    const ele = eleElement.textContent.trim();
+    const parsedInt = parseInt(ele);
+    
+    if (isNaN(parsedInt)) {
+      return lastValidElevation;
+    }
+    
+    lastValidElevation = parsedInt;
+    return parsedInt;
   });
 
   elevations = elevations.concat(etapeElevations);
-
-  // Ajuster les distances pour ne prendre en compte que les points valides
-  const lastDistance = distances[distances.length - 1];
-  const newDistances = validPoints.map((_, index) => lastDistance + index);
-  distances = distances.concat(newDistances.slice(1));
 };
 
 const createElevationProfile = () => {
@@ -62,53 +98,57 @@ const createElevationProfile = () => {
     .attr("stroke", "steelblue")
     .attr("stroke-width", 1.5);
 
-  const xAxis = (g) =>
-    g
-      .attr("transform", `translate(0, ${height})`)
-      .call((g) =>
-        g
-          .append("g")
-          .call((axis) => axis.selectAll(".tick line").remove())
-          .call((axis) => axis.select(".domain").remove())
-      );
+  svg.append("g")
+    .attr("transform", `translate(0,${height})`)
+    .call(axisBottom(xScale)
+      .ticks(10)
+      .tickFormat(d => `${d.toFixed(0)} km`)
+    )
+    .append("text")
+    .attr("x", width / 2)
+    .attr("y", 30)
+    .attr("text-anchor", "middle")
+    .text("Distance");
 
-  const yAxis = (g) =>
-    g.call((g) =>
-      g
-        .append("g")
-        .call((axis) => axis.selectAll(".tick line").remove())
-        .call((axis) => axis.select(".domain").remove())
-    );
-
-  svg
-    .append("g")
-    .call(
-      (g) =>
-        g
-          .call(xAxis)
-          .append("text")
-          .attr("x", width / 2)
-          .attr("y", 30)
-          .attr("text-anchor", "middle")
-          .text("Distance")
-    );
-
-  svg
-    .append("g")
-    .call(yAxis)
+  svg.append("g")
+    .call(axisLeft(yScale)
+      .ticks(10)
+      .tickFormat(d => `${d.toFixed(0)} m`)
+    )
     .append("text")
     .attr("transform", "rotate(-90)")
     .attr("x", -height / 2)
     .attr("y", -30)
     .attr("text-anchor", "middle")
-    .text("Élévation (m)");
+    .text("Élévation");
+
+  svg.append("g")
+    .attr("class", "grid")
+    .call(axisLeft(yScale)
+      .tickSize(-width)
+      .tickFormat("")
+    )
+    .style("stroke-dasharray", "2,2")
+    .style("stroke", "#ccc");
+
+  svg.append("g")
+    .attr("class", "grid")
+    .attr("transform", `translate(0,${height})`)
+    .call(axisBottom(xScale)
+      .tickSize(-height)
+      .tickFormat("")
+    )
+    .style("stroke-dasharray", "2,2")
+    .style("stroke", "#ccc");
 };
 
 const main = async () => {
   for (let i = 1; i <= etapes.length; i++) {
     await loadElevationData(i);
+    console.log(i);
   }
+  // await loadElevationData(13);
+
   createElevationProfile();
 };
-
-main();
+export { main };
