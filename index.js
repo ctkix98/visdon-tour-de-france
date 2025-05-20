@@ -18,6 +18,7 @@ import { showWinnerStage } from "./sections/podiums/winnerStage.js";
 import { populateGeneralPodium } from "./sections/podiums/winnersGC.js";
 import { startCountdown } from "./sections/countdown/countdown.js";
 import { checkScreenSize } from "./sections/checkSize.js";
+import { setupFinishScrollRace } from "./sections/finish/finishline.js";
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
 
@@ -36,6 +37,9 @@ startCountdown();
 
 //Function to check the size of the screen. If >1024, it says no :
 checkScreenSize();
+
+//Function to animate finish-line section
+setupFinishScrollRace();
 
 
 
