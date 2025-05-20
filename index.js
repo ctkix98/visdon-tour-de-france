@@ -4,7 +4,6 @@ import "/custom-elements/menu-bubble.js";
 import "/custom-elements/RulesCard.js";
 import "/custom-elements/jerseyInfoCard.js";
 import "/sections/menu/rules.js"
-import "/sections/map/setup-traces.js"
 import "/sections/menu/stakes.js"
 import "/sections/menu/teams.js"
 import "/sections/podiums/podiumsTabs.js"
@@ -17,6 +16,7 @@ import { displayCards } from "./sections/menu/rules";
 import { displayJerseyDetails } from "./sections/menu/stakes";
 import { initSlideAnimations } from "./sections/slides/slidesAnimations";
 import { displayTeams } from "./sections/menu/teams";
+import { main } from "./sections/menu/setup-curve"
 
 import { initPodiumsTabs } from "./sections/podiums/podiumsTabs";
 import { showWinnerStage } from "./sections/podiums/winnerStage.js";
@@ -79,7 +79,7 @@ const routes = () => {
 
     case "#route":
       displaySection("route");
-      createElevationCurve();
+      main();
       console.log("courbe créée depuis index")
       toggleMenu()
       break;
