@@ -9,8 +9,8 @@ import etapes from "../../data/etapes.json";
 const urlStart = "../../coordonnees_etapes/stage-";
 const urlEnd = "-route.gpx";
 const margin = { top: 20, right: 20, bottom: 30, left: 40 };
-const width = 5000 - margin.left - margin.right;
-const height = 1000 - margin.top + margin.bottom;
+const width = window.innerWidth*5 - margin.left - margin.right;
+const height = window.innerHeight*0.9 - margin.top + margin.bottom;
 
 let elevations = [];
 let distances = [0];
@@ -142,13 +142,13 @@ const createElevationProfile = () => {
     .style("stroke", "#ccc");
 };
 
-const main = async () => {
+
+const createFullElevationProfile = async () => {
   for (let i = 1; i <= etapes.length; i++) {
     await loadElevationData(i);
     console.log(i);
   }
-  // await loadElevationData(13);
 
   createElevationProfile();
 };
-export { main };
+export { createFullElevationProfile };

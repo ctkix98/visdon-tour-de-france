@@ -15,7 +15,7 @@ import { displayCards } from "./sections/menu/rules";
 import { displayJerseyDetails } from "./sections/menu/stakes";
 import { initSlideAnimations } from "./sections/slides/slidesAnimations";
 import { displayTeams } from "./sections/menu/teams";
-import { main } from "./sections/menu/setup-curve"
+import { createFullElevationProfile } from "./sections/menu/setup-curve"
 
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
@@ -57,8 +57,7 @@ const routes = () => {
 
     case "#route":
       displaySection("route");
-      main();
-      console.log("courbe créée depuis index")
+      createFullElevationProfile();
       toggleMenu()
       break;
 
