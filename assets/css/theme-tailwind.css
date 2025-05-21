@@ -290,4 +290,53 @@
     @apply inline-block bg-yellow-500 text-black font-bold px-6 py-2 rounded-full hover:bg-yellow-400 transition;
   }
 
+
+  /*Finish line section*/
+  @layer components {
+  /* Section principale */
+  .finish-section {
+    @apply relative w-full;
+  }
+
+  /* Conteneur qui simule un long scroll */
+  .scroll-wrapper {
+    @apply relative h-[200vh]; /* crée un scroll long */
+  }
+
+  /* Zone sticky visible pendant tout le scroll */
+  .sticky-track {
+    @apply sticky top-0 h-screen w-full bg-white overflow-hidden;
+  }
+
+  /* Ligne d’arrivée fixe à droite */
+  #finish-line {
+    @apply absolute top-0 right-20 h-full w-2 bg-yellow-400 z-10;
+  }
+
+  /* Conteneur des cyclistes */
+  #riders-container {
+    @apply absolute top-0 left-0 w-full h-full pointer-events-none;
+  }
+
+  /* Style des cyclistes */
+  .rider {
+    @apply absolute w-40 transition-transform duration-75 ease-out;
+  }
+
+  .rider-wrapper {
+    @apply flex flex-col items-center w-fit transition-transform duration-75 ease-out;
+  }
+
+  .rider-img {
+    @apply w-40;
+  }
+
+  .rider-label {
+    @apply mb-2 text-sm font-semibold bg-white px-2 py-1 rounded shadow;
+  }
+
+
+
+}
+
 }
