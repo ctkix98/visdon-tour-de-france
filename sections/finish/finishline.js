@@ -2,8 +2,8 @@ import * as d3 from "d3";
 
 export function setupFinishScrollRace() {
   const wrapper = document.getElementById("finish-scroll-wrapper");
-  const riders = d3.selectAll(".rider");
-  const maxDistance = window.innerWidth - 150; // ajuster selon la position de la ligne
+  const riders = d3.selectAll(".rider-wrapper");
+  const maxDistance = window.innerWidth - 150;
 
   function updatePositions() {
     const wrapperRect = wrapper.getBoundingClientRect();
@@ -18,6 +18,7 @@ export function setupFinishScrollRace() {
       const el = d3.select(this);
       const speed = parseFloat(el.attr("data-speed")) || 1;
       const shift = scrollProgress * maxDistance * speed;
+
       el.style("transform", `translateX(${shift}px)`);
     });
   }
