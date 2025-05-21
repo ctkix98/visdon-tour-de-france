@@ -340,9 +340,26 @@
   .rider-label {
     @apply mb-2 text-sm font-semibold bg-white px-2 py-1 rounded shadow;
   }
-
-
-
 }
+
+/* Background maillots*/
+@layer components {
+  .maillot-bg-jaune {
+    @apply bg-yellow-400;
+  }
+  .maillot-bg-vert {
+    @apply bg-green-600;
+  }
+  .maillot-bg-blanc {
+    @apply bg-white;
+  }
+.maillot-bg-pois {
+    @apply bg-white;
+    background-image: radial-gradient(red 6px, transparent 7px);
+    background-size: 50px 50px;
+    background-repeat: repeat;
+  }
+}
+
 
 }

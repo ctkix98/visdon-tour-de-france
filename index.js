@@ -19,6 +19,7 @@ import { populateGeneralPodium } from "./sections/podiums/winnersGC.js";
 import { startCountdown } from "./sections/countdown/countdown.js";
 import { checkScreenSize } from "./sections/checkSize.js";
 import { setupFinishScrollRace } from "./sections/finish/finishline.js";
+import { showMaillots } from "./sections/podiums/maillots.js";
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
 
@@ -31,6 +32,7 @@ initSlideAnimations()
 initPodiumsTabs();
 showWinnerStage();
 populateGeneralPodium();
+showMaillots();
 
 //Countdown
 startCountdown();
