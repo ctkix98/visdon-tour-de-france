@@ -1,6 +1,7 @@
 import { geoPath } from "d3-geo";
 import { select } from "d3-selection";
 import { xml } from "d3-fetch";
+import { transition } from "d3-transition";
 import { createMap } from "./setup-map";
 import etapes from "../../data/etapes.json";
 
@@ -45,12 +46,18 @@ const createTrace = async (stageNumber) => {
         .attr("class", "stroke-transparent fill-none")
         .attr("stroke-width", 20)
         .on("mouseenter", () => {
-          // Afficher les labels de l'étape
-          svg.selectAll(`.stage-${stageNumber}-label`).style("opacity", 1);
+          // Afficher les labels de l'étape avec transition
+          svg.selectAll(`.stage-${stageNumber}-label`)
+            .transition()
+            .duration(200)
+            .style("opacity", 1);
         })
         .on("mouseleave", () => {
-          // Masquer les labels de l'étape
-          svg.selectAll(`.stage-${stageNumber}-label`).style("opacity", 0);
+          // Masquer les labels de l'étape avec transition
+          svg.selectAll(`.stage-${stageNumber}-label`)
+            .transition()
+            .duration(200)
+            .style("opacity", 0);
         });
         stageGroup.append("path")
         .datum(line)
