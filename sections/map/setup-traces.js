@@ -42,7 +42,8 @@ const createTrace = async (stageNumber) => {
       stageGroup.append("path")
         .datum(line)
         .attr("d", path)
-        .attr("class", "stroke-gray-500 fill-none stroke-2")
+        .attr("class", "stroke-transparent fill-none")
+        .attr("stroke-width", 20)
         .on("mouseenter", () => {
           // Afficher les labels de l'étape
           svg.selectAll(`.stage-${stageNumber}-label`).style("opacity", 1);
@@ -51,6 +52,10 @@ const createTrace = async (stageNumber) => {
           // Masquer les labels de l'étape
           svg.selectAll(`.stage-${stageNumber}-label`).style("opacity", 0);
         });
+        stageGroup.append("path")
+        .datum(line)
+        .attr("d", path)
+        .attr("class", "stroke-gray-500 fill-none stroke-2");
 
       // Points de départ et d'arrivée
       const startCoord = coords[0];
