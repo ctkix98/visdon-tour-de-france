@@ -5,7 +5,7 @@ import runnerJson from '../../data/coureur.json' assert { type: 'json' };
 const equipes = teamsJson.equipes;
 const coureurs = runnerJson.coureurs;
 const teamList = document.querySelector('#teams-section .third-cloumn > div');
-console.log(equipes);
+//console.log(equipes);
 
 const displayTeams = async() => {
     // vider le contenu de l'élément

@@ -8,6 +8,7 @@ import "/sections/menu/stakes.js"
 import "/sections/menu/teams.js"
 import "/sections/podiums/podiumsTabs.js"
 import "/sections/menu/route.js"
+import "/sections/menu/equipment.js"
 // import "/sections/menu/setup-curve.js"
 
 import { displayCategories } from "./sections/menu/menu";
