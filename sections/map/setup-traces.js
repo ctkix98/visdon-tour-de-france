@@ -32,7 +32,7 @@ const createTrace = async (stageNumber) => {
           coordinates: coords,
         },
       };
-      appendPath(line, "stroke-green-900 fill-none stroke-2");
+      appendPath(line, "stroke-gray-500 fill-none stroke-2");
 
       // Points de départ et d'arrivée
       const startCoord = coords[0];
@@ -150,25 +150,26 @@ const addCityLabel = (coordinates, cityName, pointType, stageNumber) => {
   // Centrer verticalement le texte dans le rectangle
   // La valeur de base de y est 0, donc on calcule le décalage vertical
   const halfHeight = (bbox.height + paddingY * 2) / 2;
-  const textY = halfHeight - bbox.height / 2 - bbox.y;
 
   // Ajouter le fond de l'étiquette
   labelGroup
     .append("rect")
     .attr("x", rectX)
-    .attr("y", halfHeight) // Centrer verticalement
+    .attr("y", -halfHeight) // Ajuster la position verticale pour centrer
     .attr("width", bbox.width + paddingX * 2)
     .attr("height", bbox.height + paddingY * 2)
     .attr("fill", "white")
     .attr("fill-opacity", 0.8)
-    .attr("rx", 3); // Coins arrondis légèrement plus grands
+    .attr("rx", 6) // Coins arrondis plus grands
+    .attr("ry", 6); // Coins arrondis plus grands
 
   // Ajouter le texte final, centré dans le rectangle
   labelGroup
     .append("text")
     .attr("x", xOffset)
-    .attr("y", textY)
+    .attr("y", 0) // Centrer verticalement
     .attr("text-anchor", anchor)
+    .attr("dominant-baseline", "middle") // Centrer verticalement le texte
     .attr("fill", textColor)
     .attr("font-size", `${fontSize}px`)
     .text(cityName);
