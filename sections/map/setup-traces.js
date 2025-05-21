@@ -12,6 +12,7 @@ const projection = await createMap();
 const path = geoPath().projection(projection);
 const svg = select("svg");
 
+
 // Map pour suivre les villes déjà affichées (évite les doublons)
 const displayedCities = new Map();
 
@@ -33,13 +34,13 @@ const createTrace = async (stageNumber) => {
           coordinates: coords,
         },
       };
-      
-      // Créer un groupe pour l'étape
+
+      // Créer un groupe principal pour l'étape
       const stageGroup = svg.append("g")
         .attr("class", `stage-${stageNumber}`)
         .style("cursor", "pointer");
 
-      // Ajouter le tracé au groupe
+      // Ajouter la zone cliquable invisible
       stageGroup.append("path")
         .datum(line)
         .attr("d", path)
@@ -47,19 +48,23 @@ const createTrace = async (stageNumber) => {
         .attr("stroke-width", 20)
         .on("mouseenter", () => {
           // Afficher les labels de l'étape avec transition
-          svg.selectAll(`.stage-${stageNumber}-label`)
+          stageGroup.selectAll(`.stage-${stageNumber}-label`)
             .transition()
             .duration(200)
             .style("opacity", 1);
+          hideStages(stageNumber);
         })
         .on("mouseleave", () => {
           // Masquer les labels de l'étape avec transition
-          svg.selectAll(`.stage-${stageNumber}-label`)
+          stageGroup.selectAll(`.stage-${stageNumber}-label`)
             .transition()
             .duration(200)
             .style("opacity", 0);
+          showStages();
         });
-        stageGroup.append("path")
+
+      // Ajouter le tracé visible
+      stageGroup.append("path")
         .datum(line)
         .attr("d", path)
         .attr("class", "stroke-gray-500 fill-none stroke-2");
@@ -74,9 +79,16 @@ const createTrace = async (stageNumber) => {
         startCoord,
         "start",
         stageNumber,
-        etape.nom_ville_depart
+        etape.nom_ville_depart,
+        stageGroup
       );
-      addPointWithLabel(endCoord, "end", stageNumber, etape.nom_ville_arrivee);
+      addPointWithLabel(
+        endCoord,
+        "end",
+        stageNumber,
+        etape.nom_ville_arrivee,
+        stageGroup
+      );
 
       resolve();
     });
@@ -84,18 +96,18 @@ const createTrace = async (stageNumber) => {
 };
 
 // Fonction pour ajouter un point sur la carte avec son étiquette
-const addPointWithLabel = (coordinates, pointType, stageNumber, cityName) => {
+const addPointWithLabel = (coordinates, pointType, stageNumber, cityName, parentGroup) => {
   // Ajouter le point
-  addPoint(coordinates, pointType);
+  addPoint(coordinates, pointType, parentGroup);
 
   // Ajouter l'étiquette s'il y a un nom de ville
   if (cityName) {
-    addCityLabel(coordinates, cityName, pointType, stageNumber);
+    addCityLabel(coordinates, cityName, pointType, stageNumber, parentGroup);
   }
 };
 
 // Fonction pour ajouter un point (marqueur) sur la carte
-const addPoint = (coordinates, pointType) => {
+const addPoint = (coordinates, pointType, parentGroup) => {
   // Créer le point GeoJSON
   const point = {
     type: "Feature",
@@ -119,19 +131,24 @@ const addPoint = (coordinates, pointType) => {
   }
 
   // Ajouter le point à la carte
-  appendPath(point, pointStyle);
+  parentGroup.append("path")
+    .datum(point)
+    .attr("d", path)
+    .attr("class", pointStyle);
 
   // Créer le cercle du marqueur
   const [x, y] = projection(coordinates);
-  const markerGroup = svg
+  const markerGroup = parentGroup
     .append("g")
     .attr("transform", `translate(${x}, ${y})`);
 
-  markerGroup.append("circle").attr("r", 5).attr("class", pointStyle);
+  markerGroup.append("circle")
+    .attr("r", 5)
+    .attr("class", pointStyle);
 };
 
 // Fonction pour ajouter une étiquette de ville
-const addCityLabel = (coordinates, cityName, pointType, stageNumber) => {
+const addCityLabel = (coordinates, cityName, pointType, stageNumber, parentGroup) => {
   if (!cityName) return;
 
   // Vérifier si la ville a déjà été affichée (éviter les doublons)
@@ -148,12 +165,12 @@ const addCityLabel = (coordinates, cityName, pointType, stageNumber) => {
   const textColor = pointType === "start" ? "blue" : "red";
   const fontSize = 14;
 
-  // Créer le groupe pour l'étiquette avec une classe spécifique à l'étape
-  const labelGroup = svg.append("g")
+  // Créer le groupe pour l'étiquette
+  const labelGroup = parentGroup.append("g")
     .attr("transform", `translate(${x}, ${y})`)
     .attr("class", `stage-${stageNumber}-label`)
-    .style("opacity", 0) // Cacher par défaut
-    .style("pointer-events", "none"); // Désactiver les interactions avec les labels
+    .style("opacity", 0)
+    .style("pointer-events", "none");
 
   // Créer temporairement le texte pour mesurer sa taille
   const tempText = labelGroup
@@ -209,9 +226,26 @@ const addCityLabel = (coordinates, cityName, pointType, stageNumber) => {
     .text(cityName);
 };
 
-// Fonction utilitaire pour ajouter un path au SVG
-const appendPath = (feature, style) => {
-  svg.append("path").datum(feature).attr("d", path).attr("class", style);
+const hideStages = (currentStageNumber) => {
+  for (let i = 1; i <= etapes.length; i++) {
+    svg.selectAll(".stage-" + i)
+      .filter((d, i, nodes) => {
+        const group = nodes[i];
+      return !group.classList.contains(`stage-${currentStageNumber}`);
+    })
+    .transition()
+    .duration(200)
+    .style("opacity", 0.5);
+  }
+};
+
+const showStages = () => {
+  for (let i = 1; i <= etapes.length; i++) {
+    svg.selectAll(".stage-" + i)
+      .transition()
+      .duration(200)
+      .style("opacity", 1);
+  }
 };
 
 // Fonction d'initialisation qui charge toutes les étapes séquentiellement
