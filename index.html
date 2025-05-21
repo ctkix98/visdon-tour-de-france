@@ -485,7 +485,7 @@
     </section>
 
     <!-- Section podiums -->
-    <section id="podiums-section" class="px-8 py-12">
+    <section id="podiums-section">
       <h2 class="section-title">Les podiums</h2>
 
       <!-- Navigation Tabs -->
@@ -502,7 +502,7 @@
       </div>
 
 <!-- 🏁 Vainqueur de la dernière étape -->
-<section id="podium-etape" class="w-screen h-screen flex flex-col items-center justify-start px-8 py-12 bg-white overflow-hidden">
+<div id="podium-etape" class="h-screen overflow-hidden">
 
   <!-- Titre parcours -->
   <h2 id="stage-winner-title" class="text-4xl font-bold uppercase text-center text-black mb-2">
@@ -510,7 +510,7 @@
   </h2>
 
   <!-- Sous-titre étape + distance -->
-  <p id="stage-winner-subtitle" class="text-base text-black font-semibold mb-8">
+  <p id="stage-winner-subtitle" class="text-center text-black font-semibold mb-8">
     Étape 21 — 33.7 km
   </p>
 
@@ -518,8 +518,8 @@
   <div class="relative w-full h-[60vh] flex items-end justify-center overflow-hidden">
 
     <!-- Fond drapeau -->
-    <div id="flag-background" class="absolute inset-0 z-0">
-      <img src="/assets/flags/slo.png" alt="Drapeau" class="w-full h-full object-cover" />
+    <div id="flag-background" class="absolute inset-0 z-0 bg-black">
+  
       <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/60"></div>
     </div>
 
@@ -566,7 +566,7 @@
     </button>
 
   </div>
-</section>
+</div>
 
 
       <!-- 🥇 Classement général -->

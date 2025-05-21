@@ -35,6 +35,12 @@
   --color-black-950: #000000;
 }
 
+@layer base {
+  body {
+    @apply bg-[#F8F8F5];
+  }
+}
+
 @layer components {
 
   /*Sections slides*/
