@@ -11,12 +11,12 @@
     <!-- <link rel="stylesheet" href="/assets/css/dev.css" /> -->
   </head>
   <body>
-    <header>
+<!--    <header>
       <a id="logo">
         <img src="/assets/img/favicon_io/logo_tdf.png" alt="logo tdf" />
         Tour de France 2024
       </a>
-    </header>
+    </header>-->
 
     <!--Vidéo de lancement-->
     <!-- Section d'introduction vidéo -->
@@ -338,7 +338,7 @@
 
     <!-- Section de la finish line -->
 <section id="finish-section" class="finish-section">
-  <h2 class="text-3xl font-bold text-center mb-8">Dernière étape : arrivée à Nice</h2>
+  <!--<h2 class="text-3xl font-bold text-center mb-8">Dernière étape : arrivée à Nice</h2>-->
 
   <!-- Conteneur "scroll" interne -->
   <div id="finish-scroll-wrapper" class="scroll-wrapper">
@@ -377,8 +377,8 @@
     </section>
 
     <!-- Section podiums -->
-    <section id="podiums-section" class="px-8 py-12">
-      <h2 class="section-title">Les podiums</h2>
+    <section id="podiums-section">
+      <!--<h2 class="section-title">Les podiums</h2>-->
 
       <!-- Navigation Tabs -->
       <div class="podium-tabs">
@@ -394,7 +394,7 @@
       </div>
 
 <!-- 🏁 Vainqueur de la dernière étape -->
-<section id="podium-etape" class="w-screen h-screen flex flex-col items-center justify-start px-8 py-12 bg-white overflow-hidden">
+<div id="podium-etape" class="h-screen overflow-hidden">
 
   <!-- Titre parcours -->
   <h2 id="stage-winner-title" class="text-4xl font-bold uppercase text-center text-black mb-2">
@@ -402,7 +402,7 @@
   </h2>
 
   <!-- Sous-titre étape + distance -->
-  <p id="stage-winner-subtitle" class="text-base text-black font-semibold mb-8">
+  <p id="stage-winner-subtitle" class="text-2xl font-semibold text-center mb-6">
     Étape 21 — 33.7 km
   </p>
 
@@ -410,8 +410,8 @@
   <div class="relative w-full h-[60vh] flex items-end justify-center overflow-hidden">
 
     <!-- Fond drapeau -->
-    <div id="flag-background" class="absolute inset-0 z-0">
-      <img src="/assets/flags/slo.png" alt="Drapeau" class="w-full h-full object-cover" />
+    <div id="flag-background" class="absolute inset-0 z-0 bg-black">
+  
       <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/60"></div>
     </div>
 
@@ -458,172 +458,102 @@
     </button>
 
   </div>
-</section>
+</div>
 
 
       <!-- 🥇 Classement général -->
-      <div id="podium-general" class="full-screen-podium" class="mb-12">
-        <h3 class="text-xl font-bold mb-4">Classement général</h3>
-        <div id="general-podium-container">
-          <!-- 1er -->
-          <div class="podium-block group">
-            <div class="podium-character">
-              <img
-                src="/assets/placeholders/rider.png"
-                alt="Jonas Vingegaard"
-                class="podium-img"
-              />
-              <div id="tooltip-graphic-vg-1" class="tooltip-graphic"></div>
-              <div class="tooltip-content">
-                <p class="tooltip-title">Jonas Vingegaard 🇩🇰</p>
-                <p class="tooltip-text">Équipe : Jumbo-Visma</p>
-                <p class="tooltip-text">Temps total : 82h 45' 00''</p>
-                <p class="tooltip-text">Différence : 00h 00' 00''</p>
-                <p class="tooltip-text">Maillots distinctifs : 1</p>
-                <p class="tooltip-text">Victoires d'étapes : 2</p>
-              </div>
-            </div>
-          </div>
+<section id="podium-general" class="section-podium h-screen overflow-hidden">
+  <!-- Titre -->
+  <h2 class="section-podium-title text-3xl font-bold uppercase text-center mb-8">Classement général</h2>
 
-          <!-- 2e -->
-          <div class="podium-block group">
-            <div class="podium-character">
-              <img
-                src="/assets/placeholders/rider.png"
-                alt="Tadej Pogacar"
-                class="podium-img"
-              />
-              <div id="tooltip-graphic-vg-2" class="tooltip-graphic"></div>
-              <div class="tooltip-content">
-                <p class="tooltip-title">Tadej Pogacar 🇸🇮</p>
-                <p class="tooltip-text">Équipe : UAE Team Emirates</p>
-                <p class="tooltip-text">Temps total : 82h 46' 03''</p>
-                <p class="tooltip-text">Différence : +01' 03''</p>
-                <p class="tooltip-text">Maillots distinctifs : 2</p>
-                <p class="tooltip-text">Victoires d'étapes : 6</p>
-              </div>
-            </div>
-          </div>
+  <!-- Podium centré avec ordre ajusté -->
+  <div class="podium-wrapper">
+    
+    <!-- 2e place -->
+    <div class="podium-card podium-second order-1" id="general-rank-2">
+      <img src="/assets/placeholders/rider.png" alt="Rider" class="podium-img" id="gen-img-2" />
+      <p class="podium-position">2</p>
+      <p class="podium-name" id="gen-name-2">NOM PRÉNOM</p>
+      <p class="podium-time" id="gen-time-2">82h 46' 03''</p>
+    </div>
 
-          <!-- 3e -->
-          <div class="podium-block group">
-            <div class="podium-character">
-              <img
-                src="/assets/placeholders/rider.png"
-                alt="Remco Evenepoel"
-                class="podium-img"
-              />
-              <div id="tooltip-graphic-vg-3" class="tooltip-graphic"></div>
-              <div class="tooltip-content">
-                <p class="tooltip-title">Remco Evenepoel 🇧🇪</p>
-                <p class="tooltip-text">Équipe : Soudal Quick-Step</p>
-                <p class="tooltip-text">Temps total : 82h 48' 12''</p>
-                <p class="tooltip-text">Différence : +03' 12''</p>
-                <p class="tooltip-text">Maillots distinctifs : 1</p>
-                <p class="tooltip-text">Victoires d'étapes : 4</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- 1ère place (au centre) -->
+    <div class="podium-card podium-first order-2" id="general-rank-1">
+      <img src="/assets/placeholders/rider.png" alt="Rider" class="podium-img" id="gen-img-1" />
+      <p class="podium-position">1</p>
+      <p class="podium-name" id="gen-name-1">NOM PRÉNOM</p>
+      <p class="podium-time" id="gen-time-1">82h 45' 00''</p>
+    </div>
+
+    <!-- 3e place -->
+    <div class="podium-card podium-third order-3" id="general-rank-3">
+      <img src="/assets/placeholders/rider.png" alt="Rider" class="podium-img" id="gen-img-3" />
+      <p class="podium-position">3</p>
+      <p class="podium-name" id="gen-name-3">NOM PRÉNOM</p>
+      <p class="podium-time" id="gen-time-3">82h 48' 12''</p>
+    </div>
+
+  </div>
+</section>
+
+
+
 
       <!-- 👕 Maillots distinctifs -->
-      <div id="podium-maillots" class="full-screen-podium">
-        <h3 class="text-xl font-bold mb-4">
-          Gagnants des maillots distinctifs
-        </h3>
-        <button class="maillot-nav maillot-prev" aria-label="Précédent">
-          &#9664;
-        </button>
+<div id="podium-maillots" class="h-screen overflow-hidden relative flex flex-col items-center justify-start">
 
-        <!-- Blanc -->
-        <div class="podium-block group">
-          <div class="podium-character">
-            <img
-              src="/assets/placeholders/rider.png"
-              alt="Remco Evenepoel"
-              class="podium-img"
-            />
-            <div
-              id="tooltip-graphic-maillot-blanc"
-              class="tooltip-graphic"
-            ></div>
-            <div class="tooltip-content">
-              <p class="tooltip-title">Remco Evenepoel 🇧🇪</p>
-              <p class="tooltip-text">Équipe : Soudal Quick-Step</p>
-              <p class="tooltip-text">Points : 120</p>
-              <p class="tooltip-text">Jours en maillot : 15</p>
-            </div>
-          </div>
-        </div>
+  <!-- Titre -->
+  <h2 class="text-3xl font-bold uppercase text-center mb-8">Gagnants des maillots distinctifs</h2>
+<!-- Titre dynamique du maillot -->
+<h3 id="maillot-titre" class="text-2xl font-semibold text-center mb-6">Maillot jaune</h3>
 
-        <!-- Jaune -->
-        <div class="podium-block group">
-          <div class="podium-character">
-            <img
-              src="/assets/placeholders/rider.png"
-              alt="Jonas Vingegaard"
-              class="podium-img"
-            />
-            <div
-              id="tooltip-graphic-maillot-jaune"
-              class="tooltip-graphic"
-            ></div>
-            <div class="tooltip-content">
-              <p class="tooltip-title">Jonas Vingegaard 🇩🇰</p>
-              <p class="tooltip-text">Équipe : Jumbo-Visma</p>
-              <p class="tooltip-text">Points : 280</p>
-              <p class="tooltip-text">Jours en maillot : 14</p>
-            </div>
-          </div>
-        </div>
+  <!-- Contenu principal -->
+  <div class="relative w-full h-[60vh] flex items-end justify-center overflow-hidden">
 
-        <!-- Vert -->
-        <div class="podium-block group">
-          <div class="podium-character">
-            <img
-              src="/assets/placeholders/rider.png"
-              alt="Wout Van Aert"
-              class="podium-img"
-            />
-            <div
-              id="tooltip-graphic-maillot-vert"
-              class="tooltip-graphic"
-            ></div>
-            <div class="tooltip-content">
-              <p class="tooltip-title">Wout Van Aert 🇧🇪</p>
-              <p class="tooltip-text">Équipe : Jumbo-Visma</p>
-              <p class="tooltip-text">Points : 340</p>
-              <p class="tooltip-text">Jours en maillot : 21</p>
-            </div>
-          </div>
-        </div>
+    <!-- Fond noir uni -->
+    <div id="maillot-background" class="absolute inset-0 z-0 bg-black"></div>
 
-        <!-- Pois -->
-        <div class="podium-block group">
-          <div class="podium-character">
-            <img
-              src="/assets/placeholders/rider.png"
-              alt="Giulio Ciccone"
-              class="podium-img"
-            />
-            <div
-              id="tooltip-graphic-maillot-pois"
-              class="tooltip-graphic"
-            ></div>
-            <div class="tooltip-content">
-              <p class="tooltip-title">Giulio Ciccone 🇮🇹</p>
-              <p class="tooltip-text">Équipe : Lidl-Trek</p>
-              <p class="tooltip-text">Points : 85</p>
-              <p class="tooltip-text">Jours en maillot : 13</p>
-            </div>
-          </div>
-        </div>
-        <!-- Flèche droite -->
-        <button class="maillot-nav maillot-next" aria-label="Suivant">
-          &#9654;
-        </button>
+    <!-- Flèche gauche -->
+    <button id="maillot-prev" class="absolute left-4 top-1/2 -translate-y-1/2 text-black text-3xl z-10">
+      &#9664;
+    </button>
+
+    <!-- Contenu coureur -->
+    <div class="relative z-10 flex items-end gap-12 max-w-6xl w-full">
+      <!-- Image coureur -->
+      <div>
+        <img
+          src="/assets/placeholders/rider.png"
+          alt="Coureur maillot"
+          class="w-[250px] h-auto"
+          id="maillot-img"
+        />
       </div>
+
+      <!-- Infos coureur -->
+      <div id="maillot-infos" class="flex flex-col justify-end mb-4 text-dark max-w-md space-y-1">
+        <!-- Temps ou points -->
+        <div id="maillot-valeur" class="text-3xl font-semibold">---</div>
+
+        <!-- Nom + Nationalité -->
+        <h4 id="maillot-name" class="text-2xl font-bold">
+          NOM PRÉNOM <span id="maillot-nation" class="text-sm font-light uppercase">---</span>
+        </h4>
+
+        <!-- Équipe -->
+        <p id="maillot-team" class="text-sm font-light">ÉQUIPE</p>
+      </div>
+    </div>
+
+    <!-- Flèche droite -->
+    <button id="maillot-next" class="absolute right-4 top-1/2 -translate-y-1/2 text-black text-3xl z-10">
+      &#9654;
+    </button>
+  </div>
+</div>
+
+
+ 
     </section>
 
     <!--Section slide-->
