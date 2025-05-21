@@ -15,11 +15,11 @@ import { displayJerseyDetails } from "./sections/menu/stakes";
 import { initSlideAnimations } from "./sections/slides/slidesAnimations";
 import { initPodiumsTabs } from "./sections/podiums/podiumsTabs";
 import { showWinnerStage } from "./sections/podiums/winnerStage.js";
-import { populateGeneralPodium } from "./sections/podiums/winnersGC.js";
 import { startCountdown } from "./sections/countdown/countdown.js";
 import { checkScreenSize } from "./sections/checkSize.js";
 import { setupFinishScrollRace } from "./sections/finish/finishline.js";
 import { showMaillots } from "./sections/podiums/maillots.js";
+import { showGeneralPodium } from "./sections/podiums/winnersGC.js";
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
 
@@ -31,8 +31,8 @@ initSlideAnimations()
 //Section podiums
 initPodiumsTabs();
 showWinnerStage();
-populateGeneralPodium();
 showMaillots();
+showGeneralPodium();
 
 //Countdown
 startCountdown();

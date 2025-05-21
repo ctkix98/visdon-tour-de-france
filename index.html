@@ -510,7 +510,7 @@
   </h2>
 
   <!-- Sous-titre étape + distance -->
-  <p id="stage-winner-subtitle" class="text-center text-black font-semibold mb-8">
+  <p id="stage-winner-subtitle" class="text-2xl font-semibold text-center mb-6">
     Étape 21 — 33.7 km
   </p>
 
@@ -570,73 +570,44 @@
 
 
       <!-- 🥇 Classement général -->
-      <div id="podium-general" class="full-screen-podium" class="mb-12">
-        <h3 class="text-xl font-bold mb-4">Classement général</h3>
-        <div id="general-podium-container">
-          <!-- 1er -->
-          <div class="podium-block group">
-            <div class="podium-character">
-              <img
-                src="/assets/placeholders/rider.png"
-                alt="Jonas Vingegaard"
-                class="podium-img"
-              />
-              <div id="tooltip-graphic-vg-1" class="tooltip-graphic"></div>
-              <div class="tooltip-content">
-                <p class="tooltip-title">Jonas Vingegaard 🇩🇰</p>
-                <p class="tooltip-text">Équipe : Jumbo-Visma</p>
-                <p class="tooltip-text">Temps total : 82h 45' 00''</p>
-                <p class="tooltip-text">Différence : 00h 00' 00''</p>
-                <p class="tooltip-text">Maillots distinctifs : 1</p>
-                <p class="tooltip-text">Victoires d'étapes : 2</p>
-              </div>
-            </div>
-          </div>
+<section id="podium-general" class="section-podium h-screen overflow-hidden">
+  <!-- Titre -->
+  <h2 class="section-podium-title text-3xl font-bold uppercase text-center mb-8">Classement général</h2>
 
-          <!-- 2e -->
-          <div class="podium-block group">
-            <div class="podium-character">
-              <img
-                src="/assets/placeholders/rider.png"
-                alt="Tadej Pogacar"
-                class="podium-img"
-              />
-              <div id="tooltip-graphic-vg-2" class="tooltip-graphic"></div>
-              <div class="tooltip-content">
-                <p class="tooltip-title">Tadej Pogacar 🇸🇮</p>
-                <p class="tooltip-text">Équipe : UAE Team Emirates</p>
-                <p class="tooltip-text">Temps total : 82h 46' 03''</p>
-                <p class="tooltip-text">Différence : +01' 03''</p>
-                <p class="tooltip-text">Maillots distinctifs : 2</p>
-                <p class="tooltip-text">Victoires d'étapes : 6</p>
-              </div>
-            </div>
-          </div>
+  <!-- Podium centré avec ordre ajusté -->
+  <div class="podium-wrapper">
+    
+    <!-- 2e place -->
+    <div class="podium-card podium-second order-1" id="general-rank-2">
+      <img src="/assets/placeholders/rider.png" alt="Rider" class="podium-img" id="gen-img-2" />
+      <p class="podium-position">2</p>
+      <p class="podium-name" id="gen-name-2">NOM PRÉNOM</p>
+      <p class="podium-time" id="gen-time-2">82h 46' 03''</p>
+    </div>
 
-          <!-- 3e -->
-          <div class="podium-block group">
-            <div class="podium-character">
-              <img
-                src="/assets/placeholders/rider.png"
-                alt="Remco Evenepoel"
-                class="podium-img"
-              />
-              <div id="tooltip-graphic-vg-3" class="tooltip-graphic"></div>
-              <div class="tooltip-content">
-                <p class="tooltip-title">Remco Evenepoel 🇧🇪</p>
-                <p class="tooltip-text">Équipe : Soudal Quick-Step</p>
-                <p class="tooltip-text">Temps total : 82h 48' 12''</p>
-                <p class="tooltip-text">Différence : +03' 12''</p>
-                <p class="tooltip-text">Maillots distinctifs : 1</p>
-                <p class="tooltip-text">Victoires d'étapes : 4</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- 1ère place (au centre) -->
+    <div class="podium-card podium-first order-2" id="general-rank-1">
+      <img src="/assets/placeholders/rider.png" alt="Rider" class="podium-img" id="gen-img-1" />
+      <p class="podium-position">1</p>
+      <p class="podium-name" id="gen-name-1">NOM PRÉNOM</p>
+      <p class="podium-time" id="gen-time-1">82h 45' 00''</p>
+    </div>
+
+    <!-- 3e place -->
+    <div class="podium-card podium-third order-3" id="general-rank-3">
+      <img src="/assets/placeholders/rider.png" alt="Rider" class="podium-img" id="gen-img-3" />
+      <p class="podium-position">3</p>
+      <p class="podium-name" id="gen-name-3">NOM PRÉNOM</p>
+      <p class="podium-time" id="gen-time-3">82h 48' 12''</p>
+    </div>
+
+  </div>
+</section>
+
+
+
 
       <!-- 👕 Maillots distinctifs -->
-<!-- 👕 Maillots distinctifs -->
 <div id="podium-maillots" class="h-screen overflow-hidden relative flex flex-col items-center justify-start">
 
   <!-- Titre -->

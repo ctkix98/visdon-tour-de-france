@@ -311,7 +311,7 @@
 
   /* Zone sticky visible pendant tout le scroll */
   .sticky-track {
-    @apply sticky top-0 h-screen w-full bg-white overflow-hidden;
+    @apply sticky top-0 h-screen w-full overflow-hidden;
   }
 
   /* Ligne d’arrivée fixe à droite */
@@ -345,10 +345,10 @@
 /* Background maillots*/
 @layer components {
   .maillot-bg-jaune {
-    @apply bg-yellow-400;
+    @apply bg-yellow-500;
   }
   .maillot-bg-vert {
-    @apply bg-green-600;
+    @apply bg-green-500;
   }
   .maillot-bg-blanc {
     @apply bg-white;
@@ -360,6 +360,42 @@
     background-repeat: repeat;
   }
 }
+/*Section GC*/
+@layer components {
+  .podium-wrapper {
+    @apply flex justify-center items-end gap-6 flex-wrap text-center;
+  }
 
+  .podium-card {
+    @apply flex flex-col items-center;
+  }
 
+  .podium-img {
+    @apply w-40 h-auto  mb-4;
+  }
+
+  .podium-position {
+    @apply text-4xl font-bold;
+  }
+
+  .podium-name {
+    @apply text-xl font-semibold uppercase mt-1;
+  }
+
+  .podium-time {
+    @apply text-sm text-gray-700;
+  }
+
+  .podium-first {
+    @apply mt-0 order-2;
+  }
+
+  .podium-second {
+    @apply mt-12 order-1;
+  }
+
+  .podium-third {
+    @apply mt-12 order-3;
+  }
+}
 }

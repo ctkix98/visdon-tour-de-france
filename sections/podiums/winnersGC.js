@@ -1,46 +1,42 @@
-export async function populateGeneralPodium() {
-    try {
-      const [etapesRes, coureursRes] = await Promise.all([
-        fetch("/data/etapes.json"),
-        fetch("/data/coureur.json"),
-      ]);
-  
-      const etapes = await etapesRes.json();
-      const coureurs = await coureursRes.json();
-  
-      const etape21 = etapes.find(e => e.id === 21);
-  
-      const classementJaune = etape21?.classements?.[1]?.classement_maillots?.classement_maillot_jaune;
-      if (!classementJaune) {
-        console.warn("Classement général (maillot jaune) introuvable.");
-        return;
+export async function showGeneralPodium() {
+  try {
+    const [etapes, coureursData] = await Promise.all([
+      fetch("./data/etapes.json").then(res => res.json()),
+      fetch("./data/coureur.json").then(res => res.json())
+    ]);
+
+    // Récupère l'étape finale (21)
+    const etape = etapes.find(e => e.id === 21);
+    if (!etape) return;
+
+    const classement = etape.classements.find(c => c.classement_maillots);
+    if (!classement?.classement_maillots?.classement_maillot_jaune) return;
+
+    const top3 = classement.classement_maillots.classement_maillot_jaune.slice(0, 3);
+
+    top3.forEach((item, index) => {
+      const coureur = coureursData.coureurs.find(c => parseInt(c.id) === item.id_coureur);
+      if (!coureur) return;
+
+      const num = index + 1;
+      const fullName = `${coureur.prenom.toUpperCase()} ${coureur.nom.toUpperCase()}`;
+      const image = coureur.image?.replace(/\\/g, "/") || "/assets/placeholders/rider.png";
+
+      // Mise à jour DOM
+      const imgEl = document.getElementById(`gen-img-${num}`);
+      if (imgEl) {
+        imgEl.src = image;
+        imgEl.alt = fullName;
       }
-  
-      const podiumContainer = document.getElementById("general-podium-container");
-      podiumContainer.innerHTML = ""; // On nettoie
-  
-      classementJaune.slice(0, 3).forEach((entry, index) => {
-        const coureur = coureurs.coureurs.find(c => parseInt(c.id) === entry.id_coureur);
-        if (!coureur) return;
-  
-        const podium = document.createElement("div");
-        podium.className = "podium-block group";
-        podium.innerHTML = `
-          <div class="podium-character">
-            <img src="${coureur.image}" alt="${coureur.prenom} ${coureur.nom}" class="podium-img" />
-            <div class="tooltip-graphic"></div>
-            <div class="tooltip-content">
-              <p class="tooltip-title">${coureur.prenom} ${coureur.nom} ${coureur.drapeau || ""}</p>
-              <p class="tooltip-text">Équipe : ${coureur.equipe}</p>
-              <p class="tooltip-text">Temps total : ${entry.temps}</p>
-            </div>
-          </div>
-        `;
-  
-        podiumContainer.appendChild(podium);
-      });
-    } catch (error) {
-      console.error("Erreur lors du chargement du classement général :", error);
-    }
+
+      const nameEl = document.getElementById(`gen-name-${num}`);
+      if (nameEl) nameEl.textContent = fullName;
+
+      const timeEl = document.getElementById(`gen-time-${num}`);
+      if (timeEl) timeEl.textContent = item.temps;
+    });
+
+  } catch (err) {
+    console.error("❌ Erreur chargement podium général :", err);
   }
-  
+}
