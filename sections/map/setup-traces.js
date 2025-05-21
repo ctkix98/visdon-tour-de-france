@@ -32,7 +32,25 @@ const createTrace = async (stageNumber) => {
           coordinates: coords,
         },
       };
-      appendPath(line, "stroke-gray-500 fill-none stroke-2");
+      
+      // Créer un groupe pour l'étape
+      const stageGroup = svg.append("g")
+        .attr("class", `stage-${stageNumber}`)
+        .style("cursor", "pointer");
+
+      // Ajouter le tracé au groupe
+      stageGroup.append("path")
+        .datum(line)
+        .attr("d", path)
+        .attr("class", "stroke-gray-500 fill-none stroke-2")
+        .on("mouseenter", () => {
+          // Afficher les labels de l'étape
+          svg.selectAll(`.stage-${stageNumber}-label`).style("opacity", 1);
+        })
+        .on("mouseleave", () => {
+          // Masquer les labels de l'étape
+          svg.selectAll(`.stage-${stageNumber}-label`).style("opacity", 0);
+        });
 
       // Points de départ et d'arrivée
       const startCoord = coords[0];
@@ -116,10 +134,14 @@ const addCityLabel = (coordinates, cityName, pointType, stageNumber) => {
   const xOffset = pointType === "start" ? -10 : 10;
   const anchor = pointType === "start" ? "end" : "start";
   const textColor = pointType === "start" ? "blue" : "red";
-  const fontSize = 14; // Taille de police agrandie
+  const fontSize = 14;
 
-  // Créer le groupe pour l'étiquette
-  const labelGroup = svg.append("g").attr("transform", `translate(${x}, ${y})`);
+  // Créer le groupe pour l'étiquette avec une classe spécifique à l'étape
+  const labelGroup = svg.append("g")
+    .attr("transform", `translate(${x}, ${y})`)
+    .attr("class", `stage-${stageNumber}-label`)
+    .style("opacity", 0) // Cacher par défaut
+    .style("pointer-events", "none"); // Désactiver les interactions avec les labels
 
   // Créer temporairement le texte pour mesurer sa taille
   const tempText = labelGroup
