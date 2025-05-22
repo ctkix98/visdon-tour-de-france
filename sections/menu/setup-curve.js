@@ -144,6 +144,10 @@ const createElevationProfile = () => {
 
 
 const createFullElevationProfile = async () => {
+  // Vider les données précédentes
+  elevations = [];
+  distances = [0];
+  select("#elevation-profile").selectAll("*").remove();
   for (let i = 1; i <= etapes.length; i++) {
     await loadElevationData(i);
     console.log(i);
