@@ -9,6 +9,23 @@ const displaySection = (id) => {
     document.querySelector(`menu-bubble a.active`)?.classList.remove('active')
     document.querySelector(`menu-bubble a[href="${id}"]`)?.classList.add('active')
   }
-  
-  export {displaySection, activateLink}
+  const toggleMenu = () => {
+    const notMenuSections = document.querySelectorAll('body>*:not(#menu-wrapper)');
+
+const backButton = document.querySelectorAll('a.btn-back');
+
+    notMenuSections.forEach(section => {
+      section.classList.add('hide');
+    });
+
+    backButton.forEach(button => {
+      button.addEventListener('click', () => {
+        notMenuSections.forEach(section => {
+          section.classList.remove('hide');
+          console.log('back button clicked');
+        });
+      });
+    });
+  };
+  export {displaySection, activateLink, toggleMenu}
   

@@ -20,7 +20,7 @@
 
     <!--Vidéo de lancement-->
     <!-- Section d'introduction vidéo -->
-    <section id="intro-video-section">
+    <section id="intro-video-section" class="slide">
       <video autoplay muted playsinline loop id="intro-video">
         <source src="/assets/videos/intro-tour.mp4" type="video/mp4" />
         Votre navigateur ne supporte pas la vidéo HTML5.
@@ -28,7 +28,7 @@
     </section>
 
     <!--Section slide-->
-    <section class="slide">
+    <section class="slide" id="intro-slide">
       <div class="slide-content">
         <p>
           Avant le coup d’envoi, découvre tout ce qui rend cette course unique
@@ -62,119 +62,10 @@
       <!-- section teams -->
       <section id="teams-section" class="active section-wrapper">
         <a href="#menu-section" class="btn-back"> back </a>
-
         <div class="menu-section-title">Equipes</div>
-        <div class="third-cloumn">
-          <div>
-            <div class="selected">
-              <div><img src="" alt="" /></div>
-              <div>
-                <div>
-                  <h6>Team Visma | Lease a Bike</h6>
-                  <p>Pays-Bas</p>
-                </div>
-                <!-- ce div renvoie à une deuxième colonne a partir une certaine hauteur -->
-                <div>
-                  <!-- mettre un before avec le num du coureur -->
-                  <p>Name</p>
-                  <p>Name</p>
-                  <p>Name</p>
-                  <p>Name</p>
-                  <p>Name</p>
-                  <p>Name</p>
-                  <p>Name</p>
-                  <p>Name</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
-            <div>
-              <div>n°equipe</div>
-              <div>name</div>
-            </div>
+        <div class="third-cloumn h-[calc(100vh-200px)] overflow-y-auto">
+          <div class="flex flex-col gap-4 p-4">
+            <!-- Team cards will be dynamically inserted here -->
           </div>
         </div>
       </section>
@@ -236,7 +127,7 @@
               <div class="jersey-info-display">
                 <p>
                   Maillot blanc à pois rouges pour le classement du meilleur
-                  grimpeur parrainé par E.Leclerc.Les points sont attribués au
+                  grimpeur parrainé par E.Leclerc.Les points sont attribués au
                   passage au sommet de chaque col ou côte et aux arrivées en
                   altitude.
                 </p>

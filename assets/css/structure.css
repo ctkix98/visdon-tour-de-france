@@ -44,7 +44,15 @@ section#menu-wrapper {
   overflow-y: hidden;
   flex-grow: 1;
 }
-
+.hide {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
 /* section#menu-section {
     display: flex;
     flex-direction: row;
