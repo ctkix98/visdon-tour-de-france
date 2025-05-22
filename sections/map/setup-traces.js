@@ -10,7 +10,7 @@ const urlStart = "../../coordonnees_etapes/stage-";
 const urlEnd = "-route.gpx";
 const projection = await createMap();
 const path = geoPath().projection(projection);
-const svg = select("svg");
+const svg = select("#tdf-map");
 const importantStagesNumber = [1,3,4,5,9,21]
 const importantStagesCoords = []
 const importantStages = etapes.filter(etape => importantStagesNumber.includes(etape.id))

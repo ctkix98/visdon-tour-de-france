@@ -12,7 +12,8 @@ export const createMap = () => {
         .insert("svg", "img")
         .attr("width", "100%")
         .attr("height", "100%")
-        .attr("viewBox", `0 0 ${width} ${height}`);
+        .attr("viewBox", `0 0 ${width} ${height}`)
+        .attr("id", "tdf-map");
 
       const projection = geoMercator().fitSize([width, height], data);
       const path = geoPath().projection(projection);
