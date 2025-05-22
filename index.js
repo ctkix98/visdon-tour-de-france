@@ -7,6 +7,7 @@ import "/sections/menu/rules.js"
 import "/sections/menu/stakes.js"
 import "/sections/menu/teams.js"
 import "/sections/podiums/podiumsTabs.js"
+import "/sections/map/setup-traces.js"
 
 import "/sections/menu/route.js"
 // import "/sections/menu/setup-curve.js"
