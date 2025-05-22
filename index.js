@@ -83,11 +83,11 @@ const routes = () => {
       toggleMenu()
       break;
 
-    case "#route":
+    /* case "#route":
       displaySection("route");
       createFullElevationProfile();
       toggleMenu()
-      break;
+      break; */
 
     case "#rules":
       displaySection("rules");

@@ -125,17 +125,17 @@
   /* Positioning */
   /*top-left*/
   .box-1 {
-    @apply top-[2%] left-[20%];
+    @apply top-[12%] left-[14%]; 
   }
 
   /*bottom-left*/
   .box-2 {
-    @apply bottom-[30%] left-[17%];
+    @apply bottom-[10%] left-[22%];
   }
 
   /*bottom-center*/
   .box-3 {
-    @apply bottom-[10%] left-[50%] -translate-x-1/2;
+    @apply bottom-[10%] right-[15%] -translate-x-1/2; 
   }
 
   /*top-right*/
@@ -145,7 +145,7 @@
 
   /*bottom-right*/
   .box-5 {
-    @apply bottom-[30%] right-[17%];
+    @apply top-[10%] right-[14%]; 
   }
 
   .menu-bubble {
