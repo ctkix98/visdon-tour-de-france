@@ -1,12 +1,12 @@
 {
-    "name": "webmobui-private",
+    "name": "visdon-tour-de-france",
     "version": "0.0.1",
-    "description": "",
+    "description": "A project to display the Tour de France 2024",
     "private": true,
     "type": "module",
     "source": "src/index.html",
     "scripts": {
-        "start": "vite",
+        "dev": "vite",
         "build": "vite build",
         "preview": "vite preview"
     },
