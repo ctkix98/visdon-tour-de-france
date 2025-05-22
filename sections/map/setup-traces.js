@@ -168,10 +168,10 @@ const addCityLabel = (coordinates, cityName, pointType, stageNumber, parentGroup
 
   // Calculer la position et le style
   const [x, y] = projection(coordinates);
-  const xOffset = pointType === "start" ? -10 : 10;
+  const xOffset = pointType === "start" ? -20 : 20;
   const anchor = pointType === "start" ? "end" : "start";
   const textColor = pointType === "start" ? "blue" : "red";
-  const fontSize = 14;
+  const fontSize = 24;
 
   // Créer le groupe pour l'étiquette
   const labelGroup = parentGroup.append("g")
@@ -217,8 +217,8 @@ const addCityLabel = (coordinates, cityName, pointType, stageNumber, parentGroup
     .attr("y", -halfHeight) // Ajuster la position verticale pour centrer
     .attr("width", bbox.width + paddingX * 2)
     .attr("height", bbox.height + paddingY * 2)
-    .attr("fill", "white")
-    .attr("fill-opacity", 0.8)
+    .attr("fill", "#F8F8F5")
+    .attr("fill-opacity", 1)
     .attr("rx", 6) // Coins arrondis plus grands
     .attr("ry", 6); // Coins arrondis plus grands
 
