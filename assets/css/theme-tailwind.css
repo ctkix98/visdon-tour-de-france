@@ -225,6 +225,30 @@
     @apply p-[5%] text-xl font-thin
   }
 
+  /*Section equipement*/
+  .cls-1:hover,
+  .cls-2:hover,
+  .cls-3:hover,
+  .cls-4:hover,
+  .cls-5:hover,
+  .cls-6:hover,
+  .cls-7:hover,
+  .cls-8:hover,
+  .cls-9:hover{
+    @apply  !fill-yellow-500 cursor-pointer !opacity-55;
+  }
+  #cycliste{
+    @apply !w-[70vw] h-[70vw] object-contain;
+  }
+  #equipment-section{
+  @apply  bg-[url(../img/fond.png)] !overflow-x-hidden bg-bottom bg-right bg-no-repeat bg-cover bg-[length:10%_10%] 
+   mr-[-50vh] ;
+  
+ } 
+  #equipment-section .third-cloumn {
+    @apply mr-[-5vw] overflow-y-hidden;
+  } 
+
   /* Podium composant réutilisable */
     .full-screen-podium {
       @apply relative w-screen h-screen overflow-hidden flex flex-col items-center justify-center px-8 py-12;
