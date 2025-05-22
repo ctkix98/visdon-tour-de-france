@@ -11,7 +11,9 @@ const urlEnd = "-route.gpx";
 const projection = await createMap();
 const path = geoPath().projection(projection);
 const svg = select("svg");
-
+const importantStagesNumber = [1,3,4,5,9,21]
+const importantStagesCoords = []
+const importantStages = etapes.filter(etape => importantStagesNumber.includes(etape.id))
 
 // Map pour suivre les villes déjà affichées (évite les doublons)
 const displayedCities = new Map();
@@ -25,7 +27,9 @@ const createTrace = async (stageNumber) => {
         parseFloat(trkpt.getAttribute("lon")),
         parseFloat(trkpt.getAttribute("lat")),
       ]);
-
+      if (importantStagesNumber.includes(stageNumber)) {
+        importantStagesCoords.push(coords[Math.floor(coords.length/2)])
+      }
       // Créer et afficher la ligne du tracé
       const line = {
         type: "Feature",
@@ -116,6 +120,7 @@ const addPoint = (coordinates, pointType, parentGroup) => {
       coordinates: coordinates,
     },
   };
+  const radius = pointType === "important" ? 10 : 5;
 
   // Déterminer le style selon le type de point
   let pointStyle;
@@ -126,8 +131,11 @@ const addPoint = (coordinates, pointType, parentGroup) => {
     case "end":
       pointStyle = "stroke-red-900 fill-red-500 stroke-[1]";
       break;
+    case "important":
+      pointStyle = "stroke-gray-900 fill-yellow-500 stroke-4";
+      break;
     default:
-      pointStyle = "stroke-gray-900 fill-gray-500 stroke-[1]";
+      pointStyle = "stroke-gray-900 fill-gray-500 stroke-[]";
   }
 
   // Ajouter le point à la carte
@@ -143,7 +151,7 @@ const addPoint = (coordinates, pointType, parentGroup) => {
     .attr("transform", `translate(${x}, ${y})`);
 
   markerGroup.append("circle")
-    .attr("r", 5)
+    .attr("r", radius)
     .attr("class", pointStyle);
 };
 
@@ -248,12 +256,21 @@ const showStages = () => {
   }
 };
 
+const initImportantStages = async () => {
+  for (let i = 0; i < importantStages.length; i++) {
+    addPoint(importantStagesCoords[i], "important", svg)
+  }
+}
+
 // Fonction d'initialisation qui charge toutes les étapes séquentiellement
 const init = async () => {
   for (let i = 1; i <= etapes.length; i++) {
     await createTrace(i);
   }
+  await initImportantStages();
 };
+
+
 
 // Lancer l'initialisation
 init();
