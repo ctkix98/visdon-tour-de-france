@@ -132,7 +132,7 @@ const addPoint = (coordinates, pointType, parentGroup) => {
       pointStyle = "stroke-red-900 fill-red-500 stroke-[1]";
       break;
     case "important":
-      pointStyle = "stroke-gray-900 fill-yellow-500 stroke-4";
+      pointStyle = "stroke-gray-700 fill-yellow-500 stroke-4 drop-shadow-lg";
       break;
     default:
       pointStyle = "stroke-gray-900 fill-gray-500 stroke-[]";
@@ -258,7 +258,18 @@ const showStages = () => {
 
 const initImportantStages = async () => {
   for (let i = 0; i < importantStages.length; i++) {
-    addPoint(importantStagesCoords[i], "important", svg)
+    const stageNumber = importantStages[i].id;
+    const stageGroup = svg.select(`.stage-${stageNumber}`);
+    if (stageGroup.node()) {
+      const etape = importantStages[i];
+      addPointWithLabel(
+        importantStagesCoords[i],
+        "important",
+        stageNumber,
+        etape.nom_ville_depart,
+        stageGroup
+      );
+    }
   }
 }
 
