@@ -1,5 +1,6 @@
 import etapes from "../../data/etapes.json";
 import coureurs from "../../data/coureur.json";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { select } from "d3-selection";
 import { init } from "./setup-traces";
 console.log(etapes);
@@ -55,9 +56,10 @@ function getCoureurNom(coureur_id) {
   const coureur = coureurs.coureurs.find(c => c.id == coureur_id);
   return coureur ? coureur.prenom + " " + coureur.nom : "Inconnu";
 }
+
 const getCoureurFlag = (coureur_id) => {
   const coureur = coureurs.coureurs.find(c => c.id == coureur_id);
-  return coureur ? coureur.drapeau : "Inconnu";
+  return coureur ? `<span class="fi fi-${coureur.nation}"></span>` : "Inconnu";
 }
 
 
@@ -146,8 +148,8 @@ const setUpStageInfos = (stageNumber) => {
   const classementTbody = select("#classementTbody");
   classementTbody.html("");
   for (const coureur of classement) {
-    classementTbody.append("tr")
-      .attr("class", "p-2  rounded-lg shadow-sm")
+        classementTbody.append("tr")
+      .attr("class", `${coureur.no_classement % 2 == 0 ? "bg-yellow-500 p-6 h-10 rounded-lg shadow-sm" : "bg-white p-6 h-10 rounded-lg shadow-sm"}`)
       .html(`
         <td class="text-center">${coureur.no_classement}</td>
         <td class="text-center">${getCoureurNom(coureur.id_coureur)}</td>
