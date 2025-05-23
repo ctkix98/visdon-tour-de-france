@@ -4,6 +4,7 @@ import { xml } from "d3-fetch";
 import { createMap } from "./setup-map";
 import etapes from "../../data/etapes.json";
 
+const main = async () => {
 // Configuration initiale
 const urlStart = "../../coordonnees_etapes/stage-";
 const urlEnd = "-route.gpx";
@@ -315,15 +316,15 @@ const initImportantStages = async () => {
 }
 
 // Fonction d'initialisation qui charge toutes les étapes séquentiellement
+
+};
 export const init = async () => {
   for (let i = 1; i <= etapes.length; i++) {
     await createTrace(i);
   }
   await initImportantStages();
   return projection;
-};
-
-
+}
 
 // Lancer l'initialisation
 // export {init};
