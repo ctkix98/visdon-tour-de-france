@@ -13,7 +13,7 @@
     },
     "distance": 206,
     "denivele": 3600,
-    "type_etape": "accidente",
+    "type_etape": "accidentée",
     "date": "2024-06-29",
     "classements": [
       { "classement_etape": [
@@ -980,7 +980,7 @@
     },
     "distance": 199.2,
     "denivele": 1850,
-    "type_etape": "accidente",
+    "type_etape": "accidentée",
     "date": "2024-06.30",
     "classements": [
       { "classement_etape": [
@@ -7719,7 +7719,7 @@
     },
     "distance": 199,
     "denivele": 2033,
-    "type_etape": "accidente",
+    "type_etape": "accidentée",
     "date": "2024-07-07",
     "classements": [
       { "classement_etape": [

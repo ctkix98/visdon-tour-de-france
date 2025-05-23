@@ -1,7 +1,6 @@
 import { geoPath } from "d3-geo";
 import { select } from "d3-selection";
 import { xml } from "d3-fetch";
-import { transition } from "d3-transition";
 import { createMap } from "./setup-map";
 import etapes from "../../data/etapes.json";
 
@@ -10,7 +9,7 @@ const urlStart = "../../coordonnees_etapes/stage-";
 const urlEnd = "-route.gpx";
 const projection = await createMap();
 const path = geoPath().projection(projection);
-const svg = select("svg");
+const svg = select("#tdf-map");
 const importantStagesNumber = [1,3,4,5,9,21]
 const importantStagesCoords = []
 const importantStages = etapes.filter(etape => importantStagesNumber.includes(etape.id))
@@ -102,7 +101,7 @@ const createTrace = async (stageNumber) => {
 // Fonction pour ajouter un point sur la carte avec son étiquette
 const addPointWithLabel = (coordinates, pointType, stageNumber, cityName, parentGroup) => {
   // Ajouter le point
-  addPoint(coordinates, pointType, parentGroup);
+  addPoint(coordinates, pointType, parentGroup, stageNumber);
 
   // Ajouter l'étiquette s'il y a un nom de ville
   if (cityName) {
@@ -111,7 +110,7 @@ const addPointWithLabel = (coordinates, pointType, stageNumber, cityName, parent
 };
 
 // Fonction pour ajouter un point (marqueur) sur la carte
-const addPoint = (coordinates, pointType, parentGroup) => {
+const addPoint = (coordinates, pointType, parentGroup, stageNumber) => {
   // Créer le point GeoJSON
   const point = {
     type: "Feature",
@@ -120,7 +119,8 @@ const addPoint = (coordinates, pointType, parentGroup) => {
       coordinates: coordinates,
     },
   };
-  const radius = pointType === "important" ? 10 : 5;
+  const radius = pointType === "important" ? 8 : 4;
+  
 
   // Déterminer le style selon le type de point
   let pointStyle;
@@ -132,7 +132,7 @@ const addPoint = (coordinates, pointType, parentGroup) => {
       pointStyle = "stroke-red-900 fill-red-500 stroke-[1]";
       break;
     case "important":
-      pointStyle = "stroke-gray-700 fill-yellow-500 stroke-4 drop-shadow-lg";
+      pointStyle = "stroke-gray-700 fill-yellow-500 stroke-2 drop-shadow-lg";
       break;
     default:
       pointStyle = "stroke-gray-900 fill-gray-500 stroke-[]";
@@ -148,10 +148,14 @@ const addPoint = (coordinates, pointType, parentGroup) => {
   const [x, y] = projection(coordinates);
   const markerGroup = parentGroup
     .append("g")
-    .attr("transform", `translate(${x}, ${y})`);
+    .attr("transform", `translate(${x}, ${y})`)
+    .attr("class", `${pointType}-point`)
+
+    .attr("data-coordinates", JSON.stringify(coordinates));
 
   markerGroup.append("circle")
     .attr("r", radius)
+    .attr("data-id", `${stageNumber}`)
     .attr("class", pointStyle);
 };
 
@@ -168,10 +172,34 @@ const addCityLabel = (coordinates, cityName, pointType, stageNumber, parentGroup
 
   // Calculer la position et le style
   const [x, y] = projection(coordinates);
-  const xOffset = pointType === "start" ? -10 : 10;
-  const anchor = pointType === "start" ? "end" : "start";
+  
+  // Trouver les coordonnées du point opposé (départ si on est à l'arrivée, arrivée si on est au départ)
+  const stageGroup = parentGroup;
+  const oppositePointType = pointType === "start" ? "end" : "start";
+  const oppositePoint = stageGroup.select(`.${oppositePointType}-point`).node();
+  let xOffset;
+  let anchor;
+  
+  if (oppositePoint) {
+    const oppositeCoords = JSON.parse(oppositePoint.getAttribute("data-coordinates"));
+    const [oppositeX] = projection(oppositeCoords);
+    
+    // Si le point actuel est plus à l'ouest que le point opposé
+    if (x < oppositeX) {
+      xOffset = -20;
+      anchor = "end";
+    } else {
+      xOffset = 20;
+      anchor = "start";
+    }
+  } else {
+    // Fallback au comportement par défaut si on ne trouve pas le point opposé
+    xOffset = pointType === "start" ? -20 : 20;
+    anchor = pointType === "start" ? "end" : "start";
+  }
+
   const textColor = pointType === "start" ? "blue" : "red";
-  const fontSize = 14;
+  const fontSize = 24;
 
   // Créer le groupe pour l'étiquette
   const labelGroup = parentGroup.append("g")
@@ -217,8 +245,8 @@ const addCityLabel = (coordinates, cityName, pointType, stageNumber, parentGroup
     .attr("y", -halfHeight) // Ajuster la position verticale pour centrer
     .attr("width", bbox.width + paddingX * 2)
     .attr("height", bbox.height + paddingY * 2)
-    .attr("fill", "white")
-    .attr("fill-opacity", 0.8)
+    .attr("fill", "#F8F8F5")
+    .attr("fill-opacity", 1)
     .attr("rx", 6) // Coins arrondis plus grands
     .attr("ry", 6); // Coins arrondis plus grands
 
@@ -274,14 +302,15 @@ const initImportantStages = async () => {
 }
 
 // Fonction d'initialisation qui charge toutes les étapes séquentiellement
-const init = async () => {
+export const init = async () => {
   for (let i = 1; i <= etapes.length; i++) {
     await createTrace(i);
   }
   await initImportantStages();
+  return projection;
 };
 
 
 
 // Lancer l'initialisation
-init();
+// export {init};
