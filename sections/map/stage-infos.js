@@ -38,7 +38,7 @@ const setUpStageInfos = (stageNumber) => {
     stageInfos.style("display", "none");
   });
 
-  const stageSubtitle = `${stage.nom_ville_depart} - ${stage.nom_ville_arrivee} - ${stage.type_etape}`;
+  const stageSubtitle = `${stage.nom_ville_depart} - ${stage.nom_ville_arrivee} - ${stage.type_etape.charAt(0).toUpperCase() + stage.type_etape.slice(1)}`;
       
   // Mettre à jour le contenu
   stageInfos.select("img").attr("src", `assets/profils/profil_${stageNumber}.jpg`);
