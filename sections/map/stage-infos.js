@@ -55,6 +55,10 @@ function getCoureurNom(coureur_id) {
   const coureur = coureurs.coureurs.find(c => c.id == coureur_id);
   return coureur ? coureur.prenom + " " + coureur.nom : "Inconnu";
 }
+const getCoureurFlag = (coureur_id) => {
+  const coureur = coureurs.coureurs.find(c => c.id == coureur_id);
+  return coureur ? coureur.drapeau : "Inconnu";
+}
 
 
 const setUpStageInfos = (stageNumber) => {
@@ -142,13 +146,14 @@ const setUpStageInfos = (stageNumber) => {
   const classementTbody = select("#classementTbody");
   classementTbody.html("");
   for (const coureur of classement) {
-    const html = `<tr >
-    <td class="text-center">${coureur.no_classement}</td>
-    <td class="text-center">${getCoureurNom(coureur.id_coureur)}</td>
-    <td class="text-center">${coureur.temps}</td>
-  </tr>`
-  classementTbody.append("tr").html(html);
-    }
+    classementTbody.append("tr")
+      .attr("class", "p-2  rounded-lg shadow-sm")
+      .html(`
+        <td class="text-center">${coureur.no_classement}</td>
+        <td class="text-center">${getCoureurNom(coureur.id_coureur)}</td>
+        <td class="text-center">${coureur.temps}</td>
+      `);
+  }
 }
 
 initStageInfos();
