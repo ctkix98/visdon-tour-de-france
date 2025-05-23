@@ -150,11 +150,12 @@ const addPoint = (coordinates, pointType, parentGroup, stageNumber) => {
     .append("g")
     .attr("transform", `translate(${x}, ${y})`)
     .attr("class", `${pointType}-point`)
-    .attr("id", `${stageNumber}`)
+
     .attr("data-coordinates", JSON.stringify(coordinates));
 
   markerGroup.append("circle")
     .attr("r", radius)
+    .attr("data-id", `${stageNumber}`)
     .attr("class", pointStyle);
 };
 
