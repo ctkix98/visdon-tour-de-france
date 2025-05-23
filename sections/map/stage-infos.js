@@ -11,8 +11,18 @@ const initStageInfos = async () => {
   await init(); // Cette fonction initialise la carte et ajoute les points importants
   const svg = select("#tdf-map");
 
-  // Cacher stage-infos par défaut
-  select("stage-infos").style("display", "none");
+  // Configurer le conteneur stage-infos
+  select("stage-infos")
+    .style("display", "none")
+    .style("position", "fixed")
+    .style("top", "0")
+    .style("right", "0")
+    .style("width", "50%")
+    .style("height", "100vh")
+    .style("background-color", "white")
+    .style("box-shadow", "-2px 0 10px rgba(0, 0, 0, 0.1)")
+    .style("padding", "2rem")
+    .style("box-sizing", "border-box");
 
   // Attacher l'événement de clic après l'initialisation
   svg.selectAll(".important-point").on("click", (e) => {
@@ -33,25 +43,34 @@ const setUpStageInfos = (stageNumber) => {
   // Afficher stage-infos
   stageInfos.style("display", "block");
 
+  // Créer la structure HTML avec les classes Tailwind
+  stageInfos.html(`
+    <button class="absolute top-4 left-4 text-2xl hover:text-gray-600 transition-colors">
+      ×
+    </button>
+    <div class="h-full overflow-y-auto">
+      <img 
+        src="assets/profils/profil_${stageNumber}.jpg" 
+        alt="Profil de l'étape ${stageNumber}"
+        class="w-full h-auto rounded-lg mb-8"
+      />
+      <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">
+          Etape n°${stage.id} - ${stage.distance} km - ${stage.denivele} m de dénivelé
+        </h2>
+        <h3 class="text-xl text-gray-600 mb-4">
+          ${stage.nom_ville_depart} - ${stage.nom_ville_arrivee} - ${stage.type_etape.charAt(0).toUpperCase() + stage.type_etape.slice(1)}
+        </h3>
+        <p class="text-gray-500 mb-4">${stage.date}</p>
+        <p class="text-gray-700 italic leading-relaxed">${stage.anecdote}</p>
+      </div>
+    </div>
+  `);
+
   // Configurer le bouton de fermeture
   stageInfos.select("button").on("click", () => {
     stageInfos.style("display", "none");
   });
-
-  const stageSubtitle = `${stage.nom_ville_depart} - ${stage.nom_ville_arrivee} - ${stage.type_etape.charAt(0).toUpperCase() + stage.type_etape.slice(1)}`;
-      
-  // Mettre à jour le contenu
-  stageInfos.select("img").attr("src", `assets/profils/profil_${stageNumber}.jpg`);
-    stageInfos.select(".stage-title").text(`Etape n°${stage.id} - ${stage.distance} km - ${stage.denivele} m de dénivelé`);
-  stageInfos.select(".stage-subtitle").text(stageSubtitle);
-  stageInfos.select(".stage-date").text(stage.date);
-  stageInfos.select(".stage-anecdote").text(stage.anecdote);
-  console.log(stageNumber);
 }
-
-
-
-
-
 
 initStageInfos();
