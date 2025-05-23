@@ -9,7 +9,7 @@ export const createMap = () => {
   return new Promise((resolve) => {
     json("../../data/map/france_italie_simplified.geojson").then((data) => {
       const svg = select("#map-section")
-        .insert("svg", "img")
+        .insert("svg", "stage-infos")
         .attr("width", "100%")
         .attr("height", "100%")
         .attr("viewBox", `0 0 ${width} ${height}`)
