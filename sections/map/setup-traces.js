@@ -120,7 +120,7 @@ const addPoint = (coordinates, pointType, parentGroup) => {
       coordinates: coordinates,
     },
   };
-  const radius = pointType === "important" ? 10 : 5;
+  const radius = pointType === "important" ? 8 : 4;
 
   // Déterminer le style selon le type de point
   let pointStyle;
@@ -132,7 +132,7 @@ const addPoint = (coordinates, pointType, parentGroup) => {
       pointStyle = "stroke-red-900 fill-red-500 stroke-[1]";
       break;
     case "important":
-      pointStyle = "stroke-gray-700 fill-yellow-500 stroke-4 drop-shadow-lg";
+      pointStyle = "stroke-gray-700 fill-yellow-500 stroke-2 drop-shadow-lg";
       break;
     default:
       pointStyle = "stroke-gray-900 fill-gray-500 stroke-[]";
@@ -310,4 +310,4 @@ const init = async () => {
 
 
 // Lancer l'initialisation
-init();
+export {init};
