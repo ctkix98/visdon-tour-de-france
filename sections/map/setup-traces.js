@@ -148,7 +148,9 @@ const addPoint = (coordinates, pointType, parentGroup) => {
   const [x, y] = projection(coordinates);
   const markerGroup = parentGroup
     .append("g")
-    .attr("transform", `translate(${x}, ${y})`);
+    .attr("transform", `translate(${x}, ${y})`)
+    .attr("class", `${pointType}-point`)
+    .attr("data-coordinates", JSON.stringify(coordinates));
 
   markerGroup.append("circle")
     .attr("r", radius)
@@ -168,8 +170,32 @@ const addCityLabel = (coordinates, cityName, pointType, stageNumber, parentGroup
 
   // Calculer la position et le style
   const [x, y] = projection(coordinates);
-  const xOffset = pointType === "start" ? -20 : 20;
-  const anchor = pointType === "start" ? "end" : "start";
+  
+  // Trouver les coordonnées du point opposé (départ si on est à l'arrivée, arrivée si on est au départ)
+  const stageGroup = parentGroup;
+  const oppositePointType = pointType === "start" ? "end" : "start";
+  const oppositePoint = stageGroup.select(`.${oppositePointType}-point`).node();
+  let xOffset;
+  let anchor;
+  
+  if (oppositePoint) {
+    const oppositeCoords = JSON.parse(oppositePoint.getAttribute("data-coordinates"));
+    const [oppositeX] = projection(oppositeCoords);
+    
+    // Si le point actuel est plus à l'ouest que le point opposé
+    if (x < oppositeX) {
+      xOffset = -20;
+      anchor = "end";
+    } else {
+      xOffset = 20;
+      anchor = "start";
+    }
+  } else {
+    // Fallback au comportement par défaut si on ne trouve pas le point opposé
+    xOffset = pointType === "start" ? -20 : 20;
+    anchor = pointType === "start" ? "end" : "start";
+  }
+
   const textColor = pointType === "start" ? "blue" : "red";
   const fontSize = 24;
 
