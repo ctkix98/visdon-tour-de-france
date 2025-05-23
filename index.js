@@ -28,12 +28,15 @@ import { checkScreenSize } from "./sections/checkSize.js";
 import { setupFinishScrollRace } from "./sections/finish/finishline.js";
 import { showMaillots } from "./sections/podiums/maillots.js";
 import { showGeneralPodium } from "./sections/podiums/winnersGC.js";
+
+import { animateIntroLogo } from "./sections/slides/intro.js";
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
 
 console.log("coucou");
 
 //To create the slides animations
+animateIntroLogo();
 initSlideAnimations()
 
 //Section podiums

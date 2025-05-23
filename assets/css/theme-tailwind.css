@@ -44,15 +44,24 @@
 /*Intro*/
 @layer components {
   .slide-intro {
-    @apply relative w-full h-screen bg-yellow-500 flex items-center justify-center overflow-hidden;
+    @apply relative w-full h-screen bg-yellow-500 overflow-hidden;
   }
 
+  .intro-overlay {
+    @apply flex flex-col items-center justify-center w-full h-full text-center;
+  }
+
+  #intro-logo {
+    @apply w-[20rem] h-auto opacity-100;
+    transform-origin: center center;
+  }
+
+  .intro-text {
+    @apply transition-opacity duration-1000;
+  }
 }
 
 
-  .intro-logo {
-    @apply w-[40rem] h-auto opacity-100;
-  }
 
 @layer utilities {
   @keyframes zoom-in {
