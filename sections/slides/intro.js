@@ -15,13 +15,13 @@ export function animateIntroLogo() {
     logo
       .style("transform", "scale(1)")
       .transition()
-      .duration(3000)
+      .duration(2000)
       .ease(d3.easeCubicOut)
       .style("transform", "scale(1.7)")
       .on("end", () => {
         // ➕ Texte en fondu
         text.transition()
-          .duration(1000)
+          .duration(200)
           .style("opacity", 1)
           .on("end", () => {
             // S'assure que le texte reste visible
