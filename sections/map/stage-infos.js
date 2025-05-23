@@ -55,6 +55,8 @@ function getCoureurNom(coureur_id) {
   const coureur = coureurs.coureurs.find(c => c.id == coureur_id);
   return coureur ? coureur.prenom + " " + coureur.nom : "Inconnu";
 }
+
+
 const setUpStageInfos = (stageNumber) => {
   const stage = etapes.find(etape => etape.id == stageNumber);
   const stageInfos = select("stage-infos");
@@ -107,9 +109,7 @@ const setUpStageInfos = (stageNumber) => {
           </thead>
           <tbody id="classementTbody">
             <tr>
-              <td class="text-center">1</td>
-              <td class="text-center">${getCoureurNom(stage.classements[0].classement_etape[0].id_coureur)}</td>
-              <td class="text-center">${stage.classements[0].classement_etape[0].temps}</td>
+              
             </tr>
             <!-- Rows will go here -->
           </tbody>
@@ -118,6 +118,8 @@ const setUpStageInfos = (stageNumber) => {
     </div>
   
   `);
+
+  setClassement(stageNumber);
 
   // Configurer le bouton de fermeture
   stageInfos.select("button").on("click", () => {
@@ -131,6 +133,22 @@ const setUpStageInfos = (stageNumber) => {
       stageInfos.style("display", "none");
     }, 300);
   });
+}
+
+
+ const setClassement = (stageNumber) => {
+  const stage = etapes.find(etape => etape.id == stageNumber);
+  const classement = stage.classements[0].classement_etape;
+  const classementTbody = select("#classementTbody");
+  classementTbody.html("");
+  for (const coureur of classement) {
+    const html = `<tr >
+    <td class="text-center">${coureur.no_classement}</td>
+    <td class="text-center">${getCoureurNom(coureur.id_coureur)}</td>
+    <td class="text-center">${coureur.temps}</td>
+  </tr>`
+  classementTbody.append("tr").html(html);
+    }
 }
 
 initStageInfos();
