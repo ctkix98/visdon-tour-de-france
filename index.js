@@ -8,6 +8,7 @@ import "/sections/menu/stakes.js"
 import "/sections/menu/teams.js"
 import "/sections/podiums/podiumsTabs.js"
 import "/sections/map/stage-infos.js"
+import "/sections/menu/equipment.js"
 import "/sections/menu/route.js"
 
 
@@ -84,11 +85,11 @@ const routes = () => {
       toggleMenu()
       break;
 
-    case "#route":
+    /* case "#route":
       displaySection("route");
       createFullElevationProfile();
       toggleMenu()
-      break;
+      break; */
 
     case "#rules":
       displaySection("rules");

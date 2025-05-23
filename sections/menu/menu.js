@@ -10,7 +10,7 @@ const displayCategories = () => {
         { name: 'Equipes', href: '#teams-section', id: 'teams', number: 1 },
         { name: 'Enjeux', href: '#stakes-section', id: 'stakes', number: 2 },
         { name: 'Equipment', href: '#equipment-section', id: 'equipment', number: 3 },
-        { name: 'Parcours', href: '#route-section' , id: 'route', number: 4 },
+        /* { name: 'Parcours', href: '#route-section' , id: 'route', number: 4 }, */
         { name: 'Reglement', href: '#rules-section', id: 'rules' , number: 5 },
     ];
 
