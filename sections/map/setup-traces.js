@@ -101,7 +101,7 @@ const createTrace = async (stageNumber) => {
 // Fonction pour ajouter un point sur la carte avec son étiquette
 const addPointWithLabel = (coordinates, pointType, stageNumber, cityName, parentGroup) => {
   // Ajouter le point
-  addPoint(coordinates, pointType, parentGroup);
+  addPoint(coordinates, pointType, parentGroup, stageNumber);
 
   // Ajouter l'étiquette s'il y a un nom de ville
   if (cityName) {
@@ -110,7 +110,7 @@ const addPointWithLabel = (coordinates, pointType, stageNumber, cityName, parent
 };
 
 // Fonction pour ajouter un point (marqueur) sur la carte
-const addPoint = (coordinates, pointType, parentGroup) => {
+const addPoint = (coordinates, pointType, parentGroup, stageNumber) => {
   // Créer le point GeoJSON
   const point = {
     type: "Feature",
@@ -120,6 +120,7 @@ const addPoint = (coordinates, pointType, parentGroup) => {
     },
   };
   const radius = pointType === "important" ? 8 : 4;
+  
 
   // Déterminer le style selon le type de point
   let pointStyle;
@@ -149,6 +150,7 @@ const addPoint = (coordinates, pointType, parentGroup) => {
     .append("g")
     .attr("transform", `translate(${x}, ${y})`)
     .attr("class", `${pointType}-point`)
+    .attr("id", `${stageNumber}`)
     .attr("data-coordinates", JSON.stringify(coordinates));
 
   markerGroup.append("circle")
