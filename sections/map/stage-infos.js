@@ -42,7 +42,7 @@ const setUpStageInfos = (stageNumber) => {
       
   // Mettre à jour le contenu
   stageInfos.select("img").attr("src", `assets/profils/profil_${stageNumber}.jpg`);
-    stageInfos.select(".stage-title").text(stage.nom_ville_arrivee);
+    stageInfos.select(".stage-title").text(`Etape n°${stage.id} - ${stage.distance} km - ${stage.denivele} m de dénivelé`);
   stageInfos.select(".stage-subtitle").text(stageSubtitle);
   stageInfos.select(".stage-date").text(stage.date);
   stageInfos.select(".stage-anecdote").text(stage.anecdote);
