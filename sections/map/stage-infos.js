@@ -1,6 +1,7 @@
 import etapes from "../../data/etapes.json";
 import { select } from "d3-selection";
 import { init } from "./setup-traces";
+console.log(etapes);
 
 // const stageInfos = etapes.filter(etape => importantStagesNumber.includes(etape.id))
 const svg = select("#tdf-map");
@@ -26,6 +27,7 @@ const getStageNumber = (e) => {
 }
 
 const setUpStageInfos = (stageNumber) => {
+  const stage = etapes.find(etape => etape.id == stageNumber);
   const stageInfos = select("stage-infos");
   
   // Afficher stage-infos
@@ -36,13 +38,14 @@ const setUpStageInfos = (stageNumber) => {
     stageInfos.style("display", "none");
   });
 
+  const stageSubtitle = `${stage.nom_ville_depart} - ${stage.nom_ville_arrivee} - ${stage.type_etape}`;
+      
   // Mettre à jour le contenu
   stageInfos.select("img").attr("src", `assets/profils/profil_${stageNumber}.jpg`);
-  stageInfos.select("p").text(etapes.find(etape => etape.id === stageNumber).nom_ville_depart);
-  stageInfos.select("p").text(etapes.find(etape => etape.id === stageNumber).nom_ville_arrivee);
-  stageInfos.select("p").text(etapes.find(etape => etape.id === stageNumber).date);
-  stageInfos.select("p").text(etapes.find(etape => etape.id === stageNumber).duree);
-
+    stageInfos.select(".stage-title").text(stage.nom_ville_arrivee);
+  stageInfos.select(".stage-subtitle").text(stageSubtitle);
+  stageInfos.select(".stage-date").text(stage.date);
+  stageInfos.select(".stage-anecdote").text(stage.anecdote);
   console.log(stageNumber);
 }
 
