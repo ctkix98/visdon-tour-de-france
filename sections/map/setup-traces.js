@@ -103,6 +103,8 @@ const addPointWithLabel = (coordinates, pointType, stageNumber, cityName, parent
   // Ajouter le point
   addPoint(coordinates, pointType, parentGroup, stageNumber);
 
+  
+
   // Ajouter l'étiquette s'il y a un nom de ville
   if (cityName) {
     addCityLabel(coordinates, cityName, pointType, stageNumber, parentGroup);
@@ -119,7 +121,7 @@ const addPoint = (coordinates, pointType, parentGroup, stageNumber) => {
       coordinates: coordinates,
     },
   };
-  const radius = pointType === "important" ? 8 : 4;
+  const radius = pointType === "important" ? 12 : 8;
   
 
   // Déterminer le style selon le type de point
@@ -157,6 +159,17 @@ const addPoint = (coordinates, pointType, parentGroup, stageNumber) => {
     .attr("r", radius)
     .attr("data-id", `${stageNumber}`)
     .attr("class", pointStyle);
+
+  // Ajouter le numéro de l'étape dans le cercle de départ
+  if (pointType !== "important") {
+    markerGroup.append("text")
+      .attr("text-anchor", "middle")
+      .attr("dominant-baseline", "middle")
+      .attr("fill", "white")
+      .attr("font-size", "12px")
+      .attr("font-weight", "bold")
+      .text(stageNumber);
+  }
 };
 
 // Fonction pour ajouter une étiquette de ville
