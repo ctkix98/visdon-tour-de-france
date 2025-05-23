@@ -1,4 +1,5 @@
 import etapes from "../../data/etapes.json";
+import coureurs from "../../data/coureur.json";
 import { select } from "d3-selection";
 import { init } from "./setup-traces";
 console.log(etapes);
@@ -50,10 +51,17 @@ const getStageNumber = (e) => {
   return stageNumber;
 }
 
+function getCoureurNom(coureur_id) {
+  const coureur = coureurs.coureurs.find(c => c.id == coureur_id);
+  return coureur ? coureur.prenom + " " + coureur.nom : "Inconnu";
+}
 const setUpStageInfos = (stageNumber) => {
   const stage = etapes.find(etape => etape.id == stageNumber);
   const stageInfos = select("stage-infos");
   const overlay = select("#stage-overlay");
+  
+  // Désactiver le scroll du body
+  document.body.style.overflow = 'hidden';
   
   // Afficher stage-infos et l'overlay
   stageInfos.style("display", "block");
@@ -66,7 +74,7 @@ const setUpStageInfos = (stageNumber) => {
 
   // Créer la structure HTML avec les classes Tailwind
   stageInfos.html(`
-    <button class="absolute top-4 left-4 text-2xl hover:text-gray-600 transition-colors">
+    <button class="absolute top-4 left-4 text-2xl hover:text-gray-600 transition-colors cursor-pointer border-2 border-gray-300 rounded-full p-4">
       ×
     </button>
     <div class="h-full overflow-y-auto">
@@ -85,7 +93,30 @@ const setUpStageInfos = (stageNumber) => {
         <p class="text-gray-500 mb-4">${stage.date}</p>
         <p class="text-gray-700 italic leading-relaxed">${stage.anecdote}</p>
       </div>
+      <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">
+          Classement de l'étape
+        </h2>
+        <table class="min-w-full bg-white rounded-lg shadow text-sm">
+          <thead>
+            <tr>
+              <th class="text-center">Classement</th>
+              <th class="text-center">Coureur</th>
+              <th class="text-center">Temps</th>
+            </tr>
+          </thead>
+          <tbody id="classementTbody">
+            <tr>
+              <td class="text-center">1</td>
+              <td class="text-center">${getCoureurNom(stage.classements[0].classement_etape[0].id_coureur)}</td>
+              <td class="text-center">${stage.classements[0].classement_etape[0].temps}</td>
+            </tr>
+            <!-- Rows will go here -->
+          </tbody>
+        </table>
+      </div>
     </div>
+  
   `);
 
   // Configurer le bouton de fermeture
@@ -93,6 +124,8 @@ const setUpStageInfos = (stageNumber) => {
     stageInfos.style("right", "-50%");
     overlay.style("opacity", "0");
     overlay.style("pointer-events", "none");
+    // Réactiver le scroll du body
+    document.body.style.overflow = 'auto';
     // Cacher complètement après l'animation
     setTimeout(() => {
       stageInfos.style("display", "none");
