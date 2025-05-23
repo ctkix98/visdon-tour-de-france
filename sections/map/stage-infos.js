@@ -11,18 +11,32 @@ const initStageInfos = async () => {
   await init(); // Cette fonction initialise la carte et ajoute les points importants
   const svg = select("#tdf-map");
 
+  // Créer l'overlay
+  svg.append("div")
+    .attr("id", "stage-overlay")
+    .style("position", "fixed")
+    .style("top", "0")
+    .style("left", "0")
+    .style("width", "100%")
+    .style("height", "100%")
+    .style("background-color", "rgba(0, 0, 0, 0.5)")
+    .style("opacity", "0")
+    .style("pointer-events", "none")
+    .style("transition", "opacity 0.3s ease");
+
   // Configurer le conteneur stage-infos
   select("stage-infos")
     .style("display", "none")
     .style("position", "fixed")
     .style("top", "0")
-    .style("right", "0")
+    .style("right", "-50%") // Commencer hors de l'écran
     .style("width", "50%")
     .style("height", "100vh")
     .style("background-color", "white")
     .style("box-shadow", "-2px 0 10px rgba(0, 0, 0, 0.1)")
     .style("padding", "2rem")
-    .style("box-sizing", "border-box");
+    .style("box-sizing", "border-box")
+    .style("transition", "right 0.3s ease");
 
   // Attacher l'événement de clic après l'initialisation
   svg.selectAll(".important-point").on("click", (e) => {
@@ -39,9 +53,16 @@ const getStageNumber = (e) => {
 const setUpStageInfos = (stageNumber) => {
   const stage = etapes.find(etape => etape.id == stageNumber);
   const stageInfos = select("stage-infos");
+  const overlay = select("#stage-overlay");
   
-  // Afficher stage-infos
+  // Afficher stage-infos et l'overlay
   stageInfos.style("display", "block");
+  // Petit délai pour permettre l'animation
+  setTimeout(() => {
+    stageInfos.style("right", "0");
+    overlay.style("opacity", "1");
+    overlay.style("pointer-events", "auto");
+  }, 10);
 
   // Créer la structure HTML avec les classes Tailwind
   stageInfos.html(`
@@ -69,7 +90,13 @@ const setUpStageInfos = (stageNumber) => {
 
   // Configurer le bouton de fermeture
   stageInfos.select("button").on("click", () => {
-    stageInfos.style("display", "none");
+    stageInfos.style("right", "-50%");
+    overlay.style("opacity", "0");
+    overlay.style("pointer-events", "none");
+    // Cacher complètement après l'animation
+    setTimeout(() => {
+      stageInfos.style("display", "none");
+    }, 300);
   });
 }
 
