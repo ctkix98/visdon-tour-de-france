@@ -1,7 +1,6 @@
 import { geoPath } from "d3-geo";
 import { select } from "d3-selection";
 import { xml } from "d3-fetch";
-import { transition } from "d3-transition";
 import { createMap } from "./setup-map";
 import etapes from "../../data/etapes.json";
 
@@ -300,14 +299,15 @@ const initImportantStages = async () => {
 }
 
 // Fonction d'initialisation qui charge toutes les étapes séquentiellement
-const init = async () => {
+export const init = async () => {
   for (let i = 1; i <= etapes.length; i++) {
     await createTrace(i);
   }
   await initImportantStages();
+  return projection;
 };
 
 
 
 // Lancer l'initialisation
-export {init};
+// export {init};
