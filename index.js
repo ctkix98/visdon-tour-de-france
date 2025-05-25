@@ -1,4 +1,4 @@
-import "/node_modules/flag-icons/css/flag-icons.min.css";
+// import "/node_modules/flag-icons/css/flag-icons.min.css";
 import "/sections/menu/menu.js";
 import "/custom-elements/menu-bubble.js";
 import "/custom-elements/RulesCard.js";
