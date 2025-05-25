@@ -62,7 +62,7 @@ if (titreEl) {
       const nationCode = coureur.nation?.toUpperCase() || "";
       const equipe = coureur.equipe || "(Équipe inconnue)";
       const image =
-        coureur.image?.replace(/\\/g, "/") || "/assets/placeholders/rider.png";
+        coureur.image?.replace(/\\/g, "/") || "/placeholders/rider.png";
 
       // MAJ DOM
       document.getElementById("maillot-img").src = image;

@@ -27,7 +27,7 @@ export async function showWinnerStage() {
       const temps = classement.temps;
       const equipe = coureur.equipe || "(Équipe inconnue)";
       const image =
-        coureur.image?.replace(/\\/g, "/") || "/assets/placeholders/rider.png";
+        coureur.image?.replace(/\\/g, "/") || "/placeholders/rider.png";
 
       // 🔁 Mise à jour des éléments DOM
       const title = document.getElementById("stage-winner-title");

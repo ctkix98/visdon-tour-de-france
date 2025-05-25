@@ -29,7 +29,7 @@ const displayCategories = () => {
     const centerLogoContainer = document.createElement('div');
     centerLogoContainer.setAttribute('class', 'logo-container');
     centerLogo.setAttribute('class', 'logo-tdf center');
-    centerLogo.setAttribute('src', '../../assets/img/favicon_io/logo_tdf.png');
+    centerLogo.setAttribute('src', '/img/favicon_io/logo_tdf.png');
 
     centerLogoContainer.appendChild(centerLogo);
     bubbleList.appendChild(centerLogoContainer);

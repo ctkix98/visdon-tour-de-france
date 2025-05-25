@@ -20,7 +20,7 @@ export async function showGeneralPodium() {
 
       const num = index + 1;
       const fullName = `${coureur.prenom.toUpperCase()} ${coureur.nom.toUpperCase()}`;
-      const image = coureur.image?.replace(/\\/g, "/") || "/assets/placeholders/rider.png";
+      const image = coureur.image?.replace(/\\/g, "/") || "/placeholders/rider.png";
 
       // Mise à jour DOM
       const imgEl = document.getElementById(`gen-img-${num}`);
