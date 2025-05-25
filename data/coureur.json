@@ -6,7 +6,7 @@
             "nom": "Vingegaard",
             "nation": "den",
             "drapeau": "<span class=\"fi fi-den\"></span>",
-            "image": "assets\\coureurs\\1_jonas-vingegaard_profil.jpg",
+            "image": "\\coureurs\\1_jonas-vingegaard_profil.jpg",
             "equipe": "TEAM VISMA | LEASE A BIKE"
         },
         {
@@ -15,7 +15,7 @@
             "nom": "Benoot",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\2_tiesj-benoot_profil.jpg",
+            "image": "\\coureurs\\2_tiesj-benoot_profil.jpg",
             "equipe": "TEAM VISMA | LEASE A BIKE"
         },
         {
@@ -24,7 +24,7 @@
             "nom": "Jorgenson",
             "nation": "usa",
             "drapeau": "<span class=\"fi fi-usa\"></span>",
-            "image": "assets\\coureurs\\3_matteo-jorgenson_profil.jpg",
+            "image": "\\coureurs\\3_matteo-jorgenson_profil.jpg",
             "equipe": "TEAM VISMA | LEASE A BIKE"
         },
         {
@@ -33,7 +33,7 @@
             "nom": "Kelderman",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\4_wilco-kelderman_profil.jpg",
+            "image": "\\coureurs\\4_wilco-kelderman_profil.jpg",
             "equipe": "TEAM VISMA | LEASE A BIKE"
         },
         {
@@ -42,7 +42,7 @@
             "nom": "Laporte",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\5_christophe-laporte_profil.jpg",
+            "image": "\\coureurs\\5_christophe-laporte_profil.jpg",
             "equipe": "TEAM VISMA | LEASE A BIKE"
         },
         {
@@ -51,7 +51,7 @@
             "nom": "Lemmen",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\6_bart-lemmen_profil.jpg",
+            "image": "\\coureurs\\6_bart-lemmen_profil.jpg",
             "equipe": "TEAM VISMA | LEASE A BIKE"
         },
         {
@@ -60,7 +60,7 @@
             "nom": "Tratnik",
             "nation": "slo",
             "drapeau": "<span class=\"fi fi-slo\"></span>",
-            "image": "assets\\coureurs\\7_jan-tratnik_profil.jpg",
+            "image": "\\coureurs\\7_jan-tratnik_profil.jpg",
             "equipe": "TEAM VISMA | LEASE A BIKE"
         },
         {
@@ -69,7 +69,7 @@
             "nom": "Van aert",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\8_wout-van-aert_profil.jpg",
+            "image": "\\coureurs\\8_wout-van-aert_profil.jpg",
             "equipe": "TEAM VISMA | LEASE A BIKE"
         },
         {
@@ -78,7 +78,7 @@
             "nom": "Pogacar",
             "nation": "slo",
             "drapeau": "<span class=\"fi fi-slo\"></span>",
-            "image": "assets\\coureurs\\11_tadej-pogacar_profil.jpg",
+            "image": "\\coureurs\\11_tadej-pogacar_profil.jpg",
             "equipe": "UAE TEAM EMIRATES"
         },
         {
@@ -87,7 +87,7 @@
             "nom": "Almeida",
             "nation": "por",
             "drapeau": "<span class=\"fi fi-por\"></span>",
-            "image": "assets\\coureurs\\12_joao-almeida_profil.jpg",
+            "image": "\\coureurs\\12_joao-almeida_profil.jpg",
             "equipe": "UAE TEAM EMIRATES"
         },
         {
@@ -96,7 +96,7 @@
             "nom": "Ayuso",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\13_juan-ayuso_profil.jpg",
+            "image": "\\coureurs\\13_juan-ayuso_profil.jpg",
             "equipe": "UAE TEAM EMIRATES"
         },
         {
@@ -105,7 +105,7 @@
             "nom": "Politt",
             "nation": "ger",
             "drapeau": "<span class=\"fi fi-ger\"></span>",
-            "image": "assets\\coureurs\\14_nils-politt_profil.jpg",
+            "image": "\\coureurs\\14_nils-politt_profil.jpg",
             "equipe": "UAE TEAM EMIRATES"
         },
         {
@@ -114,7 +114,7 @@
             "nom": "Sivakov",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\15_pavel-sivakov_profil.jpg",
+            "image": "\\coureurs\\15_pavel-sivakov_profil.jpg",
             "equipe": "UAE TEAM EMIRATES"
         },
         {
@@ -123,7 +123,7 @@
             "nom": "Soler",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\16_marc-soler_profil.jpg",
+            "image": "\\coureurs\\16_marc-soler_profil.jpg",
             "equipe": "UAE TEAM EMIRATES"
         },
         {
@@ -132,7 +132,7 @@
             "nom": "Wellens",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\17_tim-wellens_profil.jpg",
+            "image": "\\coureurs\\17_tim-wellens_profil.jpg",
             "equipe": "UAE TEAM EMIRATES"
         },
         {
@@ -141,7 +141,7 @@
             "nom": "Yates",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\18_adam-yates_profil.jpg",
+            "image": "\\coureurs\\18_adam-yates_profil.jpg",
             "equipe": "UAE TEAM EMIRATES"
         },
         {
@@ -150,7 +150,7 @@
             "nom": "Yates",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\21_simon-yates_profil.jpg",
+            "image": "\\coureurs\\21_simon-yates_profil.jpg",
             "equipe": "TEAM JAYCO ALULA"
         },
         {
@@ -159,7 +159,7 @@
             "nom": "Durbridge",
             "nation": "aus",
             "drapeau": "<span class=\"fi fi-aus\"></span>",
-            "image": "assets\\coureurs\\22_luke-durbridge_profil.jpg",
+            "image": "\\coureurs\\22_luke-durbridge_profil.jpg",
             "equipe": "TEAM JAYCO ALULA"
         },
         {
@@ -168,7 +168,7 @@
             "nom": "Groenewegen",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\23_dylan-groenewegen_profil.jpg",
+            "image": "\\coureurs\\23_dylan-groenewegen_profil.jpg",
             "equipe": "TEAM JAYCO ALULA"
         },
         {
@@ -177,7 +177,7 @@
             "nom": "Harper",
             "nation": "aus",
             "drapeau": "<span class=\"fi fi-aus\"></span>",
-            "image": "assets\\coureurs\\24_chris-harper_profil.jpg",
+            "image": "\\coureurs\\24_chris-harper_profil.jpg",
             "equipe": "TEAM JAYCO ALULA"
         },
         {
@@ -186,7 +186,7 @@
             "nom": "Juul-jensen",
             "nation": "den",
             "drapeau": "<span class=\"fi fi-den\"></span>",
-            "image": "assets\\coureurs\\25_christopher-juul-jensen_profil.jpg",
+            "image": "\\coureurs\\25_christopher-juul-jensen_profil.jpg",
             "equipe": "TEAM JAYCO ALULA"
         },
         {
@@ -195,7 +195,7 @@
             "nom": "Matthews",
             "nation": "aus",
             "drapeau": "<span class=\"fi fi-aus\"></span>",
-            "image": "assets\\coureurs\\26_michael-matthews_profil.jpg",
+            "image": "\\coureurs\\26_michael-matthews_profil.jpg",
             "equipe": "TEAM JAYCO ALULA"
         },
         {
@@ -204,7 +204,7 @@
             "nom": "Mezgec",
             "nation": "slo",
             "drapeau": "<span class=\"fi fi-slo\"></span>",
-            "image": "assets\\coureurs\\27_luka-mezgec_profil.jpg",
+            "image": "\\coureurs\\27_luka-mezgec_profil.jpg",
             "equipe": "TEAM JAYCO ALULA"
         },
         {
@@ -213,7 +213,7 @@
             "nom": "Reinders",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\28_elmar-reinders_profil.jpg",
+            "image": "\\coureurs\\28_elmar-reinders_profil.jpg",
             "equipe": "TEAM JAYCO ALULA"
         },
         {
@@ -222,7 +222,7 @@
             "nom": "Rodriguez",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\31_carlos-rodriguez_profil.jpg",
+            "image": "\\coureurs\\31_carlos-rodriguez_profil.jpg",
             "equipe": "INEOS GRENADIERS"
         },
         {
@@ -231,7 +231,7 @@
             "nom": "Bernal",
             "nation": "col",
             "drapeau": "<span class=\"fi fi-col\"></span>",
-            "image": "assets\\coureurs\\32_egan-bernal_profil.jpg",
+            "image": "\\coureurs\\32_egan-bernal_profil.jpg",
             "equipe": "INEOS GRENADIERS"
         },
         {
@@ -240,7 +240,7 @@
             "nom": "Castroviejo",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\33_jonathan-castroviejo_profil.jpg",
+            "image": "\\coureurs\\33_jonathan-castroviejo_profil.jpg",
             "equipe": "INEOS GRENADIERS"
         },
         {
@@ -249,7 +249,7 @@
             "nom": "De plus",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\34_laurens-de-plus_profil.jpg",
+            "image": "\\coureurs\\34_laurens-de-plus_profil.jpg",
             "equipe": "INEOS GRENADIERS"
         },
         {
@@ -258,7 +258,7 @@
             "nom": "Kwiatkowski",
             "nation": "pol",
             "drapeau": "<span class=\"fi fi-pol\"></span>",
-            "image": "assets\\coureurs\\35_michal-kwiatkowski_profil.jpg",
+            "image": "\\coureurs\\35_michal-kwiatkowski_profil.jpg",
             "equipe": "INEOS GRENADIERS"
         },
         {
@@ -267,7 +267,7 @@
             "nom": "Pidcock",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\36_tom-pidcock_profil.jpg",
+            "image": "\\coureurs\\36_tom-pidcock_profil.jpg",
             "equipe": "INEOS GRENADIERS"
         },
         {
@@ -276,7 +276,7 @@
             "nom": "Thomas",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\37_geraint-thomas_profil.jpg",
+            "image": "\\coureurs\\37_geraint-thomas_profil.jpg",
             "equipe": "INEOS GRENADIERS"
         },
         {
@@ -285,7 +285,7 @@
             "nom": "Turner",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\38_ben-turner_profil.jpg",
+            "image": "\\coureurs\\38_ben-turner_profil.jpg",
             "equipe": "INEOS GRENADIERS"
         },
         {
@@ -294,7 +294,7 @@
             "nom": "Ciccone",
             "nation": "ita",
             "drapeau": "<span class=\"fi fi-ita\"></span>",
-            "image": "assets\\coureurs\\41_giulio-ciccone_profil.jpg",
+            "image": "\\coureurs\\41_giulio-ciccone_profil.jpg",
             "equipe": "LIDL-TREK"
         },
         {
@@ -303,7 +303,7 @@
             "nom": "Bernard",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\42_julien-bernard_profil.jpg",
+            "image": "\\coureurs\\42_julien-bernard_profil.jpg",
             "equipe": "LIDL-TREK"
         },
         {
@@ -312,7 +312,7 @@
             "nom": "Declercq",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\43_tim-declercq_profil.jpg",
+            "image": "\\coureurs\\43_tim-declercq_profil.jpg",
             "equipe": "LIDL-TREK"
         },
         {
@@ -321,7 +321,7 @@
             "nom": "Gibbons",
             "nation": "rsa",
             "drapeau": "<span class=\"fi fi-rsa\"></span>",
-            "image": "assets\\coureurs\\44_ryan-gibbons_profil.jpg",
+            "image": "\\coureurs\\44_ryan-gibbons_profil.jpg",
             "equipe": "LIDL-TREK"
         },
         {
@@ -330,7 +330,7 @@
             "nom": "Pedersen",
             "nation": "den",
             "drapeau": "<span class=\"fi fi-den\"></span>",
-            "image": "assets\\coureurs\\45_mads-pedersen_profil.jpg",
+            "image": "\\coureurs\\45_mads-pedersen_profil.jpg",
             "equipe": "LIDL-TREK"
         },
         {
@@ -339,7 +339,7 @@
             "nom": "Skujins",
             "nation": "lat",
             "drapeau": "<span class=\"fi fi-lat\"></span>",
-            "image": "assets\\coureurs\\46_toms-skujins_profil.jpg",
+            "image": "\\coureurs\\46_toms-skujins_profil.jpg",
             "equipe": "LIDL-TREK"
         },
         {
@@ -348,7 +348,7 @@
             "nom": "Stuyven",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\47_jasper-stuyven_profil.jpg",
+            "image": "\\coureurs\\47_jasper-stuyven_profil.jpg",
             "equipe": "LIDL-TREK"
         },
         {
@@ -357,7 +357,7 @@
             "nom": "Verona",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\48_carlos-verona_profil.jpg",
+            "image": "\\coureurs\\48_carlos-verona_profil.jpg",
             "equipe": "LIDL-TREK"
         },
         {
@@ -366,7 +366,7 @@
             "nom": "Gall",
             "nation": "aut",
             "drapeau": "<span class=\"fi fi-aut\"></span>",
-            "image": "assets\\coureurs\\51_felix-gall_profil.jpg",
+            "image": "\\coureurs\\51_felix-gall_profil.jpg",
             "equipe": "DECATHLON AG2R LA MONDIALE TEAM"
         },
         {
@@ -375,7 +375,7 @@
             "nom": "Armirail",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\52_bruno-armirail_profil.jpg",
+            "image": "\\coureurs\\52_bruno-armirail_profil.jpg",
             "equipe": "DECATHLON AG2R LA MONDIALE TEAM"
         },
         {
@@ -384,7 +384,7 @@
             "nom": "Bennett",
             "nation": "irl",
             "drapeau": "<span class=\"fi fi-irl\"></span>",
-            "image": "assets\\coureurs\\53_sam-bennett_profil.jpg",
+            "image": "\\coureurs\\53_sam-bennett_profil.jpg",
             "equipe": "DECATHLON AG2R LA MONDIALE TEAM"
         },
         {
@@ -393,7 +393,7 @@
             "nom": "Godon",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\54_dorian-godon_profil.jpg",
+            "image": "\\coureurs\\54_dorian-godon_profil.jpg",
             "equipe": "DECATHLON AG2R LA MONDIALE TEAM"
         },
         {
@@ -402,7 +402,7 @@
             "nom": "Lapeira",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\55_paul-lapeira_profil.jpg",
+            "image": "\\coureurs\\55_paul-lapeira_profil.jpg",
             "equipe": "DECATHLON AG2R LA MONDIALE TEAM"
         },
         {
@@ -411,7 +411,7 @@
             "nom": "Naesen",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\56_oliver-naesen_profil.jpg",
+            "image": "\\coureurs\\56_oliver-naesen_profil.jpg",
             "equipe": "DECATHLON AG2R LA MONDIALE TEAM"
         },
         {
@@ -420,7 +420,7 @@
             "nom": "Peters",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\57_nans-peters_profil.jpg",
+            "image": "\\coureurs\\57_nans-peters_profil.jpg",
             "equipe": "DECATHLON AG2R LA MONDIALE TEAM"
         },
         {
@@ -429,7 +429,7 @@
             "nom": "Prodhomme",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\58_nicolas-prodhomme_profil.jpg",
+            "image": "\\coureurs\\58_nicolas-prodhomme_profil.jpg",
             "equipe": "DECATHLON AG2R LA MONDIALE TEAM"
         },
         {
@@ -438,7 +438,7 @@
             "nom": "Bilbao",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\61_pello-bilbao_profil.jpg",
+            "image": "\\coureurs\\61_pello-bilbao_profil.jpg",
             "equipe": "BAHRAIN VICTORIOUS"
         },
         {
@@ -447,7 +447,7 @@
             "nom": "Arndt",
             "nation": "ger",
             "drapeau": "<span class=\"fi fi-ger\"></span>",
-            "image": "assets\\coureurs\\62_nikias-arndt_profil.jpg",
+            "image": "\\coureurs\\62_nikias-arndt_profil.jpg",
             "equipe": "BAHRAIN VICTORIOUS"
         },
         {
@@ -456,7 +456,7 @@
             "nom": "Bauhaus",
             "nation": "ger",
             "drapeau": "<span class=\"fi fi-ger\"></span>",
-            "image": "assets\\coureurs\\63_phil-bauhaus_profil.jpg",
+            "image": "\\coureurs\\63_phil-bauhaus_profil.jpg",
             "equipe": "BAHRAIN VICTORIOUS"
         },
         {
@@ -465,7 +465,7 @@
             "nom": "Buitrago",
             "nation": "col",
             "drapeau": "<span class=\"fi fi-col\"></span>",
-            "image": "assets\\coureurs\\64_santiago-buitrago_profil.jpg",
+            "image": "\\coureurs\\64_santiago-buitrago_profil.jpg",
             "equipe": "BAHRAIN VICTORIOUS"
         },
         {
@@ -474,7 +474,7 @@
             "nom": "Haig",
             "nation": "aus",
             "drapeau": "<span class=\"fi fi-aus\"></span>",
-            "image": "assets\\coureurs\\65_jack-haig_profil.jpg",
+            "image": "\\coureurs\\65_jack-haig_profil.jpg",
             "equipe": "BAHRAIN VICTORIOUS"
         },
         {
@@ -483,7 +483,7 @@
             "nom": "Mohoric",
             "nation": "slo",
             "drapeau": "<span class=\"fi fi-slo\"></span>",
-            "image": "assets\\coureurs\\66_matej-mohoric_profil.jpg",
+            "image": "\\coureurs\\66_matej-mohoric_profil.jpg",
             "equipe": "BAHRAIN VICTORIOUS"
         },
         {
@@ -492,7 +492,7 @@
             "nom": "Poels",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\67_wout-poels_profil.jpg",
+            "image": "\\coureurs\\67_wout-poels_profil.jpg",
             "equipe": "BAHRAIN VICTORIOUS"
         },
         {
@@ -501,7 +501,7 @@
             "nom": "Wright",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\68_fred-wright_profil.jpg",
+            "image": "\\coureurs\\68_fred-wright_profil.jpg",
             "equipe": "BAHRAIN VICTORIOUS"
         },
         {
@@ -510,7 +510,7 @@
             "nom": "Evenepoel",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\71_remco-evenepoel_profil.jpg",
+            "image": "\\coureurs\\71_remco-evenepoel_profil.jpg",
             "equipe": "SOUDAL QUICK-STEP"
         },
         {
@@ -519,7 +519,7 @@
             "nom": "Hirt",
             "nation": "cze",
             "drapeau": "<span class=\"fi fi-cze\"></span>",
-            "image": "assets\\coureurs\\72_jan-hirt_profil.jpg",
+            "image": "\\coureurs\\72_jan-hirt_profil.jpg",
             "equipe": "SOUDAL QUICK-STEP"
         },
         {
@@ -528,7 +528,7 @@
             "nom": "Lampaert",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\73_yves-lampaert_profil.jpg",
+            "image": "\\coureurs\\73_yves-lampaert_profil.jpg",
             "equipe": "SOUDAL QUICK-STEP"
         },
         {
@@ -537,7 +537,7 @@
             "nom": "Landa",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\74_mikel-landa_profil.jpg",
+            "image": "\\coureurs\\74_mikel-landa_profil.jpg",
             "equipe": "SOUDAL QUICK-STEP"
         },
         {
@@ -546,7 +546,7 @@
             "nom": "Moscon",
             "nation": "ita",
             "drapeau": "<span class=\"fi fi-ita\"></span>",
-            "image": "assets\\coureurs\\75_gianni-moscon_profil.jpg",
+            "image": "\\coureurs\\75_gianni-moscon_profil.jpg",
             "equipe": "SOUDAL QUICK-STEP"
         },
         {
@@ -555,7 +555,7 @@
             "nom": "Pedersen",
             "nation": "den",
             "drapeau": "<span class=\"fi fi-den\"></span>",
-            "image": "assets\\coureurs\\76_casper-pedersen_profil.jpg",
+            "image": "\\coureurs\\76_casper-pedersen_profil.jpg",
             "equipe": "SOUDAL QUICK-STEP"
         },
         {
@@ -564,7 +564,7 @@
             "nom": "Van wilder",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\77_ilan-van-wilder_profil.jpg",
+            "image": "\\coureurs\\77_ilan-van-wilder_profil.jpg",
             "equipe": "SOUDAL QUICK-STEP"
         },
         {
@@ -573,7 +573,7 @@
             "nom": "Vervaeke",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\78_louis-vervaeke_profil.jpg",
+            "image": "\\coureurs\\78_louis-vervaeke_profil.jpg",
             "equipe": "SOUDAL QUICK-STEP"
         },
         {
@@ -582,7 +582,7 @@
             "nom": "Roglic",
             "nation": "slo",
             "drapeau": "<span class=\"fi fi-slo\"></span>",
-            "image": "assets\\coureurs\\81_primoz-roglic_profil.jpg",
+            "image": "\\coureurs\\81_primoz-roglic_profil.jpg",
             "equipe": "RED BULL - BORA - HANSGROHE"
         },
         {
@@ -591,7 +591,7 @@
             "nom": "Denz",
             "nation": "ger",
             "drapeau": "<span class=\"fi fi-ger\"></span>",
-            "image": "assets\\coureurs\\82_nico-denz_profil.jpg",
+            "image": "\\coureurs\\82_nico-denz_profil.jpg",
             "equipe": "RED BULL - BORA - HANSGROHE"
         },
         {
@@ -600,7 +600,7 @@
             "nom": "Haller",
             "nation": "aut",
             "drapeau": "<span class=\"fi fi-aut\"></span>",
-            "image": "assets\\coureurs\\83_marco-haller_profil.jpg",
+            "image": "\\coureurs\\83_marco-haller_profil.jpg",
             "equipe": "RED BULL - BORA - HANSGROHE"
         },
         {
@@ -609,7 +609,7 @@
             "nom": "Hindley",
             "nation": "aus",
             "drapeau": "<span class=\"fi fi-aus\"></span>",
-            "image": "assets\\coureurs\\84_jai-hindley_profil.jpg",
+            "image": "\\coureurs\\84_jai-hindley_profil.jpg",
             "equipe": "RED BULL - BORA - HANSGROHE"
         },
         {
@@ -618,7 +618,7 @@
             "nom": "Jungels",
             "nation": "lux",
             "drapeau": "<span class=\"fi fi-lux\"></span>",
-            "image": "assets\\coureurs\\85_bob-jungels_profil.jpg",
+            "image": "\\coureurs\\85_bob-jungels_profil.jpg",
             "equipe": "RED BULL - BORA - HANSGROHE"
         },
         {
@@ -627,7 +627,7 @@
             "nom": "Sobrero",
             "nation": "ita",
             "drapeau": "<span class=\"fi fi-ita\"></span>",
-            "image": "assets\\coureurs\\86_matteo-sobrero_profil.jpg",
+            "image": "\\coureurs\\86_matteo-sobrero_profil.jpg",
             "equipe": "RED BULL - BORA - HANSGROHE"
         },
         {
@@ -636,7 +636,7 @@
             "nom": "Van poppel",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\87_danny-van-poppel_profil.jpg",
+            "image": "\\coureurs\\87_danny-van-poppel_profil.jpg",
             "equipe": "RED BULL - BORA - HANSGROHE"
         },
         {
@@ -645,7 +645,7 @@
             "nom": "Vlasov",
             "nation": "",
             "drapeau": "<span class=\"fi fi-\"></span>",
-            "image": "assets\\coureurs\\88_aleksandr-vlasov_profil.jpg",
+            "image": "\\coureurs\\88_aleksandr-vlasov_profil.jpg",
             "equipe": "RED BULL - BORA - HANSGROHE"
         },
         {
@@ -654,7 +654,7 @@
             "nom": "Gaudu",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\91_david-gaudu_profil.jpg",
+            "image": "\\coureurs\\91_david-gaudu_profil.jpg",
             "equipe": "GROUPAMA-FDJ"
         },
         {
@@ -663,7 +663,7 @@
             "nom": "Geniets",
             "nation": "lux",
             "drapeau": "<span class=\"fi fi-lux\"></span>",
-            "image": "assets\\coureurs\\92_kévin-geniets_profil.jpg",
+            "image": "\\coureurs\\92_kévin-geniets_profil.jpg",
             "equipe": "GROUPAMA-FDJ"
         },
         {
@@ -672,7 +672,7 @@
             "nom": "Gregoire",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\93_romain-gregoire_profil.jpg",
+            "image": "\\coureurs\\93_romain-gregoire_profil.jpg",
             "equipe": "GROUPAMA-FDJ"
         },
         {
@@ -681,7 +681,7 @@
             "nom": "Küng",
             "nation": "sui",
             "drapeau": "<span class=\"fi fi-sui\"></span>",
-            "image": "assets\\coureurs\\94_stefan-küng_profil.jpg",
+            "image": "\\coureurs\\94_stefan-küng_profil.jpg",
             "equipe": "GROUPAMA-FDJ"
         },
         {
@@ -690,7 +690,7 @@
             "nom": "Madouas",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\95_valentin-madouas_profil.jpg",
+            "image": "\\coureurs\\95_valentin-madouas_profil.jpg",
             "equipe": "GROUPAMA-FDJ"
         },
         {
@@ -699,7 +699,7 @@
             "nom": "Martinez",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\96_lenny-martinez_profil.jpg",
+            "image": "\\coureurs\\96_lenny-martinez_profil.jpg",
             "equipe": "GROUPAMA-FDJ"
         },
         {
@@ -708,7 +708,7 @@
             "nom": "Pacher",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\97_quentin-pacher_profil.jpg",
+            "image": "\\coureurs\\97_quentin-pacher_profil.jpg",
             "equipe": "GROUPAMA-FDJ"
         },
         {
@@ -717,7 +717,7 @@
             "nom": "Russo",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\98_clément-russo_profil.jpg",
+            "image": "\\coureurs\\98_clément-russo_profil.jpg",
             "equipe": "GROUPAMA-FDJ"
         },
         {
@@ -726,7 +726,7 @@
             "nom": "Van der poel",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\101_mathieu-van-der-poel_profil.jpg",
+            "image": "\\coureurs\\101_mathieu-van-der-poel_profil.jpg",
             "equipe": "ALPECIN-DECEUNINCK"
         },
         {
@@ -735,7 +735,7 @@
             "nom": "Dillier",
             "nation": "sui",
             "drapeau": "<span class=\"fi fi-sui\"></span>",
-            "image": "assets\\coureurs\\102_silvan-dillier_profil.jpg",
+            "image": "\\coureurs\\102_silvan-dillier_profil.jpg",
             "equipe": "ALPECIN-DECEUNINCK"
         },
         {
@@ -744,7 +744,7 @@
             "nom": "Ghys",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\103_robbe-ghys_profil.jpg",
+            "image": "\\coureurs\\103_robbe-ghys_profil.jpg",
             "equipe": "ALPECIN-DECEUNINCK"
         },
         {
@@ -753,7 +753,7 @@
             "nom": "Kragh andersen",
             "nation": "den",
             "drapeau": "<span class=\"fi fi-den\"></span>",
-            "image": "assets\\coureurs\\104_soren-kragh-andersen_profil.jpg",
+            "image": "\\coureurs\\104_soren-kragh-andersen_profil.jpg",
             "equipe": "ALPECIN-DECEUNINCK"
         },
         {
@@ -762,7 +762,7 @@
             "nom": "Laurance",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\105_axel-laurance_profil.jpg",
+            "image": "\\coureurs\\105_axel-laurance_profil.jpg",
             "equipe": "ALPECIN-DECEUNINCK"
         },
         {
@@ -771,7 +771,7 @@
             "nom": "Philipsen",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\106_jasper-philipsen_profil.jpg",
+            "image": "\\coureurs\\106_jasper-philipsen_profil.jpg",
             "equipe": "ALPECIN-DECEUNINCK"
         },
         {
@@ -780,7 +780,7 @@
             "nom": "Rickaert",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\107_jonas-rickaert_profil.jpg",
+            "image": "\\coureurs\\107_jonas-rickaert_profil.jpg",
             "equipe": "ALPECIN-DECEUNINCK"
         },
         {
@@ -789,7 +789,7 @@
             "nom": "Vermeersch",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\108_gianni-vermeersch_profil.jpg",
+            "image": "\\coureurs\\108_gianni-vermeersch_profil.jpg",
             "equipe": "ALPECIN-DECEUNINCK"
         },
         {
@@ -798,7 +798,7 @@
             "nom": "Carapaz",
             "nation": "ecu",
             "drapeau": "<span class=\"fi fi-ecu\"></span>",
-            "image": "assets\\coureurs\\111_richard-carapaz_profil.jpg",
+            "image": "\\coureurs\\111_richard-carapaz_profil.jpg",
             "equipe": "EF EDUCATION - EASYPOST"
         },
         {
@@ -807,7 +807,7 @@
             "nom": "Bettiol",
             "nation": "ita",
             "drapeau": "<span class=\"fi fi-ita\"></span>",
-            "image": "assets\\coureurs\\112_alberto-bettiol_profil.jpg",
+            "image": "\\coureurs\\112_alberto-bettiol_profil.jpg",
             "equipe": "EF EDUCATION - EASYPOST"
         },
         {
@@ -816,7 +816,7 @@
             "nom": "Bissegger",
             "nation": "sui",
             "drapeau": "<span class=\"fi fi-sui\"></span>",
-            "image": "assets\\coureurs\\113_stefan-bissegger_profil.jpg",
+            "image": "\\coureurs\\113_stefan-bissegger_profil.jpg",
             "equipe": "EF EDUCATION - EASYPOST"
         },
         {
@@ -825,7 +825,7 @@
             "nom": "Costa",
             "nation": "por",
             "drapeau": "<span class=\"fi fi-por\"></span>",
-            "image": "assets\\coureurs\\114_rui-costa_profil.jpg",
+            "image": "\\coureurs\\114_rui-costa_profil.jpg",
             "equipe": "EF EDUCATION - EASYPOST"
         },
         {
@@ -834,7 +834,7 @@
             "nom": "Healy",
             "nation": "irl",
             "drapeau": "<span class=\"fi fi-irl\"></span>",
-            "image": "assets\\coureurs\\115_ben-healy_profil.jpg",
+            "image": "\\coureurs\\115_ben-healy_profil.jpg",
             "equipe": "EF EDUCATION - EASYPOST"
         },
         {
@@ -843,7 +843,7 @@
             "nom": "Powless",
             "nation": "usa",
             "drapeau": "<span class=\"fi fi-usa\"></span>",
-            "image": "assets\\coureurs\\116_neilson-powless_profil.jpg",
+            "image": "\\coureurs\\116_neilson-powless_profil.jpg",
             "equipe": "EF EDUCATION - EASYPOST"
         },
         {
@@ -852,7 +852,7 @@
             "nom": "Quinn",
             "nation": "usa",
             "drapeau": "<span class=\"fi fi-usa\"></span>",
-            "image": "assets\\coureurs\\117_sean-quinn_profil.jpg",
+            "image": "\\coureurs\\117_sean-quinn_profil.jpg",
             "equipe": "EF EDUCATION - EASYPOST"
         },
         {
@@ -861,7 +861,7 @@
             "nom": "Van den berg",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\118_marijn-van-den-berg_profil.jpg",
+            "image": "\\coureurs\\118_marijn-van-den-berg_profil.jpg",
             "equipe": "EF EDUCATION - EASYPOST"
         },
         {
@@ -870,7 +870,7 @@
             "nom": "De lie",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\121_arnaud-de-lie_profil.jpg",
+            "image": "\\coureurs\\121_arnaud-de-lie_profil.jpg",
             "equipe": "LOTTO DSTNY"
         },
         {
@@ -879,7 +879,7 @@
             "nom": "Beullens",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\122_cedric-beullens_profil.jpg",
+            "image": "\\coureurs\\122_cedric-beullens_profil.jpg",
             "equipe": "LOTTO DSTNY"
         },
         {
@@ -888,7 +888,7 @@
             "nom": "Campenaerts",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\123_victor-campenaerts_profil.jpg",
+            "image": "\\coureurs\\123_victor-campenaerts_profil.jpg",
             "equipe": "LOTTO DSTNY"
         },
         {
@@ -897,7 +897,7 @@
             "nom": "Drizners",
             "nation": "aus",
             "drapeau": "<span class=\"fi fi-aus\"></span>",
-            "image": "assets\\coureurs\\124_jarrad-drizners_profil.jpg",
+            "image": "\\coureurs\\124_jarrad-drizners_profil.jpg",
             "equipe": "LOTTO DSTNY"
         },
         {
@@ -906,7 +906,7 @@
             "nom": "Grignard",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\125_sébastien-grignard_profil.jpg",
+            "image": "\\coureurs\\125_sébastien-grignard_profil.jpg",
             "equipe": "LOTTO DSTNY"
         },
         {
@@ -915,7 +915,7 @@
             "nom": "Van gils",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\126_maxim-van-gils_profil.jpg",
+            "image": "\\coureurs\\126_maxim-van-gils_profil.jpg",
             "equipe": "LOTTO DSTNY"
         },
         {
@@ -924,7 +924,7 @@
             "nom": "Vanhoucke",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\127_harm-vanhoucke_profil.jpg",
+            "image": "\\coureurs\\127_harm-vanhoucke_profil.jpg",
             "equipe": "LOTTO DSTNY"
         },
         {
@@ -933,7 +933,7 @@
             "nom": "Van moer",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\128_brent-van-moer_profil.jpg",
+            "image": "\\coureurs\\128_brent-van-moer_profil.jpg",
             "equipe": "LOTTO DSTNY"
         },
         {
@@ -942,7 +942,7 @@
             "nom": "Williams",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\131_stephen-williams_profil.jpg",
+            "image": "\\coureurs\\131_stephen-williams_profil.jpg",
             "equipe": "ISRAEL - PREMIER TECH"
         },
         {
@@ -951,7 +951,7 @@
             "nom": "Ackermann",
             "nation": "ger",
             "drapeau": "<span class=\"fi fi-ger\"></span>",
-            "image": "assets\\coureurs\\132_pascal-ackermann_profil.jpg",
+            "image": "\\coureurs\\132_pascal-ackermann_profil.jpg",
             "equipe": "ISRAEL - PREMIER TECH"
         },
         {
@@ -960,7 +960,7 @@
             "nom": "Boivin",
             "nation": "can",
             "drapeau": "<span class=\"fi fi-can\"></span>",
-            "image": "assets\\coureurs\\133_guillaume-boivin_profil.jpg",
+            "image": "\\coureurs\\133_guillaume-boivin_profil.jpg",
             "equipe": "ISRAEL - PREMIER TECH"
         },
         {
@@ -969,7 +969,7 @@
             "nom": "Fuglsang",
             "nation": "den",
             "drapeau": "<span class=\"fi fi-den\"></span>",
-            "image": "assets\\coureurs\\134_jakob-fuglsang_profil.jpg",
+            "image": "\\coureurs\\134_jakob-fuglsang_profil.jpg",
             "equipe": "ISRAEL - PREMIER TECH"
         },
         {
@@ -978,7 +978,7 @@
             "nom": "Gee",
             "nation": "can",
             "drapeau": "<span class=\"fi fi-can\"></span>",
-            "image": "assets\\coureurs\\135_derek-gee_profil.jpg",
+            "image": "\\coureurs\\135_derek-gee_profil.jpg",
             "equipe": "ISRAEL - PREMIER TECH"
         },
         {
@@ -987,7 +987,7 @@
             "nom": "Houle",
             "nation": "can",
             "drapeau": "<span class=\"fi fi-can\"></span>",
-            "image": "assets\\coureurs\\136_hugo-houle_profil.jpg",
+            "image": "\\coureurs\\136_hugo-houle_profil.jpg",
             "equipe": "ISRAEL - PREMIER TECH"
         },
         {
@@ -996,7 +996,7 @@
             "nom": "Neilands",
             "nation": "lat",
             "drapeau": "<span class=\"fi fi-lat\"></span>",
-            "image": "assets\\coureurs\\137_krists-neilands_profil.jpg",
+            "image": "\\coureurs\\137_krists-neilands_profil.jpg",
             "equipe": "ISRAEL - PREMIER TECH"
         },
         {
@@ -1005,7 +1005,7 @@
             "nom": "Stewart",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\138_jake-stewart_profil.jpg",
+            "image": "\\coureurs\\138_jake-stewart_profil.jpg",
             "equipe": "ISRAEL - PREMIER TECH"
         },
         {
@@ -1014,7 +1014,7 @@
             "nom": "Martin",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\141_guillaume-martin_profil.jpg",
+            "image": "\\coureurs\\141_guillaume-martin_profil.jpg",
             "equipe": "COFIDIS"
         },
         {
@@ -1023,7 +1023,7 @@
             "nom": "Allegaert",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\142_piet-allegaert_profil.jpg",
+            "image": "\\coureurs\\142_piet-allegaert_profil.jpg",
             "equipe": "COFIDIS"
         },
         {
@@ -1032,7 +1032,7 @@
             "nom": "Coquard",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\143_bryan-coquard_profil.jpg",
+            "image": "\\coureurs\\143_bryan-coquard_profil.jpg",
             "equipe": "COFIDIS"
         },
         {
@@ -1041,7 +1041,7 @@
             "nom": "Geschke",
             "nation": "ger",
             "drapeau": "<span class=\"fi fi-ger\"></span>",
-            "image": "assets\\coureurs\\144_simon-geschke_profil.jpg",
+            "image": "\\coureurs\\144_simon-geschke_profil.jpg",
             "equipe": "COFIDIS"
         },
         {
@@ -1050,7 +1050,7 @@
             "nom": "Herrada",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\145_jesus-herrada_profil.jpg",
+            "image": "\\coureurs\\145_jesus-herrada_profil.jpg",
             "equipe": "COFIDIS"
         },
         {
@@ -1059,7 +1059,7 @@
             "nom": "Izagirre",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\146_ion-izagirre_profil.jpg",
+            "image": "\\coureurs\\146_ion-izagirre_profil.jpg",
             "equipe": "COFIDIS"
         },
         {
@@ -1068,7 +1068,7 @@
             "nom": "Renard",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\147_alexis-renard_profil.jpg",
+            "image": "\\coureurs\\147_alexis-renard_profil.jpg",
             "equipe": "COFIDIS"
         },
         {
@@ -1077,7 +1077,7 @@
             "nom": "Zingle",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\148_axel-zingle_profil.jpg",
+            "image": "\\coureurs\\148_axel-zingle_profil.jpg",
             "equipe": "COFIDIS"
         },
         {
@@ -1086,7 +1086,7 @@
             "nom": "Mas",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\151_enric-mas_profil.jpg",
+            "image": "\\coureurs\\151_enric-mas_profil.jpg",
             "equipe": "MOVISTAR TEAM"
         },
         {
@@ -1095,7 +1095,7 @@
             "nom": "Aranburu",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\152_alex-aranburu_profil.jpg",
+            "image": "\\coureurs\\152_alex-aranburu_profil.jpg",
             "equipe": "MOVISTAR TEAM"
         },
         {
@@ -1104,7 +1104,7 @@
             "nom": "Formolo",
             "nation": "ita",
             "drapeau": "<span class=\"fi fi-ita\"></span>",
-            "image": "assets\\coureurs\\153_davide-formolo_profil.jpg",
+            "image": "\\coureurs\\153_davide-formolo_profil.jpg",
             "equipe": "MOVISTAR TEAM"
         },
         {
@@ -1113,7 +1113,7 @@
             "nom": "Gaviria",
             "nation": "col",
             "drapeau": "<span class=\"fi fi-col\"></span>",
-            "image": "assets\\coureurs\\154_fernando-gaviria_profil.jpg",
+            "image": "\\coureurs\\154_fernando-gaviria_profil.jpg",
             "equipe": "MOVISTAR TEAM"
         },
         {
@@ -1122,7 +1122,7 @@
             "nom": "Lazkano",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\155_oier-lazkano_profil.jpg",
+            "image": "\\coureurs\\155_oier-lazkano_profil.jpg",
             "equipe": "MOVISTAR TEAM"
         },
         {
@@ -1131,7 +1131,7 @@
             "nom": "Mühlberger",
             "nation": "aut",
             "drapeau": "<span class=\"fi fi-aut\"></span>",
-            "image": "assets\\coureurs\\156_gregor-mühlberger_profil.jpg",
+            "image": "\\coureurs\\156_gregor-mühlberger_profil.jpg",
             "equipe": "MOVISTAR TEAM"
         },
         {
@@ -1140,7 +1140,7 @@
             "nom": "Oliveira",
             "nation": "por",
             "drapeau": "<span class=\"fi fi-por\"></span>",
-            "image": "assets\\coureurs\\157_nelson-oliveira_profil.jpg",
+            "image": "\\coureurs\\157_nelson-oliveira_profil.jpg",
             "equipe": "MOVISTAR TEAM"
         },
         {
@@ -1149,7 +1149,7 @@
             "nom": "Romo",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\158_javier-romo_profil.jpg",
+            "image": "\\coureurs\\158_javier-romo_profil.jpg",
             "equipe": "MOVISTAR TEAM"
         },
         {
@@ -1158,7 +1158,7 @@
             "nom": "Vauquelin",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\161_kévin-vauquelin_profil.jpg",
+            "image": "\\coureurs\\161_kévin-vauquelin_profil.jpg",
             "equipe": "ARKEA-B&B HOTELS"
         },
         {
@@ -1167,7 +1167,7 @@
             "nom": "Capiot",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\162_amaury-capiot_profil.jpg",
+            "image": "\\coureurs\\162_amaury-capiot_profil.jpg",
             "equipe": "ARKEA-B&B HOTELS"
         },
         {
@@ -1176,7 +1176,7 @@
             "nom": "Champoussin",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\163_clément-champoussin_profil.jpg",
+            "image": "\\coureurs\\163_clément-champoussin_profil.jpg",
             "equipe": "ARKEA-B&B HOTELS"
         },
         {
@@ -1185,7 +1185,7 @@
             "nom": "Demare",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\164_arnaud-demare_profil.jpg",
+            "image": "\\coureurs\\164_arnaud-demare_profil.jpg",
             "equipe": "ARKEA-B&B HOTELS"
         },
         {
@@ -1194,7 +1194,7 @@
             "nom": "Garcia pierna",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\165_raul-garcia-pierna_profil.jpg",
+            "image": "\\coureurs\\165_raul-garcia-pierna_profil.jpg",
             "equipe": "ARKEA-B&B HOTELS"
         },
         {
@@ -1203,7 +1203,7 @@
             "nom": "Mclay",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\166_daniel-mclay_profil.jpg",
+            "image": "\\coureurs\\166_daniel-mclay_profil.jpg",
             "equipe": "ARKEA-B&B HOTELS"
         },
         {
@@ -1212,7 +1212,7 @@
             "nom": "Mozzato",
             "nation": "ita",
             "drapeau": "<span class=\"fi fi-ita\"></span>",
-            "image": "assets\\coureurs\\167_luca-mozzato_profil.jpg",
+            "image": "\\coureurs\\167_luca-mozzato_profil.jpg",
             "equipe": "ARKEA-B&B HOTELS"
         },
         {
@@ -1221,7 +1221,7 @@
             "nom": "Rodriguez",
             "nation": "esp",
             "drapeau": "<span class=\"fi fi-esp\"></span>",
-            "image": "assets\\coureurs\\168_cristian-rodriguez_profil.jpg",
+            "image": "\\coureurs\\168_cristian-rodriguez_profil.jpg",
             "equipe": "ARKEA-B&B HOTELS"
         },
         {
@@ -1230,7 +1230,7 @@
             "nom": "Meintjes",
             "nation": "rsa",
             "drapeau": "<span class=\"fi fi-rsa\"></span>",
-            "image": "assets\\coureurs\\171_louis-meintjes_profil.jpg",
+            "image": "\\coureurs\\171_louis-meintjes_profil.jpg",
             "equipe": "INTERMARCHÉ - WANTY"
         },
         {
@@ -1239,7 +1239,7 @@
             "nom": "Girmay",
             "nation": "eri",
             "drapeau": "<span class=\"fi fi-eri\"></span>",
-            "image": "assets\\coureurs\\172_biniam-girmay_profil.jpg",
+            "image": "\\coureurs\\172_biniam-girmay_profil.jpg",
             "equipe": "INTERMARCHÉ - WANTY"
         },
         {
@@ -1248,7 +1248,7 @@
             "nom": "Goossens",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\173_kobe-goossens_profil.jpg",
+            "image": "\\coureurs\\173_kobe-goossens_profil.jpg",
             "equipe": "INTERMARCHÉ - WANTY"
         },
         {
@@ -1257,7 +1257,7 @@
             "nom": "Page",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\174_hugo-page_profil.jpg",
+            "image": "\\coureurs\\174_hugo-page_profil.jpg",
             "equipe": "INTERMARCHÉ - WANTY"
         },
         {
@@ -1266,7 +1266,7 @@
             "nom": "Rex",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\175_laurenz-rex_profil.jpg",
+            "image": "\\coureurs\\175_laurenz-rex_profil.jpg",
             "equipe": "INTERMARCHÉ - WANTY"
         },
         {
@@ -1275,7 +1275,7 @@
             "nom": "Teunissen",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\176_mike-teunissen_profil.jpg",
+            "image": "\\coureurs\\176_mike-teunissen_profil.jpg",
             "equipe": "INTERMARCHÉ - WANTY"
         },
         {
@@ -1284,7 +1284,7 @@
             "nom": "Thijssen",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\177_gerben-thijssen_profil.jpg",
+            "image": "\\coureurs\\177_gerben-thijssen_profil.jpg",
             "equipe": "INTERMARCHÉ - WANTY"
         },
         {
@@ -1293,7 +1293,7 @@
             "nom": "Zimmermann",
             "nation": "ger",
             "drapeau": "<span class=\"fi fi-ger\"></span>",
-            "image": "assets\\coureurs\\178_georg-zimmermann_profil.jpg",
+            "image": "\\coureurs\\178_georg-zimmermann_profil.jpg",
             "equipe": "INTERMARCHÉ - WANTY"
         },
         {
@@ -1302,7 +1302,7 @@
             "nom": "Bardet",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\181_romain-bardet_profil.jpg",
+            "image": "\\coureurs\\181_romain-bardet_profil.jpg",
             "equipe": "TEAM DSM-FIRMENICH POSTNL"
         },
         {
@@ -1311,7 +1311,7 @@
             "nom": "Barguil",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\182_warren-barguil_profil.jpg",
+            "image": "\\coureurs\\182_warren-barguil_profil.jpg",
             "equipe": "TEAM DSM-FIRMENICH POSTNL"
         },
         {
@@ -1320,7 +1320,7 @@
             "nom": "Degenkolb",
             "nation": "ger",
             "drapeau": "<span class=\"fi fi-ger\"></span>",
-            "image": "assets\\coureurs\\183_john-degenkolb_profil.jpg",
+            "image": "\\coureurs\\183_john-degenkolb_profil.jpg",
             "equipe": "TEAM DSM-FIRMENICH POSTNL"
         },
         {
@@ -1329,7 +1329,7 @@
             "nom": "Eekhoff",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\184_nils-eekhoff_profil.jpg",
+            "image": "\\coureurs\\184_nils-eekhoff_profil.jpg",
             "equipe": "TEAM DSM-FIRMENICH POSTNL"
         },
         {
@@ -1338,7 +1338,7 @@
             "nom": "Jakobsen",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\185_fabio-jakobsen_profil.jpg",
+            "image": "\\coureurs\\185_fabio-jakobsen_profil.jpg",
             "equipe": "TEAM DSM-FIRMENICH POSTNL"
         },
         {
@@ -1347,7 +1347,7 @@
             "nom": "Onley",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\186_oscar-onley_profil.jpg",
+            "image": "\\coureurs\\186_oscar-onley_profil.jpg",
             "equipe": "TEAM DSM-FIRMENICH POSTNL"
         },
         {
@@ -1356,7 +1356,7 @@
             "nom": "Van den broek",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\187_frank-van-den-broek_profil.jpg",
+            "image": "\\coureurs\\187_frank-van-den-broek_profil.jpg",
             "equipe": "TEAM DSM-FIRMENICH POSTNL"
         },
         {
@@ -1365,7 +1365,7 @@
             "nom": "Welten",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\188_bram-welten_profil.jpg",
+            "image": "\\coureurs\\188_bram-welten_profil.jpg",
             "equipe": "TEAM DSM-FIRMENICH POSTNL"
         },
         {
@@ -1374,7 +1374,7 @@
             "nom": "Cavendish",
             "nation": "gbr",
             "drapeau": "<span class=\"fi fi-gbr\"></span>",
-            "image": "assets\\coureurs\\191_mark-cavendish_profil.jpg",
+            "image": "\\coureurs\\191_mark-cavendish_profil.jpg",
             "equipe": "ASTANA QAZAQSTAN TEAM"
         },
         {
@@ -1383,7 +1383,7 @@
             "nom": "Ballerini",
             "nation": "ita",
             "drapeau": "<span class=\"fi fi-ita\"></span>",
-            "image": "assets\\coureurs\\192_davide-ballerini_profil.jpg",
+            "image": "\\coureurs\\192_davide-ballerini_profil.jpg",
             "equipe": "ASTANA QAZAQSTAN TEAM"
         },
         {
@@ -1392,7 +1392,7 @@
             "nom": "Bol",
             "nation": "ned",
             "drapeau": "<span class=\"fi fi-ned\"></span>",
-            "image": "assets\\coureurs\\193_cees-bol_profil.jpg",
+            "image": "\\coureurs\\193_cees-bol_profil.jpg",
             "equipe": "ASTANA QAZAQSTAN TEAM"
         },
         {
@@ -1401,7 +1401,7 @@
             "nom": "Fedorov",
             "nation": "kaz",
             "drapeau": "<span class=\"fi fi-kaz\"></span>",
-            "image": "assets\\coureurs\\194_yevgeniy-fedorov_profil.jpg",
+            "image": "\\coureurs\\194_yevgeniy-fedorov_profil.jpg",
             "equipe": "ASTANA QAZAQSTAN TEAM"
         },
         {
@@ -1410,7 +1410,7 @@
             "nom": "Gazzoli",
             "nation": "ita",
             "drapeau": "<span class=\"fi fi-ita\"></span>",
-            "image": "assets\\coureurs\\195_michele-gazzoli_profil.jpg",
+            "image": "\\coureurs\\195_michele-gazzoli_profil.jpg",
             "equipe": "ASTANA QAZAQSTAN TEAM"
         },
         {
@@ -1419,7 +1419,7 @@
             "nom": "Lutsenko",
             "nation": "kaz",
             "drapeau": "<span class=\"fi fi-kaz\"></span>",
-            "image": "assets\\coureurs\\196_alexey-lutsenko_profil.jpg",
+            "image": "\\coureurs\\196_alexey-lutsenko_profil.jpg",
             "equipe": "ASTANA QAZAQSTAN TEAM"
         },
         {
@@ -1428,7 +1428,7 @@
             "nom": "Morkov",
             "nation": "den",
             "drapeau": "<span class=\"fi fi-den\"></span>",
-            "image": "assets\\coureurs\\197_michael-morkov_profil.jpg",
+            "image": "\\coureurs\\197_michael-morkov_profil.jpg",
             "equipe": "ASTANA QAZAQSTAN TEAM"
         },
         {
@@ -1437,7 +1437,7 @@
             "nom": "Tejada",
             "nation": "col",
             "drapeau": "<span class=\"fi fi-col\"></span>",
-            "image": "assets\\coureurs\\198_harold-tejada_profil.jpg",
+            "image": "\\coureurs\\198_harold-tejada_profil.jpg",
             "equipe": "ASTANA QAZAQSTAN TEAM"
         },
         {
@@ -1446,7 +1446,7 @@
             "nom": "Cort",
             "nation": "den",
             "drapeau": "<span class=\"fi fi-den\"></span>",
-            "image": "assets\\coureurs\\201_magnus-cort_profil.jpg",
+            "image": "\\coureurs\\201_magnus-cort_profil.jpg",
             "equipe": "UNO-X MOBILITY"
         },
         {
@@ -1455,7 +1455,7 @@
             "nom": "Abrahamsen",
             "nation": "nor",
             "drapeau": "<span class=\"fi fi-nor\"></span>",
-            "image": "assets\\coureurs\\202_jonas-abrahamsen_profil.jpg",
+            "image": "\\coureurs\\202_jonas-abrahamsen_profil.jpg",
             "equipe": "UNO-X MOBILITY"
         },
         {
@@ -1464,7 +1464,7 @@
             "nom": "Eiking",
             "nation": "nor",
             "drapeau": "<span class=\"fi fi-nor\"></span>",
-            "image": "assets\\coureurs\\203_odd-christian-eiking_profil.jpg",
+            "image": "\\coureurs\\203_odd-christian-eiking_profil.jpg",
             "equipe": "UNO-X MOBILITY"
         },
         {
@@ -1473,7 +1473,7 @@
             "nom": "Johannessen",
             "nation": "nor",
             "drapeau": "<span class=\"fi fi-nor\"></span>",
-            "image": "assets\\coureurs\\204_tobias-johannessen_profil.jpg",
+            "image": "\\coureurs\\204_tobias-johannessen_profil.jpg",
             "equipe": "UNO-X MOBILITY"
         },
         {
@@ -1482,7 +1482,7 @@
             "nom": "Kristoff",
             "nation": "nor",
             "drapeau": "<span class=\"fi fi-nor\"></span>",
-            "image": "assets\\coureurs\\205_alexander-kristoff_profil.jpg",
+            "image": "\\coureurs\\205_alexander-kristoff_profil.jpg",
             "equipe": "UNO-X MOBILITY"
         },
         {
@@ -1491,7 +1491,7 @@
             "nom": "Kulset",
             "nation": "nor",
             "drapeau": "<span class=\"fi fi-nor\"></span>",
-            "image": "assets\\coureurs\\206_johannes-kulset_profil.jpg",
+            "image": "\\coureurs\\206_johannes-kulset_profil.jpg",
             "equipe": "UNO-X MOBILITY"
         },
         {
@@ -1500,7 +1500,7 @@
             "nom": "Tiller",
             "nation": "nor",
             "drapeau": "<span class=\"fi fi-nor\"></span>",
-            "image": "assets\\coureurs\\207_rasmus-tiller_profil.jpg",
+            "image": "\\coureurs\\207_rasmus-tiller_profil.jpg",
             "equipe": "UNO-X MOBILITY"
         },
         {
@@ -1509,7 +1509,7 @@
             "nom": "Waerenskjold",
             "nation": "nor",
             "drapeau": "<span class=\"fi fi-nor\"></span>",
-            "image": "assets\\coureurs\\208_soren-waerenskjold_profil.jpg",
+            "image": "\\coureurs\\208_soren-waerenskjold_profil.jpg",
             "equipe": "UNO-X MOBILITY"
         },
         {
@@ -1518,7 +1518,7 @@
             "nom": "Cras",
             "nation": "bel",
             "drapeau": "<span class=\"fi fi-bel\"></span>",
-            "image": "assets\\coureurs\\211_steff-cras_profil.jpg",
+            "image": "\\coureurs\\211_steff-cras_profil.jpg",
             "equipe": "TOTALENERGIES"
         },
         {
@@ -1527,7 +1527,7 @@
             "nom": "Burgaudeau",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\212_mathieu-burgaudeau_profil.jpg",
+            "image": "\\coureurs\\212_mathieu-burgaudeau_profil.jpg",
             "equipe": "TOTALENERGIES"
         },
         {
@@ -1536,7 +1536,7 @@
             "nom": "Dujardin",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\213_sandy-dujardin_profil.jpg",
+            "image": "\\coureurs\\213_sandy-dujardin_profil.jpg",
             "equipe": "TOTALENERGIES"
         },
         {
@@ -1545,7 +1545,7 @@
             "nom": "Gachignard",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\214_thomas-gachignard_profil.jpg",
+            "image": "\\coureurs\\214_thomas-gachignard_profil.jpg",
             "equipe": "TOTALENERGIES"
         },
         {
@@ -1554,7 +1554,7 @@
             "nom": "Grellier",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\215_fabien-grellier_profil.jpg",
+            "image": "\\coureurs\\215_fabien-grellier_profil.jpg",
             "equipe": "TOTALENERGIES"
         },
         {
@@ -1563,7 +1563,7 @@
             "nom": "Jegat",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\216_jordan-jegat_profil.jpg",
+            "image": "\\coureurs\\216_jordan-jegat_profil.jpg",
             "equipe": "TOTALENERGIES"
         },
         {
@@ -1572,7 +1572,7 @@
             "nom": "Turgis",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "assets\\coureurs\\217_anthony-turgis_profil.jpg",
+            "image": "\\coureurs\\217_anthony-turgis_profil.jpg",
             "equipe": "TOTALENERGIES"
         },
         {
@@ -1581,7 +1581,7 @@
             "nom": "Vercher",
             "nation": "fra",
             "drapeau": "<span class=\"fi fi-fra\"></span>",
-            "image": "../assets<<",
+            "image": "../<<",
             "equipe": "TOTALENERGIES"
         }
     ]
