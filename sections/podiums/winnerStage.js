@@ -67,7 +67,6 @@ export async function showWinnerStage() {
       //  bg.style.backgroundImage = `url(/assets/flags/${nationCode.toLowerCase()}.svg)`;
       //}
 
-      console.log("▶️ Cycliste affiché :", fullName, "-", equipe, "-", nationCode);
     }
 
     // 🔁 Navigation entre les cyclistes
