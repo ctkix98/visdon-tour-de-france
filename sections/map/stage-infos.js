@@ -2,7 +2,7 @@ import etapes from "../../data/etapes.json";
 import coureurs from "../../data/coureur.json";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { select } from "d3-selection";
-import { init } from "./setup-traces";
+import { main } from "./setup-traces";
 console.log(etapes);
 
 // const stageInfos = etapes.filter(etape => importantStagesNumber.includes(etape.id))
@@ -10,7 +10,7 @@ const svg = select("#tdf-map");
 
 // Attendre que la carte et les points importants soient initialisés
 const initStageInfos = async () => {
-  await init(); // Cette fonction initialise la carte et ajoute les points importants
+  await main(); // Cette fonction initialise la carte et ajoute les points importants
   const svg = select("#tdf-map");
 
   // Créer l'overlay
@@ -87,7 +87,7 @@ const setUpStageInfos = (stageNumber) => {
     </button>
     <div class="h-full overflow-y-auto">
       <img 
-        src="assets/profils/profil_${stageNumber}.jpg" 
+        src="/profils/profil_${stageNumber}.jpg" 
         alt="Profil de l'étape ${stageNumber}"
         class="w-full h-auto rounded-lg mb-8"
       />
