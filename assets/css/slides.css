@@ -6,55 +6,57 @@
     height: 100%;
     pointer-events: none; /* pour que ça ne bloque pas les clics */
     z-index: 0;
-  }
-  
-  .shape {
+}
+
+.shape {
     position: absolute;
     width: 80px;
     height: 80px;
     border-radius: 40px;
-  }
-  
-  .shape.yellow {
+}
+
+.shape.yellow {
     background-color: #ffd700;
-  }
-  .shape.black {
+}
+
+.shape.black {
     background-color: #000;
-  }
-  .shape.white {
+}
+
+.shape.white {
     background-color: #fff;
-  }
-  
-  /* positions des formes */
-  .top-left {
+}
+
+/* positions des formes */
+.top-left {
     top: 30px;
     left: 30px;
-  }
-  
-  .top-right {
+}
+
+.top-right {
     top: 30px;
     right: 30px;
-  }
-  
-  .center-left {
+}
+
+.center-left {
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-  }
-  
-  .center-right {
+}
+
+.center-right {
     top: 50%;
     right: 10%;
     transform: translateY(-50%);
-  }
-  
-  .bottom-left {
+}
+
+.bottom-left {
     bottom: 30px;
     left: 30px;
-  }
-  
-  .bottom-right {
+}
+
+.bottom-right {
     bottom: 30px;
     right: 30px;
-  }
+}
   

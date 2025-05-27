@@ -1,16 +1,15 @@
 // recupérer les informations du fichier json
-import teamsJson from '../../data/equipe.json' assert { type: 'json' };
-import runnerJson from '../../data/coureur.json' assert { type: 'json' };
+import teamsJson from '../../public/data/equipe.json' assert {type: 'json'};
+import runnerJson from '../../public/data/coureur.json' assert {type: 'json'};
 
 const equipes = teamsJson.equipes;
 const coureurs = runnerJson.coureurs;
 const teamList = document.querySelector('#teams-section .third-cloumn > div');
-console.log(equipes);
 
-const displayTeams = async() => {
+const displayTeams = async () => {
     // vider le contenu de l'élément
     teamList.innerHTML = '';
-    
+
     // Créer une div pour chaque équipe
     equipes.forEach((team) => {
         const card = document.createElement('div');
@@ -31,14 +30,14 @@ const displayTeams = async() => {
                     <div class="team-details opacity-0 px-4 pb-4 transition-opacity duration-300">
                         <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm mt-2">
                             ${team.coureurs.map((id, i) => {
-                                const coureur = coureurs.find(c => c.id === id.toString());
-                                return `
+            const coureur = coureurs.find(c => c.id === id.toString());
+            return `
                                     <div class="flex items-center gap-2">
                                         <span class="bg-yellow-500 text-black px-2 py-0.5 rounded-tl-[10px] rounded-tr-[0px] rounded-br-[10px] rounded-bl-[0px] text-xs">${id}</span>
                                         <span>${coureur ? `${coureur.prenom} ${coureur.nom}` : `Coureur #${id}`}</span>
                                     </div>
                                 `;
-                            }).join('')}
+        }).join('')}
                         </div>
                     </div>
                 </div>
@@ -48,7 +47,7 @@ const displayTeams = async() => {
         // Ajouter le listener
         card.addEventListener('click', () => {
             const isExpanded = card.classList.contains('max-h-96');
-            
+
             // Reset all cards
             document.querySelectorAll('.team-card').forEach(el => {
                 el.classList.remove('max-h-96');
@@ -70,4 +69,4 @@ const displayTeams = async() => {
     });
 }
 
-export { displayTeams }; 
+export {displayTeams};

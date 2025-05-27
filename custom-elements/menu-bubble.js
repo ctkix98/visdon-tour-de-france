@@ -7,22 +7,21 @@ class MenuBubble extends HTMLElement {
     }
 
     render() {
-       /*  this.innerHTML = `
-                <p>${this.getAttribute('name')}</p>
-        `; */
+        /*  this.innerHTML = `
+                 <p>${this.getAttribute('name')}</p>
+         `; */
 
         this.insertAdjacentHTML(
             "afterbegin",
             `<p>${this.getAttribute('name')}</p>`
-          );
+        );
     }
 
     connectedCallback() {
-        console.log("Custom element added to page.");
         this.render();
     }
 
-    
+
 }
 
 customElements.define("menu-bubble", MenuBubble);

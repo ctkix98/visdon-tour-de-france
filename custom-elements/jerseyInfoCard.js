@@ -19,7 +19,7 @@ class JerseyInfoCard extends HTMLElement {
                  ${this.getAttribute('content')}
                 </p>
               </div>`
-          );
+        );
     }
 
     connectedCallback() {
@@ -27,7 +27,7 @@ class JerseyInfoCard extends HTMLElement {
         this.render();
     }
 
-    
+
 }
 
-customElements.define("jersey-info-card", JerseyInfoCard );
+customElements.define("jersey-info-card", JerseyInfoCard);
