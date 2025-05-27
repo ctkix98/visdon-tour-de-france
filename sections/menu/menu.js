@@ -7,11 +7,11 @@ const displayCategories = () => {
     bubbleList.innerHTML = '';
 
     const categories = [
-        { name: 'Equipes', href: '#teams-section', id: 'teams', number: 1 },
-        { name: 'Enjeux', href: '#stakes-section', id: 'stakes', number: 2 },
-        { name: 'Equipment', href: '#equipment-section', id: 'equipment', number: 3 },
+        {name: 'Equipes', href: '#teams-section', id: 'teams', number: 1},
+        {name: 'Enjeux', href: '#stakes-section', id: 'stakes', number: 2},
+        {name: 'Equipment', href: '#equipment-section', id: 'equipment', number: 3},
         /* { name: 'Parcours', href: '#route-section' , id: 'route', number: 4 }, */
-        { name: 'Reglement', href: '#rules-section', id: 'rules' , number: 5 },
+        {name: 'Reglement', href: '#rules-section', id: 'rules', number: 5},
     ];
 
     categories.forEach(category => {
@@ -19,7 +19,7 @@ const displayCategories = () => {
         const link = document.createElement('a');
         link.setAttribute('href', category.href);
         bubble.setAttribute('id', category.id);
-        bubble.setAttribute('class',`menu-bubble  box-${category.number}`);
+        bubble.setAttribute('class', `menu-bubble  box-${category.number}`);
         bubble.setAttribute('name', category.name);
         link.appendChild(bubble);
         bubbleList.appendChild(link);

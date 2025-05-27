@@ -12,24 +12,24 @@ import "/sections/menu/equipment.js"
 import "/sections/menu/route.js"
 
 
-import { displayCategories } from "./sections/menu/menu";
-import { displaySection, activateLink, toggleMenu } from "./helpers";
-import { displayCards } from "./sections/menu/rules";
-import { displayJerseyDetails } from "./sections/menu/stakes";
-import { initSlideAnimations } from "./sections/slides/slidesAnimations";
-import { displayTeams } from "./sections/menu/teams";
-import { createFullElevationProfile } from "./sections/menu/setup-curve"
+import {displayCategories} from "./sections/menu/menu";
+import {displaySection, activateLink, toggleMenu} from "./helpers";
+import {displayCards} from "./sections/menu/rules";
+import {displayJerseyDetails} from "./sections/menu/stakes";
+import {initSlideAnimations} from "./sections/slides/slidesAnimations";
+import {displayTeams} from "./sections/menu/teams";
+import {createFullElevationProfile} from "./sections/menu/setup-curve"
 
 
-import { initPodiumsTabs } from "./sections/podiums/podiumsTabs";
-import { showWinnerStage } from "./sections/podiums/winnerStage.js";
-import { startCountdown } from "./sections/countdown/countdown.js";
-import { checkScreenSize } from "./sections/checkSize.js";
-import { setupFinishScrollRace } from "./sections/finish/finishline.js";
-import { showMaillots } from "./sections/podiums/maillots.js";
-import { showGeneralPodium } from "./sections/podiums/winnersGC.js";
+import {initPodiumsTabs} from "./sections/podiums/podiumsTabs";
+import {showWinnerStage} from "./sections/podiums/winnerStage.js";
+import {startCountdown} from "./sections/countdown/countdown.js";
+import {checkScreenSize} from "./sections/checkSize.js";
+import {setupFinishScrollRace} from "./sections/finish/finishline.js";
+import {showMaillots} from "./sections/podiums/maillots.js";
+import {showGeneralPodium} from "./sections/podiums/winnersGC.js";
 
-import { animateIntroLogo } from "./sections/slides/intro.js";
+import {animateIntroLogo} from "./sections/slides/intro.js";
 /* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
 
@@ -55,54 +55,52 @@ checkScreenSize();
 setupFinishScrollRace();
 
 
-
 const routes = () => {
-  const hash = window.location.hash || "#menu-section";
-  const hashs = hash.split("-");
-  activateLink(hashs[0]);
+    const hash = window.location.hash || "#menu-section";
+    const hashs = hash.split("-");
+    activateLink(hashs[0]);
 
-  switch (hashs[0]) {
-    case "#menu":
-      displaySection("menu");
-      displayCategories();
-      break;
+    switch (hashs[0]) {
+        case "#menu":
+            displaySection("menu");
+            displayCategories();
+            break;
 
-      case '#stakes':
-        if(hashs[2]) {
-          displayJerseyDetails(hashs[2])
-          displaySection('stakes')
-        }
-        else {
-          displayJerseyDetails(1)
-          displaySection('stakes')
-          
-        }
-        toggleMenu()
-      break;
+        case '#stakes':
+            if (hashs[2]) {
+                displayJerseyDetails(hashs[2])
+                displaySection('stakes')
+            } else {
+                displayJerseyDetails(1)
+                displaySection('stakes')
 
-    case "#equipment":
-      displaySection("equipment");
-      toggleMenu()
-      break;
+            }
+            toggleMenu()
+            break;
 
-    /* case "#route":
-      displaySection("route");
-      createFullElevationProfile();
-      toggleMenu()
-      break; */
+        case "#equipment":
+            displaySection("equipment");
+            toggleMenu()
+            break;
 
-    case "#rules":
-      displaySection("rules");
-      displayCards();
-      toggleMenu()
-      break;
+        /* case "#route":
+          displaySection("route");
+          createFullElevationProfile();
+          toggleMenu()
+          break; */
 
-      case "#teams":
-        displaySection("teams");
-        displayTeams();
-        toggleMenu()
-        break;  
-  }
+        case "#rules":
+            displaySection("rules");
+            displayCards();
+            toggleMenu()
+            break;
+
+        case "#teams":
+            displaySection("teams");
+            displayTeams();
+            toggleMenu()
+            break;
+    }
 };
 
 // On veut être averti des changements

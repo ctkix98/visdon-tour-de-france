@@ -1,11 +1,11 @@
 // recupérer les informations du fichier json
-import rulesJson from '../../data/regles.json' assert { type: 'json' };
+import rulesJson from '../../public/data/regles.json' assert {type: 'json'};
 
 // Récupérer le tag contenant la liste des cards 
 const cardList = document.querySelector('div.rules');
 
 
-const displayCards = async() => {
+const displayCards = async () => {
     // vider le contenu de l'élément 
     cardList.innerHTML = '';
 
@@ -18,7 +18,7 @@ const displayCards = async() => {
     });
     ;
 
-    
+
     console.log(rulesJson);
 }
 

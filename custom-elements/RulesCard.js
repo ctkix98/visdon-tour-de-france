@@ -7,9 +7,9 @@ class RulesCard extends HTMLElement {
     }
 
     render() {
-       /*  this.innerHTML = `
-                <p>${this.getAttribute('name')}</p>
-        `; */
+        /*  this.innerHTML = `
+                 <p>${this.getAttribute('name')}</p>
+         `; */
 
         this.insertAdjacentHTML(
             "afterbegin",
@@ -31,7 +31,7 @@ class RulesCard extends HTMLElement {
 
                   ${this.getAttribute('content')}</p>
               </div>`
-          );
+        );
     }
 
     connectedCallback() {
@@ -39,7 +39,7 @@ class RulesCard extends HTMLElement {
         this.render();
     }
 
-    
+
 }
 
 customElements.define("rules-card", RulesCard);
