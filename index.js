@@ -1,6 +1,6 @@
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import "/sections/menu/menu.js";
-import "/custom-elements/menu-bubble.js";
+import "/custom-elements/menuBubble.js";
 import "/custom-elements/RulesCard.js";
 import "/custom-elements/jerseyInfoCard.js";
 import "/sections/menu/rules.js"
@@ -12,7 +12,7 @@ import "/sections/menu/equipment.js"
 import "/sections/menu/route.js"
 
 
-import { displayCategories } from "./sections/menu/menu";
+import "/custom-elements/TdfMenu.js";
 import { displaySection, activateLink, toggleMenu } from "./helpers";
 import { displayCards } from "./sections/menu/rules";
 import { displayJerseyDetails } from "./sections/menu/stakes";
@@ -49,7 +49,6 @@ showGeneralPodium();
 startCountdown();
 
 //Function to check the size of the screen. If >1024, it says no :
-checkScreenSize();
 
 //Function to animate finish-line section
 setupFinishScrollRace();
@@ -64,7 +63,7 @@ const routes = () => {
   switch (hashs[0]) {
     case "#menu":
       displaySection("menu");
-      displayCategories();
+      // Le Custom Element se gère lui-même
       document.querySelector('#menu-wrapper')?.scrollIntoView();
       break;
 
@@ -104,6 +103,8 @@ const routes = () => {
         toggleMenu()
         break;  
   }
+  checkScreenSize();
+
 };
 
 // On veut être averti des changements

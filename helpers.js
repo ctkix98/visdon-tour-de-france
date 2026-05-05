@@ -10,7 +10,7 @@ const displaySection = (id) => {
     document.querySelector(`menu-bubble a[href="${id}"]`)?.classList.add('active')
   }
   const toggleMenu = () => {
-    const notMenuSections = document.querySelectorAll('body>*:not(#menu-wrapper)');
+    const notMenuSections = document.querySelectorAll('body > *:not(#menu-wrapper):not(#screen-warning)');
 
 const backButton = document.querySelectorAll('a.btn-back');
 
