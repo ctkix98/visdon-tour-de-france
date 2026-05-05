@@ -75,6 +75,14 @@
     }
   }
 
+  @keyframes float {
+    0%, 100% {
+      translate: 0 0;
+    }
+    50% {
+      translate: 0 -15px;
+    }
+  }
 }
 
 
@@ -164,27 +172,32 @@
   /* Positioning */
   /*top-left*/
   .box-1 {
-    @apply top-[12%] left-[14%]; 
+    @apply top-[12%] left-[14%];
+    animation-delay: 0s;
   }
 
   /*bottom-left*/
   .box-2 {
     @apply bottom-[10%] left-[22%];
+    animation-delay: 1.5s;
   }
 
   /*bottom-center*/
   .box-3 {
-    @apply bottom-[10%] right-[15%] -translate-x-1/2; 
+    @apply bottom-[10%] right-[15%] -translate-x-1/2;
+    animation-delay: 3s;
   }
 
   /*top-right*/
   .box-4 {
     @apply top-[2%] right-[20%];
+    animation-delay: 0.8s;
   }
 
   /*bottom-right*/
   .box-5 {
-    @apply top-[10%] right-[14%]; 
+    @apply top-[10%] right-[14%];
+    animation-delay: 2.2s;
   }
 
   .menu-bubble {
@@ -197,6 +210,11 @@
     box-shadow: inset 0 2px 10px rgba(255, 255, 255, 0.05), 0 10px 30px rgba(0, 0, 0, 0.5);
     /* Transition smooth dans les deux sens */
     @apply transition-all duration-500 ease-out;
+    /* Animation de flottaison (propriétés séparées pour ne pas écraser animation-delay) */
+    animation-name: float;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
   }
   
   .menu-bubble:hover {
