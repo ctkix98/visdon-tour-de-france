@@ -1,9 +1,9 @@
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import "/sections/menu/menu.js";
-import "/custom-elements/menuBubble.js";
+import "/custom-elements/MenuBubble.js";
 import "/custom-elements/RulesCard.js";
+import "/custom-elements/TdfRules.js";
 import "/custom-elements/jerseyInfoCard.js";
-import "/sections/menu/rules.js"
 import "/sections/menu/stakes.js"
 import "/sections/menu/teams.js"
 import "/sections/podiums/podiumsTabs.js"
@@ -14,7 +14,6 @@ import "/sections/menu/route.js"
 
 import "/custom-elements/TdfMenu.js";
 import { displaySection, activateLink, toggleMenu } from "./helpers";
-import { displayCards } from "./sections/menu/rules";
 import { displayJerseyDetails } from "./sections/menu/stakes";
 import { initSlideAnimations } from "./sections/slides/slidesAnimations";
 import { displayTeams } from "./sections/menu/teams";
@@ -93,7 +92,7 @@ const routes = () => {
 
     case "#rules":
       displaySection("rules");
-      displayCards();
+      // Le Custom Element se gère lui-même
       toggleMenu()
       break;
 

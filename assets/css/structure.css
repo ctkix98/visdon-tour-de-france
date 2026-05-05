@@ -46,12 +46,12 @@ section#menu-wrapper {
 }
 
 /* Toutes les sections enfants du menu-wrapper sont cachées par défaut */
-section#menu-wrapper > section {
+section#menu-wrapper > * {
   display: none;
 }
 
 /* Seule la section .active est visible */
-section#menu-wrapper > section.active {
+section#menu-wrapper > *.active {
   display: flex;
   align-items: center;
   justify-content: center;

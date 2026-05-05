@@ -1,6 +1,6 @@
 // Cache la section en cours et affiche celle correspondant à l'id passé en paramètre
 const displaySection = (id) => {
-    document.querySelector('section.active')?.classList.remove('active')
+    document.querySelector('#menu-wrapper > *.active')?.classList.remove('active')
     document.querySelector(`#${id}-section`)?.classList.add('active')
   }
   
