@@ -65,6 +65,7 @@ const routes = () => {
     case "#menu":
       displaySection("menu");
       displayCategories();
+      document.querySelector('#menu-wrapper')?.scrollIntoView();
       break;
 
       case '#stakes':
