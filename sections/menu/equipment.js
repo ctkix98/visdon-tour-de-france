@@ -11,9 +11,7 @@ const texteEl = document.getElementById("texte");
 const ids = Object.keys(equipments);
 
 ids.forEach(id => {
-    console.log(id);
   const el = document.getElementById(id);
-    console.log(el);
   if (el) {
     el.addEventListener("mousemove", (e) => {
       const equip = equipments[id];

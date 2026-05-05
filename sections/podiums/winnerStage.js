@@ -66,8 +66,6 @@ export async function showWinnerStage() {
       //  bg.classList.add("w-full", "h-full", "bg-cover", "bg-center");
       //  bg.style.backgroundImage = `url(/assets/flags/${nationCode.toLowerCase()}.svg)`;
       //}
-
-      console.log("▶️ Cycliste affiché :", fullName, "-", equipe, "-", nationCode);
     }
 
     // 🔁 Navigation entre les cyclistes
@@ -84,6 +82,5 @@ export async function showWinnerStage() {
     // 🔄 Initialisation
     renderCyclist(currentIndex);
   } catch (err) {
-    console.error("❌ Erreur chargement vainqueur d'étape :", err);
   }
 }

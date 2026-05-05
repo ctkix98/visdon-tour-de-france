@@ -3,7 +3,6 @@ import coureurs from "../../data/coureur.json";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { select } from "d3-selection";
 import { init } from "./setup-traces";
-console.log(etapes);
 
 // const stageInfos = etapes.filter(etape => importantStagesNumber.includes(etape.id))
 const svg = select("#tdf-map");
