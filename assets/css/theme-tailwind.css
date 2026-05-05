@@ -82,7 +82,6 @@
 @layer components {
 
   /*Sections slides*/
-  @layer components {
     .slide {
       @apply relative w-screen h-screen overflow-hidden flex items-center justify-center px-8 py-12;
     }
@@ -93,7 +92,7 @@
       @apply transition-all duration-500 ease-in-out;
     }
 
-    @layer components {
+
       .stage-slide {
         @apply flex flex-col items-center justify-center h-screen text-center px-8;
       }
@@ -109,8 +108,8 @@
       .stage-description {
         @apply max-w-[50vw] text-[1.6vw] font-primary text-black leading-snug;
       }
-    }
     
+
 
     .custom-shape {
       @apply absolute w-50 h-40;
@@ -143,7 +142,7 @@
     .center-left {
       @apply top-1/2 left-12 -translate-y-1/2;
     }
-  }
+  
   
   
 
