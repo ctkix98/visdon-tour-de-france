@@ -1,6 +1,6 @@
 import etapes from "../../data/etapes.json";
 import coureurs from "../../data/coureur.json";
-import "/node_modules/flag-icons/css/flag-icons.min.css";
+import "flag-icons/css/flag-icons.min.css";
 import { select } from "d3-selection";
 import { init } from "./setup-traces";
 
