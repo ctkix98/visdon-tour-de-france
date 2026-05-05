@@ -22,7 +22,6 @@ const backButton = document.querySelectorAll('a.btn-back');
       button.addEventListener('click', () => {
         notMenuSections.forEach(section => {
           section.classList.remove('hide');
-          console.log('back button clicked');
         });
       });
     });

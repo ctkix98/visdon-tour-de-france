@@ -7,11 +7,9 @@ const jerseyInfoContainer = document.querySelector('div#jersey-info-container');
 
 
 const displayJerseyDetails = async(id) => {
-    console.log(id);
     // vider le contenu de l'élément 
     jerseyInfoContainer.innerHTML = '';
     const jerseySelected =  jerseyJson.find(jersey => jersey.id == id);
-    console.log(jerseySelected);
 
     if (jerseySelected) {
     

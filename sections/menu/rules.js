@@ -19,7 +19,6 @@ const displayCards = async() => {
     ;
 
     
-    console.log(rulesJson);
 }
 
 export {displayCards};

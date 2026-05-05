@@ -23,7 +23,6 @@ class JerseyInfoCard extends HTMLElement {
     }
 
     connectedCallback() {
-        console.log("Custom element added to page.");
         this.render();
     }
 

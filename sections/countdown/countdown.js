@@ -5,6 +5,8 @@ export function startCountdown() {
   const minutesEl = document.getElementById("minutes");
   const secondsEl = document.getElementById("seconds");
 
+  let intervalId;
+
   function updateCountdown() {
     const now = new Date();
     const diff = targetDate - now;
@@ -14,7 +16,7 @@ export function startCountdown() {
       hoursEl.textContent = "0";
       minutesEl.textContent = "0";
       secondsEl.textContent = "0";
-      clearInterval(intervalId);
+      if (intervalId) clearInterval(intervalId);
       return;
     }
 
@@ -30,7 +32,7 @@ export function startCountdown() {
   }
 
   updateCountdown();
-  const intervalId = setInterval(updateCountdown, 1000);
+  intervalId = setInterval(updateCountdown, 1000);
 }
 
 document.addEventListener("DOMContentLoaded", startCountdown);
