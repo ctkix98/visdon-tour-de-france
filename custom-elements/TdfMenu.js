@@ -24,7 +24,7 @@ class TdfMenu extends HTMLElement {
 
     // On prépare le container principal avec les classes Tailwind
     // On utilise innerHTML pour vider et reconstruire proprement
-    this.className = "grid-menu layout-wrapper block relative mx-auto aspect-square w-[min(80vh,80vw)]";
+    this.classList.add("grid-menu", "layout-wrapper", "block", "relative", "mx-auto", "aspect-square", "w-[min(80vh,80vw)]");
     this.innerHTML = '';
 
     // 1. Création des bulles orbitales

@@ -11,7 +11,8 @@ class TdfRules extends HTMLElement {
   }
 
   render() {
-    this.className = "section-wrapper pr-10";
+    this.classList.add("section-wrapper");
+    this.classList.add("pr-20");
     
     this.innerHTML = `
       <a href="#menu-section" class="btn-back"> back </a>
