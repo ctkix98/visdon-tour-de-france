@@ -1,11 +1,12 @@
-import "/node_modules/flag-icons/css/flag-icons.min.css";
+import "flag-icons/css/flag-icons.min.css";
 import "/sections/menu/menu.js";
 import "/custom-elements/MenuBubble.js";
 import "/custom-elements/RulesCard.js";
 import "/custom-elements/TdfRules.js";
 import "/custom-elements/JerseyInfoCard.js";
 import "/custom-elements/TdfStakes.js";
-import "/sections/menu/teams.js"
+import "/custom-elements/TeamCard.js";
+import "/custom-elements/TdfTeams.js";
 import "/sections/podiums/podiumsTabs.js"
 import "/sections/map/stage-infos.js"
 import "/sections/menu/equipment.js"
@@ -15,7 +16,6 @@ import "/sections/menu/route.js"
 import "/custom-elements/TdfMenu.js";
 import { displaySection, activateLink, toggleMenu } from "./helpers";
 import { initSlideAnimations } from "./sections/slides/slidesAnimations";
-import { displayTeams } from "./sections/menu/teams";
 import { createFullElevationProfile } from "./sections/menu/setup-curve"
 
 
@@ -28,8 +28,8 @@ import { showMaillots } from "./sections/podiums/maillots.js";
 import { showGeneralPodium } from "./sections/podiums/winnersGC.js";
 
 import { animateIntroLogo } from "./sections/slides/intro.js";
-/* const drapeau = document.querySelector(".drapeau");
-drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`; */
+const drapeau = document.querySelector(".drapeau");
+drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`;
 
 console.log("coucou");
 
@@ -95,7 +95,7 @@ const routes = () => {
 
       case "#teams":
         displaySection("teams");
-        displayTeams();
+        // Le Custom Element se gère lui-même
         toggleMenu()
         break;  
   }
