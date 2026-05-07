@@ -5,16 +5,13 @@ class TdfStakes extends HTMLElement {
   constructor() {
     super();
     this.currentJerseyId = 1;
-    console.log("TdfStakes: Component constructed");
   }
 
   connectedCallback() {
-    console.log("TdfStakes: Connected to DOM");
     this.render();
   }
 
   setJersey(id) {
-    console.log("TdfStakes: Setting jersey", id);
     this.currentJerseyId = id;
     this.render();
   }
