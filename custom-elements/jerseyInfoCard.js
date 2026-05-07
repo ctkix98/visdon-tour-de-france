@@ -1,32 +1,30 @@
 class JerseyInfoCard extends HTMLElement {
 
-    static observedAttributes = [];
+  constructor() {
+    super();
+  }
 
-    constructor() {
-        super();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
+  render() {
+    const title = this.getAttribute('title') || '';
+    const img = this.getAttribute('img') || '';
+    const content = this.getAttribute('content') || '';
 
-        this.insertAdjacentHTML(
-            "afterbegin",
-            `<div class="jersey-display">
-                <h6>${this.getAttribute('title')}</h6>
-                <img src="${this.getAttribute('img')}" alt="${this.getAttribute('title')}" />
-              </div>
-              <div class="jersey-info-display">
-                <p>
-                 ${this.getAttribute('content')}
-                </p>
-              </div>`
-          );
-    }
+    this.className = "jersey-information flex flex-row items-center justify-center gap-[5%] mt-10";
 
-    connectedCallback() {
-        this.render();
-    }
-
-    
+    this.innerHTML = `
+      <div class="jersey-display flex flex-col items-center justify-center gap-4 min-w-[15vw]">
+        <h6 class="text-2xl font-bold text-black-950 uppercase tracking-wide text-center">${title}</h6>
+        <img src="${img}" alt="${title}" class="w-full h-auto object-contain" />
+      </div>
+      <div class="jersey-info-display p-[5%] text-xl font-thin leading-relaxed">
+        <p>${content}</p>
+      </div>
+    `;
+  }
 }
 
-customElements.define("jersey-info-card", JerseyInfoCard );
+customElements.define("jersey-info-card", JerseyInfoCard);

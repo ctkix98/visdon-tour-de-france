@@ -3,8 +3,8 @@ import "/sections/menu/menu.js";
 import "/custom-elements/MenuBubble.js";
 import "/custom-elements/RulesCard.js";
 import "/custom-elements/TdfRules.js";
-import "/custom-elements/jerseyInfoCard.js";
-import "/sections/menu/stakes.js"
+import "/custom-elements/JerseyInfoCard.js";
+import "/custom-elements/TdfStakes.js";
 import "/sections/menu/teams.js"
 import "/sections/podiums/podiumsTabs.js"
 import "/sections/map/stage-infos.js"
@@ -14,7 +14,6 @@ import "/sections/menu/route.js"
 
 import "/custom-elements/TdfMenu.js";
 import { displaySection, activateLink, toggleMenu } from "./helpers";
-import { displayJerseyDetails } from "./sections/menu/stakes";
 import { initSlideAnimations } from "./sections/slides/slidesAnimations";
 import { displayTeams } from "./sections/menu/teams";
 import { createFullElevationProfile } from "./sections/menu/setup-curve"
@@ -67,14 +66,12 @@ const routes = () => {
       break;
 
       case '#stakes':
+        displaySection('stakes');
         if(hashs[2]) {
-          displayJerseyDetails(hashs[2])
-          displaySection('stakes')
+          document.querySelector('tdf-stakes')?.setJersey(hashs[2]);
         }
         else {
-          displayJerseyDetails(1)
-          displaySection('stakes')
-          
+          document.querySelector('tdf-stakes')?.setJersey(1);
         }
         toggleMenu()
       break;
