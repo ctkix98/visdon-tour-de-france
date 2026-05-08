@@ -10,7 +10,6 @@ import "/custom-elements/TdfTeams.js";
 import "/sections/podiums/podiumsTabs.js"
 import "/sections/map/stage-infos.js"
 import "/custom-elements/TdfEquipment.js";
-import "/custom-elements/TdfFinish.js";
 import "/sections/menu/route.js"
 
 
