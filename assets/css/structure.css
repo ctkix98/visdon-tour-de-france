@@ -50,6 +50,11 @@ section#menu-wrapper > * {
   display: none;
 }
 
+@keyframes sectionFadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
 /* Seule la section .active est visible */
 section#menu-wrapper > *.active {
   display: flex;
@@ -57,6 +62,7 @@ section#menu-wrapper > *.active {
   justify-content: center;
   width: 100%;
   height: 100%;
+  animation: sectionFadeIn 0.6s ease-out forwards;
 }
 
 /* Override des règles globales pour le conteneur orbital */
@@ -82,3 +88,40 @@ section#menu-wrapper > #menu-section.grid-menu {
     gap: 2rem; 
 
 } */
+/* Transition TV spectaculaire (Stinger) */
+#transition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#transition-overlay.active {
+  opacity: 1;
+}
+
+.transition-bg {
+  position: absolute;
+  inset: 0;
+  background: #fdf6e3; /* Beige clair type papier */
+}
+
+.transition-logo {
+  position: relative;
+  width: 500px; /* Un peu plus grand pour le SVG */
+  transform: translateX(120vw);
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#transition-overlay.active .transition-logo {
+  transform: translateX(0);
+}
+
+#transition-overlay.exit .transition-logo {
+  transform: translateX(-120vw);
+}

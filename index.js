@@ -60,25 +60,25 @@ const routes = () => {
 
   switch (hashs[0]) {
     case "#menu":
-      displaySection("menu");
-      // Le Custom Element se gère lui-même
-      document.querySelector('#menu-wrapper')?.scrollIntoView();
+      displaySection("menu", () => {
+        document.querySelector('#menu-wrapper')?.scrollIntoView();
+      });
       break;
 
-      case '#stakes':
-        displaySection('stakes');
+    case '#stakes':
+      displaySection('stakes', () => {
         if(hashs[2]) {
           document.querySelector('tdf-stakes')?.setJersey(hashs[2]);
         }
         else {
           document.querySelector('tdf-stakes')?.setJersey(1);
         }
-        toggleMenu()
+        toggleMenu();
+      });
       break;
 
     case "#equipment":
-      displaySection("equipment");
-      toggleMenu()
+      displaySection("equipment", () => toggleMenu());
       break;
 
     /* case "#route":
@@ -88,16 +88,12 @@ const routes = () => {
       break; */
 
     case "#rules":
-      displaySection("rules");
-      // Le Custom Element se gère lui-même
-      toggleMenu()
+      displaySection("rules", () => toggleMenu());
       break;
 
-      case "#teams":
-        displaySection("teams");
-        // Le Custom Element se gère lui-même
-        toggleMenu()
-        break;  
+    case "#teams":
+      displaySection("teams", () => toggleMenu());
+      break;
   }
   checkScreenSize();
 
