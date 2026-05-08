@@ -9,7 +9,7 @@ import "/custom-elements/TeamCard.js";
 import "/custom-elements/TdfTeams.js";
 import "/sections/podiums/podiumsTabs.js"
 import "/sections/map/stage-infos.js"
-import "/sections/menu/equipment.js"
+import "/custom-elements/TdfEquipment.js";
 import "/sections/menu/route.js"
 
 
@@ -28,9 +28,9 @@ import { showMaillots } from "./sections/podiums/maillots.js";
 import { showGeneralPodium } from "./sections/podiums/winnersGC.js";
 
 import { animateIntroLogo } from "./sections/slides/intro.js";
-const drapeau = document.querySelector(".drapeau");
+/* const drapeau = document.querySelector(".drapeau");
 drapeau.innerHTML = `<span class="fi fi-fr"></span> <span class="fi fi-gr fis"></span>`;
-
+ */
 console.log("coucou");
 
 //To create the slides animations
