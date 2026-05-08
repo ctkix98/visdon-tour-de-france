@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden; /* Sécurité anti-scrollbar horizontale */
 }
 
 header {
@@ -31,7 +32,7 @@ a#logo img {
 }
 
 section [id*="section"] {
-  min-width: 99vw;
+  min-width: 100%;
   min-height: 100vh;
 }
 section {
@@ -99,6 +100,7 @@ section#menu-wrapper > #menu-section.grid-menu {
   justify-content: center;
   opacity: 0;
   transition: opacity 0.4s ease;
+  overflow: hidden; /* Empêche la scrollbar horizontale */
 }
 
 #transition-overlay.active {
