@@ -10,6 +10,7 @@ import "/custom-elements/TdfTeams.js";
 import "/sections/podiums/podiumsTabs.js"
 import "/sections/map/stage-infos.js"
 import "/custom-elements/TdfEquipment.js";
+import "/custom-elements/TdfFinish.js";
 import "/sections/menu/route.js"
 
 
@@ -23,7 +24,6 @@ import { initPodiumsTabs } from "./sections/podiums/podiumsTabs";
 import { showWinnerStage } from "./sections/podiums/winnerStage.js";
 import { startCountdown } from "./sections/countdown/countdown.js";
 import { checkScreenSize } from "./sections/checkSize.js";
-import { setupFinishScrollRace } from "./sections/finish/finishline.js";
 import { showMaillots } from "./sections/podiums/maillots.js";
 import { showGeneralPodium } from "./sections/podiums/winnersGC.js";
 
@@ -48,13 +48,21 @@ startCountdown();
 
 //Function to check the size of the screen. If >1024, it says no :
 
-//Function to animate finish-line section
-setupFinishScrollRace();
 
 
 
 const routes = () => {
-  const hash = window.location.hash || "#menu-section";
+  const hash = window.location.hash;
+  
+  // Si on n'a pas de hash, on est au sommet de la page (Intro)
+  if (!hash) {
+    // On s'assure que tout est visible
+    document.querySelectorAll('body > *:not(#screen-warning)').forEach(el => el.classList.remove('hide'));
+    // On met le menu sur sa section par défaut mais sans scroller
+    displaySection("menu");
+    return;
+  }
+
   const hashs = hash.split("-");
   activateLink(hashs[0]);
 
