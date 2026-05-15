@@ -3,3 +3,4 @@ dev.css
 .idea
 dist
 /.agents
+.DS_Store
